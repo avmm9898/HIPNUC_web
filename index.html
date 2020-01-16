@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-	<script src="js/w3.js"></script> 
+	
 
 <head>
 	<title>HIPNUC IMU - Innovating together</title>
@@ -109,7 +109,7 @@
 	</section>
 
 
-	<div w3-include-html="footer.html"></div> 
+	
 	<section class="ftco-section ftco-no-pt ftco-no-pb bg-primary">
 		<div class="container py-4">
 			<div class="row d-flex justify-content-center">
@@ -127,7 +127,7 @@
 			</div>
 		</div>
 	</section>
-
+	<div w3-include-html="footer.html"></div> 
 	<!-- footer section -->
 	<footer class="ftco-footer ftco-bg-dark ftco-section">
 		<div class="container">
@@ -188,7 +188,10 @@
 
 
 	<!-- loader -->
-
+	<script src="js/w3.js"></script> 
+	<script>
+		w3.includeHTML();
+	</script>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery-migrate-3.0.1.min.js"></script>
 	<script src="js/popper.min.js"></script>
@@ -202,9 +205,7 @@
 	<script src="js/jquery.animateNumber.min.js"></script>
 	<script src="js/scrollax.min.js"></script>
 	<script src="js/main.js"></script>
-	<script>
-		w3.includeHTML();
-	</script>
+	
 
 </body>
 
