@@ -1,0 +1,16 @@
+Full
+HIPNUC is dedicated to develope cost-effective IMU/AHRS and integrated navigation modules, 
+providing the best solution under the same price gradient.
+We've developed more than 6 years in low-cost MEMS sensor algorithm with accurate measurement and minimal angle drift,
+hense we've made lots robust and reliable applications.
+Our products are widely implemented in robot, sweeper, motion capture, virtual reality, and more products are on the way. 
+
+shorter
+HIPNUC is dedicated to develope cost-effective IMU/AHRS with high quality , 
+providing mature and advanced integrated navigation modules.
+
+
+超核电子致力于开发高性价比IMU/AHRS及组合导航模块。
+6年+ 低成本MEMS传感器算法开发经验
+稳定可靠的机器人/扫地机航向信息输出，极小的航向角飘移。
+为用户提供同价格梯度下最具性价比的姿态检测方案

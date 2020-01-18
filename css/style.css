@@ -11134,7 +11134,7 @@ h5,
   right: 0;
   bottom: 0;
   content: '';
-  opacity: .5;
+  opacity: .6;
   background: #000000;
 }
 
@@ -11342,7 +11342,7 @@ h5,
 }
 
 .bg-primary {
-  background: #83b582;
+  background: #638a63;
 }
 
 .btn {
@@ -11845,7 +11845,7 @@ textarea.form-control {
 .ftco-footer {
   font-size: 16px;
   background: #222831;
-  padding: 3em 0 3em 0;
+  padding: 2.5em 0 1em 0;
 }
 
 .ftco-footer .ftco-footer-widget h2 {
