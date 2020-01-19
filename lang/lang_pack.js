@@ -12,7 +12,7 @@ const messages = {
     content: {
       title: 'Sample Requests & Supports'
     }
-    
+
   },
   tw: {
     navbar: {
@@ -71,4 +71,15 @@ function listCookie() {
   }
   document.writeln("</table>");
 }
+function init_lang() {
+  var i18n = new VueI18n({
+    locale: 'en',
+    messages,
+  })
+  var tmp_lang = getCookie("lang");
+  if (tmp_lang == "en" || tmp_lang == "cn" || tmp_lang == "tw")
+    i18n.locale = tmp_lang
+  new Vue({ i18n }).$mount('#div1');
+  new Vue({ i18n }).$mount('#div2');
 
+}
