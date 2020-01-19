@@ -26,15 +26,40 @@ const messages = {
 };
 
 var i18n = new VueI18n({
-  locale: 'en',
+  locale: 'cn',
   messages,
-  lang=''
 })
-new Vue({ i18n }).$mount('#navbar')
+function doCookieSetup(name, lang) {
+  document.cookie = name + "=" + escape(lang);
+}
+function getCookie(name) {
+  var arg = escape(name) + "=";
+  var nameLen = arg.length;
+  var cookieLen = document.cookie.length;
+  var i = 0;
+  while (i < cookieLen) {
+    var j = i + nameLen;
+    if (document.cookie.substring(i, j) == arg) return getCookieValueByIndex(j);
+    i = document.cookie.indexOf(" ", i) + 1;
+    if (i == 0) break;
+  }
+  return null;
+}
 
-function changeLang() {
-  i18n.lang = localStorage.getItem('locale') || 'en';
-  this.lang=i18n.lang
-  console.log(this.lang);
-  localStorage.setItem('locale', this.lang);
-};
+function getCookieValueByIndex(startIndex) {
+  var endIndex = document.cookie.indexOf(";", startIndex);
+  if (endIndex == -1) endIndex = document.cookie.length;
+  return unescape(document.cookie.substring(startIndex, endIndex));
+}
+function listCookie() {
+  document.writeln("<table>");
+  document.writeln("<tr><th>Name<th>Value");
+  cookieArray = document.cookie.split(";");
+  for (var i = 0; i < cookieArray.length; i++) {
+    thisCookie = cookieArray[i].split("=");
+    cName = unescape(thisCookie[0]);
+    cValue = unescape(thisCookie[1]);
+    document.writeln("<tr><td>" + cName + "</td><td>" + cValue + "</td>");
+  }
+  document.writeln("</table>");
+}
