@@ -111,7 +111,11 @@
   <script>
     w3.includeHTML();
 
-    $("#div1").load("navbar.html");
+    $("#div1").load("navbar.html",function(){
+           var sc =  document.createElement("script");
+           sc.src= "lang/lang_pack.js";
+           $("body").append(sc);
+        });
     $.getScript("lang/lang_pack.js",function(){
              alert("載入成功！");
         });
