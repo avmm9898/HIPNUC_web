@@ -2,31 +2,36 @@
 
 const messages = {
   en: {
-    word: {
+    navbar: {
       home: 'Home',
       products: 'Products',
       documentation: 'Documentation',
-      contact: 'Contact&Purchase'
+      contact: 'Contact&Purchase',
+      language: 'Language'
     }
   },
   tw: {
-    word: {
-      hello: '哈囉',
-      minwt: '梅問題'
-    }
-  },
-  cn: {
-    word: {
+    navbar: {
       home: '首頁',
       products: '產品型錄',
       documentation: '產品文件',
-      contact: '聯絡與購買'
+      contact: '聯絡與購買',
+      language: '語言'
+    }
+  },
+  cn: {
+    navbar: {
+      home: '首页',
+      products: '产品型录',
+      documentation: '产品文件',
+      contact: '联络与购买',
+      language: '语言'
     }
   },
 };
 
 var i18n = new VueI18n({
-  locale: 'cn',
+  locale: 'en',
   messages,
 })
 function doCookieSetup(name, lang) {

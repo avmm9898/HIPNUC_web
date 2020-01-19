@@ -30,188 +30,153 @@
 </head>
 
 <body>
-	<div id="language">
-		<!-- navbar -->
-		<nav class="navbar px-md-0 navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light">
-			<div class="container-fluid px-md-5">
-				<a class="navbar-brand" href="index.html">HIPNUC <span>Electronic</span></a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
-					aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="oi oi-menu"></span> Menu
-				</button>
-				<div class="collapse navbar-collapse" id="ftco-nav">
-					<ul class="navbar-nav ml-auto">
-						<li class="nav-item"><a href="index.html" class="nav-link">{{ $t("word.home") }}</a></li>
-						<li class="nav-item"><a href="products.html" class="nav-link">{{ $t("word.products") }}</a></li>
-						<li class="nav-item"><a href="documentation.html"
-								class="nav-link">{{ $t("word.documentation") }}</a></li>
-						<li class="nav-item"><a href="contact.html" class="nav-link">{{ $t("word.contact") }}</a></li>
-						<li class="nav-item">Language</li>
-					</ul>
-				</div>
+	<!-- navbar -->
+	<nav id="language" class="navbar px-md-0 navbar-expand-lg  navbar-dark  bg-dark ftco-navbar-light">
+		<div class="container-fluid px-md-5">
+			<a class="navbar-brand" href="index.html">HIPNUC <span>Electronic</span></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+				aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="oi oi-menu"></span> Menu
+			</button>
+			<div class="collapse navbar-collapse" id="ftco-nav">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item"><a href="index.html" class="nav-link">{{ $t("navbar.home") }}</a></li>
+					<li class="nav-item"><a href="products.html" class="nav-link">{{ $t("navbar.products") }}</a></li>
+					<li class="nav-item"><a href="documentation.html"
+							class="nav-link">{{ $t("navbar.documentation") }}</a></li>
+					<li class="nav-item"><a href="contact.html" class="nav-link">{{ $t("navbar.contact") }}</a></li>
+					<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#"
+							id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+							aria-expanded="false">{{ $t("navbar.language") }}</a>
+						<!-- .dropdown-menu 下拉選單內容 -->
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<a class="dropdown-item" href="index.html" onclick="doCookieSetup('lang', 'en')">English</a>
+							<a class="dropdown-item" href="index.html" onclick="doCookieSetup('lang', 'cn')">简体中文</a>
+							<a class="dropdown-item" href="index.html" onclick="doCookieSetup('lang', 'tw')">繁體中文</a>
+						</div>
+					</li>
+					</li>
+				</ul>
 			</div>
-		</nav>
-		<!-- END nav -->
+		</div>
+	</nav>
+	<!-- END nav -->
 
-		<div class="intro-bg js-fullheight" style="background-image: url('images/intro-background.jpg');"
-			data-stellar-background-ratio="0.5">
-			<div class="overlay"></div>
+	<div id="language" class="intro-bg js-fullheight" style="background-image: url('images/intro-background.jpg');"
+		data-stellar-background-ratio="0.5">
+		<div class="overlay"></div>
 
-			<div class="container-fluid px-md-5" style="text-align:center">
-				<div class="row no-gutters slider-text js-fullheight align-items-center justify-content-start"
-					data-scrollax-parent="true">
-					<div class="container-fluid ftco-animate">
-						<h1 style="font-size:450%;">Welcome to HIPNUC</h1>
-						<h1 style="font-size:180%;margin-top:1em">We make professional, advanced, and tiny IMU/AHRS
-							systems
-							and products.
-						</h1>
-						<h2 style="margin-top:6em"><a href="#" class="btn-custom mr-md-4">Products
-								<span class="ion-ios-arrow-forward"></span></a>
-							<a href="#" class="btn-custom">Contact us <span class="ion-ios-arrow-forward"></span></a>
-						</h2>
-					</div>
+		<div class="container-fluid px-md-5" style="text-align:center">
+			<div class="row no-gutters slider-text js-fullheight align-items-center justify-content-start"
+				data-scrollax-parent="true">
+				<div class="container-fluid ftco-animate">
+					<h1 style="font-size:450%;">Welcome to HIPNUC</h1>
+					<h1 style="font-size:180%;margin-top:1em">We make professional, advanced, and tiny IMU/AHRS
+						systems
+						and products.
+					</h1>
+					<h2 style="margin-top:6em"><a href="#" class="btn-custom mr-md-4">Products
+							<span class="ion-ios-arrow-forward"></span></a>
+						<a href="#" class="btn-custom">Contact us <span class="ion-ios-arrow-forward"></span></a>
+					</h2>
 				</div>
 			</div>
 		</div>
-
-
-		<button @click="changeLang">切換語言</button>
-		<section class="ftco-section ftco-no-pb ftco-no-pt services-section"> </section>
-
-		<section class="ftco-section ftco-no-pt ftco-no-pb">
-			<div class="container">
-				<div class="row d-flex">
-					<div class="col-md-6 d-flex">
-						<div class="img img-video d-flex align-self-stretch align-items-center justify-content-center justify-content-md-end"
-							style="background-image:url(images/about.jpg);">
-							<a href="https://vimeo.com/45830194"
-								class="icon-video popup-vimeo d-flex justify-content-center align-items-center">
-								<span class="icon-play"></span>
-							</a>
-						</div>
-					</div>
-					<div class="col-md-6 px-5 py-5">
-						<div class="row justify-content-start pt-3 pb-3">
-							<div class="col-md-12 heading-section ftco-animate">
-								<span class="subheading">Welcome to Judge</span>
-								<h2 class="mb-4">We Always Fight For Your Justice to Win</h2>
-								<p>Far far away, behind the word mountains, far from the countries Vokalia and
-									Consonantia
-								</p>
-								<p>A small river named Duden flows by their place and supplies it with the necessary
-									regelialia. It is a paradisematic country, in which roasted parts of sentences fly
-									into
-									your mouth.</p>
-								<p>Even the all-powerful Pointing has no control about the blind texts it is an almost
-									unorthographic life One day however a small line of blind text by the name of Lorem
-									Ipsum decided to leave for the far World of Grammar.</p>
-								<div class="years d-flex">
-									<h4 class="number mr-2" data-number="40">0</h4>
-									<h4>Years of Experienced</h4>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-
-
-		<section class="ftco-section ftco-no-pt ftco-no-pb bg-primary">
-			<div class="container py-2">
-				<div class="row d-flex justify-content-center">
-					<div class="col-md-12 ftco-animate d-flex align-items-center">
-						<h2 class="mb-0" style="color:white; font-size: 15px;">
-							Buy our industrial, art-of-state products on
-							<a href="#" class="mb-0" style="color:rgb(253, 225, 155); font-size: 15px;"><span
-									class="ion-ios-arrow-forward"></span> Taobao(Global) </a>
-							<a> or </a>
-							<a href="#" class="mb-0" style="color:rgb(253, 225, 155); font-size: 15px;"><span
-									class="ion-ios-arrow-forward"></span> Ruten(Taiwan) </a>
-
-						</h2>
-					</div>
-				</div>
-			</div>
-		</section>
-		<div w3-include-html="footer.html"></div>
-
-		<!-- footer section for development-->
-		<footer class="ftco-footer ftco-bg-dark ftco-section">
-			<div class="container">
-				<div class="row mb-5">
-					<div class="col-md">
-						<div class="ftco-footer-widget">
-							<h2 class="ftco-heading-2">About HIPNUC</h2>
-							<p style="font-size:80%;text-align:justify;text-justify:inter-ideograph;">
-								HIPNUC is dedicated to develope cost-effective IMU/AHRS with high quality,
-								providing mature and advanced integrated navigation modules.
-							</p>
-							<ul style="font-size:80%;">
-								<li><a href=https://github.com/ftco/products>Visit our github <span
-										class="ion-ios-arrow-forward"></span></a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-md">
-						<div class="ftco-footer-widget">
-							<h2 class="ftco-heading-2">Our Library</h2>
-							<ul style="font-size:80%">
-								<li><a href=https://zhuanlan.zhihu.com/p/65483011>Digital filering with matlab <span
-										class="ion-ios-arrow-forward"></span></a></li>
-								<li><a href=https://zhuanlan.zhihu.com/p/60301874>Mathematic basis of rotation <span
-										class="ion-ios-arrow-forward"></span></a></li>
-								<li><a href=https://zhuanlan.zhihu.com/p/56073859>Basic concepts of 3D inertial sensors
-										and attitude <span class="ion-ios-arrow-forward"></span></a></li>
-								<li><a href=https://zhuanlan.zhihu.com/p/58379051>Notes of MIT linear algebra <span
-										class="ion-ios-arrow-forward"></span></a></li>
-								<li><a href=https://zhuanlan.zhihu.com/p/58379051>Basic concepts of
-										IMU/VRU/AHRS/6-axis/9-axis <span class="ion-ios-arrow-forward"></span></a></li>
-
-							</ul>
-						</div>
-					</div>
-					<div class="col-md">
-						<div class="ftco-footer-widget">
-							<h2 class="ftco-heading-2">Business Hours</h2>
-							<p style="font-size:80%;">Monday to Friday : 09:00-19:00</p>
-							<p style="font-size:80%;">Saturday : 09:00-17:00</p>
-						</div>
-					</div>
-					<div class="col-md">
-						<div class="ftco-footer-widget">
-							<h2 class="ftco-heading-2">Sales (Beijing)</h2>
-							<p style="font-size:80%;"><a href="tel:+8618612030435" class="icon icon-phone"> +86
-									18612030435</a></p>
-							<p style="font-size:80%;"><a href="mailto:18612030435@163.com" class="icon icon-envelope">
-									18612030435@163.com</a></p>
-							<h2 class="ftco-heading-2">Sales (Taipei)</h2>
-							<p style="font-size:80%;"><a href="tel:+886 0988592841" class="icon icon-phone"> +886
-									0908179107</a></p>
-							<p style="font-size:80%;"><a href="mailto:avmm9898@gmail.com" class="icon icon-envelope">
-									avmm9898@gmail.com</a></p>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-12 text-center">
-
-						<p style="font-size:70%;">
-							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-							Copyright &copy;
-							<script>document.write(new Date().getFullYear());</script> All rights reserved | Made by
-							ftco
-							and <a href="https://colorlib.com" target="_blank">Colorlib</a>
-							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-						</p>
-					</div>
-				</div>
-			</div>
-		</footer>
-
 	</div>
+
+	<section id="language" class="ftco-section ftco-no-pt ftco-no-pb bg-primary">
+		<div class="container py-2">
+			<div class="row d-flex justify-content-center">
+				<div class="col-md-12 ftco-animate d-flex align-items-center">
+					<h2 class="mb-0" style="color:white; font-size: 15px;">
+						Buy our industrial, art-of-state products on
+						<a href="#" class="mb-0" style="color:rgb(253, 225, 155); font-size: 15px;"><span
+								class="ion-ios-arrow-forward"></span> Taobao(Global) </a>
+						<a> or </a>
+						<a href="#" class="mb-0" style="color:rgb(253, 225, 155); font-size: 15px;"><span
+								class="ion-ios-arrow-forward"></span> Ruten(Taiwan) </a>
+
+					</h2>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div w3-include-html="footer.html"></div>
+
+	<!-- footer section for development-->
+	<footer id="language" class="ftco-footer ftco-bg-dark ftco-section">
+		<div class="container">
+			<div class="row mb-5">
+				<div class="col-md">
+					<div class="ftco-footer-widget">
+						<h2 class="ftco-heading-2">About HIPNUC</h2>
+						<p style="font-size:80%;text-align:justify;text-justify:inter-ideograph;">
+							HIPNUC is dedicated to develope cost-effective IMU/AHRS with high quality,
+							providing mature and advanced integrated navigation modules.
+						</p>
+						<ul style="font-size:80%;">
+							<li><a href=https://github.com/ftco/products>Visit our github <span
+									class="ion-ios-arrow-forward"></span></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md">
+					<div class="ftco-footer-widget">
+						<h2 class="ftco-heading-2">Our Library</h2>
+						<ul style="font-size:80%">
+							<li><a href=https://zhuanlan.zhihu.com/p/65483011>Digital filering with matlab <span
+									class="ion-ios-arrow-forward"></span></a></li>
+							<li><a href=https://zhuanlan.zhihu.com/p/60301874>Mathematic basis of rotation <span
+									class="ion-ios-arrow-forward"></span></a></li>
+							<li><a href=https://zhuanlan.zhihu.com/p/56073859>Basic concepts of 3D inertial sensors and
+									attitude <span class="ion-ios-arrow-forward"></span></a></li>
+							<li><a href=https://zhuanlan.zhihu.com/p/58379051>Notes of MIT linear algebra <span
+									class="ion-ios-arrow-forward"></span></a></li>
+							<li><a href=https://zhuanlan.zhihu.com/p/58379051>Basic concepts of
+									IMU/VRU/AHRS/6-axis/9-axis <span class="ion-ios-arrow-forward"></span></a></li>
+
+						</ul>
+					</div>
+				</div>
+				<div class="col-md">
+					<div class="ftco-footer-widget">
+						<h2 class="ftco-heading-2">Business Hours</h2>
+						<p style="font-size:80%;">Monday to Friday : 09:00-19:00</p>
+						<p style="font-size:80%;">Saturday : 09:00-17:00</p>
+					</div>
+				</div>
+				<div class="col-md">
+					<div class="ftco-footer-widget">
+						<h2 class="ftco-heading-2">Sales (Beijing)</h2>
+						<p style="font-size:80%;"><a href="tel:+8618612030435" class="icon icon-phone"> +86
+								18612030435</a></p>
+						<p style="font-size:80%;"><a href="mailto:18612030435@163.com" class="icon icon-envelope">
+								18612030435@163.com</a></p>
+						<h2 class="ftco-heading-2">Sales (Taipei)</h2>
+						<p style="font-size:80%;"><a href="tel:+886 0988592841" class="icon icon-phone"> +886
+								0908179107</a></p>
+						<p style="font-size:80%;"><a href="mailto:avmm9898@gmail.com" class="icon icon-envelope">
+								avmm9898@gmail.com</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 text-center">
+
+					<p style="font-size:70%;">
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						Copyright &copy;
+						<script>document.write(new Date().getFullYear());</script> All rights reserved | Made by
+						ftco
+						and <a href="https://colorlib.com" target="_blank">Colorlib</a>
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	</span>
 
 	<!-- loader -->
 	<script src="js/w3.js"></script>
@@ -237,16 +202,12 @@
 	<script>
 
 		console.log(i18n.locale);
-		doCookieSetup("lang", "en");
-
-		if (getCookie("lang") == 'en') {
-
-			i18n.locale = 'en';
-			new Vue({ i18n }).$mount('#language')
-		}
+		/*var userLang = navigator.language || navigator.userLanguage;*/
+		var tmp_lang = getCookie("lang");
+		if (tmp_lang != "")
+			i18n.locale = tmp_lang
+		new Vue({ i18n }).$mount('#language');
 		console.log(i18n.locale);
-		console.log(getCookie("lang"));
-
 
 	</script>
 
