@@ -110,17 +110,30 @@
   <script src="lang/lang_pack.js"></script>
   <script>
     w3.includeHTML();
-    $("#div1").load("navbar.html");
 
-    var i18n = new VueI18n({
-      locale: 'en',
-      messages,
-    })
-    var tmp_lang = getCookie("lang");
-    if (tmp_lang == "en" || tmp_lang == "cn" || tmp_lang == "tw")
-      i18n.locale = tmp_lang
-    new Vue({ i18n }).$mount('#div1');
-    new Vue({ i18n }).$mount('#div2');
+
+    function load(url, data) { //alert($(url).attr("href")); 
+      $.ajaxSetup({ cache: false });
+      $("#content").load($(url).attr("href") + " #content ", data, function (result) {
+        //alert(result); 
+        //將被加載頁的JavaScript加載到本頁執行 
+        $result = $(result);
+        $result.find("script").appendTo('#content');
+      });
+
+
+
+      $("#div1").load("navbar.html");
+
+      var i18n = new VueI18n({
+        locale: 'en',
+        messages,
+      })
+      var tmp_lang = getCookie("lang");
+      if (tmp_lang == "en" || tmp_lang == "cn" || tmp_lang == "tw")
+        i18n.locale = tmp_lang
+      new Vue({ i18n }).$mount('#div1');
+      new Vue({ i18n }).$mount('#div2');
 
     /*console.log(i18n.locale);*/
 
