@@ -34,21 +34,22 @@
 	<!-- navbar -->
 	<nav class="navbar px-md-0 navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="navbar">
 		<div class="container-fluid px-md-5">
-		  <a class="navbar-brand" href="index.html">HIPNUC <span>Electronic</span></a>
-		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
-			aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="oi oi-menu"></span> Menu
-		  </button>
-		  <div class="collapse navbar-collapse" id="ftco-nav">
-			<ul class="navbar-nav ml-auto">
-			  <li class="nav-item"><a href="index.html" class="nav-link">{{ $t("word.home") }}</a></li>
-			  <li class="nav-item"><a href="products.html" class="nav-link">{{ $t("word.products") }}</a></li>
-			  <li class="nav-item"><a href="documentation.html" class="nav-link">{{ $t("word.documentation") }}</a></li>
-			  <li class="nav-item"><a href="contact.html" class="nav-link">{{ $t("word.contact") }}</a></li>
-			</ul>
-		  </div>
+			<a class="navbar-brand" href="index.html">HIPNUC <span>Electronic</span></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+				aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="oi oi-menu"></span> Menu
+			</button>
+			<div class="collapse navbar-collapse" id="ftco-nav">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item"><a href="index.html" class="nav-link">{{ $t("word.home") }}</a></li>
+					<li class="nav-item"><a href="products.html" class="nav-link">{{ $t("word.products") }}</a></li>
+					<li class="nav-item"><a href="documentation.html"
+							class="nav-link">{{ $t("word.documentation") }}</a></li>
+					<li class="nav-item"><a href="contact.html" class="nav-link">{{ $t("word.contact") }}</a></li>
+				</ul>
+			</div>
 		</div>
-	  </nav>
+	</nav>
 	<!-- END nav -->
 
 	<div class="intro-bg js-fullheight" style="background-image: url('images/intro-background.jpg');"
@@ -132,7 +133,7 @@
 		</div>
 	</section>
 	<div w3-include-html="footer.html"></div>
-	
+
 	<!-- footer section for development-->
 	<footer class="ftco-footer ftco-bg-dark ftco-section">
 		<div class="container">
@@ -228,9 +229,23 @@
 	<script src="js/main.js"></script>
 	<script src="lang/vue.js"></script>
 	<script src="lang/vuei18n.js"></script>
-	<script src="lang/lang_pack.js"></script> 
+	<script src="lang/lang_pack.js"></script>
 	<script>
-		console.log(222);
+		function changeLang() {
+			this.lang = localStorage.getItem('locale') || 'en';
+
+			if (this.lang === 'cn') {
+				this.lang = 'en';
+				this.$i18n.locale = this.lang;
+
+			} else {
+				this.lang = 'cn';
+				this.$i18n.locale = this.lang;
+			}
+			console.log(this.lang);
+			localStorage.setItem('locale', this.lang);
+		};
+		console.log(2);
 	</script>
 
 </body>
