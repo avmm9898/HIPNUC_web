@@ -28,9 +28,8 @@
 
 <body>
 
-  <!-- navbar -->
-  <div id="language" w3-include-html="navbar.html"></div>
-  <!-- END nav -->
+ 	<!-- navbar -->
+   <div id="language" w3-include-html="navbar.html"></div>
 
   <section class="intro-bg intro-bg-2" style="background-image: url('images/intro-background.jpg');"
     data-stellar-background-ratio="0.5">
@@ -106,7 +105,19 @@
   <script src="js/main.js"></script>
   <script src="lang/vue.js"></script>
 	<script src="lang/vuei18n.js"></script>
-	<script src="lang/lang_pack.js"></script>
+  <script src="lang/lang_pack.js"></script>
+  <script>
+
+		/*console.log(i18n.locale);*/
+		/*var userLang = navigator.language || navigator.userLanguage;*/
+
+		var tmp_lang = getCookie("lang");
+		if (tmp_lang != "")
+			i18n.locale = tmp_lang
+		new Vue({ i18n }).$mount('#language');
+		/*console.log(i18n.locale);*/
+
+	</script>
 </body>
 
 </html>
