@@ -1,17 +1,4 @@
-function changeLang(){
-  this.lang = localStorage.getItem('locale') || 'en';
-  
-  if ( this.lang === 'cn' ) {
-     this.lang = 'en';
-     this.$i18n.locale = this.lang;
-     
-  } else {
-     this.lang = 'cn';
-     this.$i18n.locale = this.lang;
-  }
-  console.log(this.lang);
-  localStorage.setItem('locale', this.lang);
-};
+
 
 const messages = {
     en: {
