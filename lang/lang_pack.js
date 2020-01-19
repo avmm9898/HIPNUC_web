@@ -1,4 +1,4 @@
-changeLang() {
+changeLang = function (sel){
   this.lang = localStorage.getItem('locale') || 'en';
   
   if ( this.lang === 'cn' ) {
@@ -9,7 +9,7 @@ changeLang() {
      this.$i18n.locale = this.lang;
   }
   localStorage.setItem('locale', this.lang);
-}
+};
 
 const messages = {
     en: {
@@ -34,7 +34,7 @@ const messages = {
         contact:'聯絡與購買'
       }
     },
-  }
+  };
   
   const i18n = new VueI18n({
     locale: 'en', 
