@@ -210,7 +210,11 @@
 
 		/*console.log(i18n.locale);*/
 		/*var userLang = navigator.language || navigator.userLanguage;*/
-		
+
+		var tmp_lang = getCookie("lang");
+		if (tmp_lang != "")
+			i18n.locale = tmp_lang
+		new Vue({ i18n }).$mount('#language');
 		/*console.log(i18n.locale);*/
 
 	</script>
