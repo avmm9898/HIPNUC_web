@@ -107,18 +107,19 @@
   <script src="js/main.js"></script>
   <script src="lang/vue.js"></script>
   <script src="lang/vuei18n.js"></script>
-  
+
   <script>
     w3.includeHTML();
 
-    $("#div1").load("navbar.html",function(){
-           var sc =  document.createElement("script");
-           sc.src= "lang/lang_pack.js";
-           $("body").append(sc);
-        });
-    $.getScript("lang/lang_pack.js",function(){
+    $("#div1").load("navbar.html", function () {
+      var sc = document.createElement("script");
+      sc.src = "lang/lang_pack.js";
+      $("body").append(sc);
+    });
+    init_lang();
+    /*$.getScript("lang/lang_pack.js",function(){
              alert("載入成功！");
-        });
+        });*/
 
     /*console.log(i18n.locale);*/
 
