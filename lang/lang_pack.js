@@ -72,7 +72,3 @@ function listCookie() {
   document.writeln("</table>");
 }
 
-var i18n = new VueI18n({
-  locale: 'en',
-  messages,
-})
