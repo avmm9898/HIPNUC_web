@@ -32,14 +32,14 @@
 
 <body>
 
-   <!-- navbar -->
-   <!--#include file="navbar.html" -->
-   <div w3-include-html="navbar.html"></div>
-   <script>
+  <!-- navbar -->
+  <!--#include file="navbar.html" -->
+  <div w3-include-html="navbar.html"></div>
+  <script>
 
     console.log("here");
 
-	</script>
+  </script>
 
   <section class="intro-bg intro-bg-2" style="background-image: url('images/intro-background.jpg');"
     data-stellar-background-ratio="0.5">
@@ -96,8 +96,8 @@
       <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
         stroke="#F96D00" /></svg></div>
 
- 
-  
+
+
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
   <script src="js/popper.min.js"></script>
@@ -112,21 +112,23 @@
   <script src="js/scrollax.min.js"></script>
   <script src="js/main.js"></script>
   <script src="lang/vue.js"></script>
-	<script src="lang/vuei18n.js"></script>
+  <script src="lang/vuei18n.js"></script>
   <script src="lang/lang_pack.js"></script>
   <script>
+    window.addEventListener('load', function () {
+      var tmp_lang = getCookie("lang");
+      if (tmp_lang != "")
+        i18n.locale = tmp_lang;
+      new Vue({ i18n }).$mount('#language');
+      /*console.log(i18n.locale);*/
+      console.log("newlang");
 
+    })
 		/*console.log(i18n.locale);*/
-		/*var userLang = navigator.language || navigator.userLanguage;*/
+    /*var userLang = navigator.language || navigator.userLanguage;*/
 
-		var tmp_lang = getCookie("lang");
-		if (tmp_lang != "")
-			i18n.locale = tmp_lang;
-		new Vue({ i18n }).$mount('#language');
-    /*console.log(i18n.locale);*/
-    console.log("newlang");
 
-	</script>
+  </script>
 </body>
 
 </html>
