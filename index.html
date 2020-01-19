@@ -189,7 +189,7 @@
 	<script src="js/w3.js"></script>
 	<script>
 		w3.includeHTML();
-		
+
 	</script>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery-migrate-3.0.1.min.js"></script>
@@ -211,9 +211,12 @@
 
 		/*console.log(i18n.locale);*/
 		/*var userLang = navigator.language || navigator.userLanguage;*/
-
+		var i18n = new VueI18n({
+			locale: 'en',
+			messages,
+		})
 		var tmp_lang = getCookie("lang");
-		if (tmp_lang != "")
+		if (tmp_lang == "en" ||tmp_lang == "cn"||tmp_lang == "tw")
 			i18n.locale = tmp_lang
 		new Vue({ i18n }).$mount('#language');
 		/*console.log(i18n.locale);*/

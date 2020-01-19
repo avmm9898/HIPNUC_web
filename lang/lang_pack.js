@@ -10,7 +10,7 @@ const messages = {
       language: 'Language'
     },
     content: {
-      title: 'Sample Requests &amp; Supports',
+      title: 'Sample Requests & Supports'
     }
     
   },
@@ -32,7 +32,7 @@ const messages = {
       language: '语言'
     },
     content: {
-      title: '樣本申請與銷售支援',
+      title: '樣本申請與銷售支援'
     }
   },
 };
@@ -72,3 +72,7 @@ function listCookie() {
   document.writeln("</table>");
 }
 
+var i18n = new VueI18n({
+  locale: 'en',
+  messages,
+})

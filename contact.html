@@ -31,11 +31,11 @@
 <body>
 
   <!-- navbar -->
-  
+
   <div id="div1"></div>
 
 
-  <section id="div2" class="intro-bg intro-bg-2" style="background-image: url('images/intro-background.jpg');"
+  <section class="intro-bg intro-bg-2" style="background-image: url('images/intro-background.jpg');"
     data-stellar-background-ratio="0.5">
     <div class="overlay"></div>
     <div class="container">
@@ -50,7 +50,7 @@
     </div>
   </section>
 
-  <section class="ftco-section contact-section">
+  <section id="div2" class="ftco-section contact-section">
     <div class="container">
       <div class="row d-flex mb-5 contact-info">
         <div class="col-md-12 mb-4">
@@ -117,12 +117,12 @@
       messages,
     })
     var tmp_lang = getCookie("lang");
-    if (tmp_lang != "")
-      i18n.locale = tmp_lang;
+    if (tmp_lang == "en" || tmp_lang == "cn" || tmp_lang == "tw")
+      i18n.locale = tmp_lang
     new Vue({ i18n }).$mount('#div1');
     new Vue({ i18n }).$mount('#div2');
+
     /*console.log(i18n.locale);*/
-    console.log("newlang");
 
 
     /*console.log(i18n.locale);*/
