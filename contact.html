@@ -25,14 +25,14 @@
   <link rel="stylesheet" href="css/icomoon.css">
   <link rel="stylesheet" href="css/style.css">
   <script src="js/w3.js"></script>
-  
+
 </head>
 
 <body>
 
   <!-- navbar -->
-  
-  <div id="language"  w3-include-html="navbar.html"></div>
+
+  <div id="language" w3-include-html="navbar.html"></div>
   <script>
 
     console.log("here");
@@ -116,6 +116,11 @@
   <script src="lang/lang_pack.js"></script>
   <script>
     window.addEventListener('load', function () {
+
+      var i18n = new VueI18n({
+        locale: 'en',
+        messages,
+      })
       var tmp_lang = getCookie("lang");
       if (tmp_lang != "")
         i18n.locale = tmp_lang;
