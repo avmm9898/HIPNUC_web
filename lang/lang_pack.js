@@ -28,20 +28,13 @@ const messages = {
 var i18n = new VueI18n({
   locale: 'en',
   messages,
+  lang=''
 })
 new Vue({ i18n }).$mount('#navbar')
 
 function changeLang() {
-  this.lang = localStorage.getItem('locale') || 'en';
-
-  if (this.lang === 'cn') {
-    this.lang = 'en';
-    this.$i18n.locale = this.lang;
-
-  } else {
-    this.lang = 'cn';
-    this.$i18n.locale = this.lang;
-  }
+  i18n.lang = localStorage.getItem('locale') || 'en';
+  this.lang=i18n.lang
   console.log(this.lang);
   localStorage.setItem('locale', this.lang);
 };
