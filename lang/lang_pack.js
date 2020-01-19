@@ -30,10 +30,6 @@ const messages = {
   },
 };
 
-var i18n = new VueI18n({
-  locale: 'en',
-  messages,
-})
 function doCookieSetup(name, lang) {
   document.cookie = name + "=" + escape(lang);
 }

@@ -33,13 +33,9 @@
   <!-- navbar -->
 
   <div id="language" w3-include-html="navbar.html"></div>
+
   <script>
 
-    console.log("here");
-
-  </script>
-  <script>
-    w3.includeHTML();
   </script>
   <section class="intro-bg intro-bg-2" style="background-image: url('images/intro-background.jpg');"
     data-stellar-background-ratio="0.5">
@@ -115,21 +111,22 @@
   <script src="lang/vuei18n.js"></script>
   <script src="lang/lang_pack.js"></script>
   <script>
-    window.addEventListener('load', function () {
+    w3.includeHTML();
 
-      var i18n = new VueI18n({
-        locale: 'en',
-        messages,
-      })
-      var tmp_lang = getCookie("lang");
-      if (tmp_lang != "")
-        i18n.locale = tmp_lang;
-      new Vue({ i18n }).$mount('#language');
-      /*console.log(i18n.locale);*/
-      console.log("newlang");
 
+    var i18n = new VueI18n({
+      locale: 'en',
+      messages,
     })
-		/*console.log(i18n.locale);*/
+    var tmp_lang = getCookie("lang");
+    if (tmp_lang != "")
+      i18n.locale = tmp_lang;
+    new Vue({ i18n }).$mount('#language');
+    /*console.log(i18n.locale);*/
+    console.log("newlang");
+
+
+    /*console.log(i18n.locale);*/
     /*var userLang = navigator.language || navigator.userLanguage;*/
 
 
