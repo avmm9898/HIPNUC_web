@@ -31,8 +31,8 @@
 <body>
 
   <!-- navbar -->
-
-  <div w3-include-html="navbar.html"></div>
+  
+  <div id="div1"></div>
 
   <script>
 
@@ -112,7 +112,7 @@
   <script src="lang/lang_pack.js"></script>
   <script>
     w3.includeHTML();
-
+    $("#div1").load("navbar.html");
 
     var i18n = new VueI18n({
       locale: 'en',
