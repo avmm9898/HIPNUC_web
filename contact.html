@@ -24,7 +24,7 @@
   <link rel="stylesheet" href="css/flaticon.css">
   <link rel="stylesheet" href="css/icomoon.css">
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/w3.js"></script>
+
 
 </head>
 
@@ -91,6 +91,9 @@
         stroke="#F96D00" /></svg></div>
 
 
+  <script src="lang/vue.js"></script>
+  <script src="lang/vuei18n.js"></script>
+  <script src="js/w3.js"></script>
 
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
@@ -105,18 +108,17 @@
   <script src="js/jquery.animateNumber.min.js"></script>
   <script src="js/scrollax.min.js"></script>
   <script src="js/main.js"></script>
-  <script src="lang/vue.js"></script>
-  <script src="lang/vuei18n.js"></script>
+
 
   <script>
-   
+
 
     $("#div1").load("navbar.html", function () {
       var sc = document.createElement("script");
       sc.src = "lang/lang_pack.js";
       $("body").append(sc);
     });
-    
+
     /*$.getScript("lang/lang_pack.js",function(){
              alert("載入成功！");
         });*/
