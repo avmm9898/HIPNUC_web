@@ -29,4 +29,4 @@ const messages = {
     locale: 'en', 
     messages,
   })
-  new Vue({ i18n }).$mount('#language')
+  new Vue({ i18n }).$mount('#navbar')
