@@ -29,7 +29,7 @@
 <body>
 
  	<!-- navbar -->
-   <div id="language" w3-include-html="navbar.html"></div>
+   <div w3-include-html="navbar.html"></div>
 
   <section class="intro-bg intro-bg-2" style="background-image: url('images/intro-background.jpg');"
     data-stellar-background-ratio="0.5">
@@ -113,9 +113,10 @@
 
 		var tmp_lang = getCookie("lang");
 		if (tmp_lang != "")
-			i18n.locale = tmp_lang
+			i18n.locale = tmp_lang;
 		new Vue({ i18n }).$mount('#language');
-		/*console.log(i18n.locale);*/
+    /*console.log(i18n.locale);*/
+    console.log(new lang);
 
 	</script>
 </body>
