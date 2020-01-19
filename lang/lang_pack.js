@@ -68,3 +68,9 @@ function listCookie() {
   }
   document.writeln("</table>");
 }
+
+
+var tmp_lang = getCookie("lang");
+		if (tmp_lang != "")
+			i18n.locale = tmp_lang
+		new Vue({ i18n }).$mount('#language');
