@@ -35,7 +35,7 @@
   <div id="div1"></div>
 
 
-  <section class="intro-bg intro-bg-2" style="background-image: url('images/intro-background.jpg');"
+  <section id="div2" class="intro-bg intro-bg-2" style="background-image: url('images/intro-background.jpg');"
     data-stellar-background-ratio="0.5">
     <div class="overlay"></div>
     <div class="container">
@@ -54,7 +54,7 @@
     <div class="container">
       <div class="row d-flex mb-5 contact-info">
         <div class="col-md-12 mb-4">
-          <h1 class="h1">Sample Requests &amp; Supports</h1>
+          <h1 class="h1">{{ $t('content.title') }}</h1>
           <p>If you need samples, bulk purchase, or other supports, please contact our office.</p>
         </div>
         <div class="w-100"></div>
@@ -120,6 +120,7 @@
     if (tmp_lang != "")
       i18n.locale = tmp_lang;
     new Vue({ i18n }).$mount('#div1');
+    new Vue({ i18n }).$mount('#div2');
     /*console.log(i18n.locale);*/
     console.log("newlang");
 

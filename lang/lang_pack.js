@@ -8,7 +8,11 @@ const messages = {
       documentation: 'Documentation',
       contact: 'Contact&Purchase',
       language: 'Language'
+    },
+    content: {
+      title: 'Sample Requests &amp; Supports',
     }
+    
   },
   tw: {
     navbar: {
@@ -26,6 +30,9 @@ const messages = {
       documentation: '产品文件',
       contact: '联络与购买',
       language: '语言'
+    },
+    content: {
+      title: '樣本申請與銷售支援',
     }
   },
 };
