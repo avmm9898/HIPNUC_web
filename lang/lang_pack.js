@@ -1,3 +1,16 @@
+changeLang() {
+  this.lang = localStorage.getItem('locale') || 'en';
+  
+  if ( this.lang === 'cn' ) {
+     this.lang = 'en';
+     this.$i18n.locale = this.lang;
+  } else {
+     this.lang = 'cn';
+     this.$i18n.locale = this.lang;
+  }
+  localStorage.setItem('locale', this.lang);
+}
+
 const messages = {
     en: {
       word: {
@@ -15,16 +28,12 @@ const messages = {
     },
     cn: {
       word: {
-        hello: '哈啰',
-        minwt:'梅问题'
+        home: '首頁',
+        products:'產品型錄',
+        documentation:'產品文件',
+        contact:'聯絡與購買'
       }
     },
-    jp: {
-      word: {
-        hello: 'ハロー',
-        minwt:'メイウンディー'
-      }
-    }
   }
   
   const i18n = new VueI18n({
