@@ -29,7 +29,7 @@
 <body>
 
  	<!-- navbar -->
-   <div class="include" file="navbar.html">需要引入的</div>
+   <div w3-include-html="navbar.html"></div>
 
   <section class="intro-bg intro-bg-2" style="background-image: url('images/intro-background.jpg');"
     data-stellar-background-ratio="0.5">
@@ -87,7 +87,9 @@
         stroke="#F96D00" /></svg></div>
 
   <script src="js/w3.js"></script>
-  
+  <script>
+    w3.includeHTML();
+  </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
 
   <script src="js/jquery.min.js"></script>
@@ -107,57 +109,18 @@
 	<script src="lang/vuei18n.js"></script>
   <script src="lang/lang_pack.js"></script>
   <script>
-    w3.includeHTML();
-  </script>
-  <script type="text/javascript">
-    //三種不同方式引入頁面，載入的檔案內容寫入到當前標籤裡面並移除當前標籤<div class="include" ></div>
-    //基於ajax的get請求
-    $(".include").each(function() {
-        var file = $(this).attr("file");
-        if(!!file) {
-            var thisObj = $(this);
-            $.get(file, function(html) {
-                thisObj.after(html).remove();
-            });
-        }
-    });
-    //基於iframe請求的實現是要使用jQuery偽造一個隱藏的iframe標籤出來請求檔案內容，獲取後移除它
-    $(".include").each(function(){
-        var file = $(this).attr("file");
-        if(!!file) {
-            var $includeObj = $(this);
-            $("<iframe style='display:none'>").attr("src", file).attr("name", file).appendTo($("body")).load(function(){
-                $includeObj.after($(window.frames[file].document).text()).remove();
-                $(this).remove();
-            });
-        }
-    });
-    //使用jQuery的load方法
-    $(".include").each(function(){
-        if(!!$(this).attr("file")) {
-            var $includeObj = $(this);
-            $(this).load($(this).attr("file"), function(html){
-                $includeObj.after(html).remove();    //載入的檔案內容寫入到當前標籤後面並移除當前標籤
-            })
-        }
-    });
-    </script>
-        <script>
 
-          /*console.log(i18n.locale);*/
-          /*var userLang = navigator.language || navigator.userLanguage;*/
-      
-          var tmp_lang = getCookie("lang");
-          if (tmp_lang != "")
-            i18n.locale = tmp_lang;
-          new Vue({ i18n }).$mount('#language');
-          /*console.log(i18n.locale);*/
-          console.log("newlang");
-      
-        </script>
-          <script>console.log(navbar);</script>
+		/*console.log(i18n.locale);*/
+		/*var userLang = navigator.language || navigator.userLanguage;*/
 
+		var tmp_lang = getCookie("lang");
+		if (tmp_lang != "")
+			i18n.locale = tmp_lang;
+		new Vue({ i18n }).$mount('#language');
+    /*console.log(i18n.locale);*/
+    console.log("newlang");
 
+	</script>
 </body>
 
 </html>
