@@ -29,24 +29,25 @@
 
 </head>
 
-<body>
-
+<body >
+	<!-- navbar -->
 	<nav class="navbar px-md-0 navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 		<div class="container-fluid px-md-5">
-			<a class="navbar-brand" href="index.html">HIPNUC <span>Electronic</span></a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
-				aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="oi oi-menu"></span> Menu
-			</button>
-
-			<div class="collapse navbar-collapse" id="ftco-nav">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
-					<li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-				</ul>
-			</div>
+		  <a class="navbar-brand" href="index.html">HIPNUC <span>Electronic</span></a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+			aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="oi oi-menu"></span> Menu
+		  </button>
+		  <div class="collapse navbar-collapse" id="ftco-nav">
+			<ul class="navbar-nav ml-auto">
+			  <li id="language" class="nav-item"><a href="index.html" class="nav-link">{{ $t("message.hello") }}</a></li>
+			  <li class="nav-item"><a href="products.html" class="nav-link">Products</a></li>
+			  <li class="nav-item"><a href="documentation.html" class="nav-link">Documentation</a></li>
+			  <li class="nav-item"><a href="contact.html" class="nav-link">Contact&Purchase</a></li>
+			</ul>
+		  </div>
 		</div>
-	</nav>
+	  </nav>
 	<!-- END nav -->
 
 	<div class="intro-bg js-fullheight" style="background-image: url('images/intro-background.jpg');"
@@ -58,7 +59,7 @@
 				data-scrollax-parent="true">
 				<div class="container-fluid ftco-animate">
 					<h1 style="font-size:450%;">Welcome to HIPNUC</h1>
-					<h1 style="font-size:180%;margin-top:1em">We make professtional, accurate, and tiny IMU/AHRS systems
+					<h1 style="font-size:180%;margin-top:1em">We make professional, advanced, and tiny IMU/AHRS systems
 						and products.
 					</h1>
 					<h2 style="margin-top:6em"><a href="#" class="btn-custom mr-md-4">Products
@@ -128,7 +129,8 @@
 		</div>
 	</section>
 	<div w3-include-html="footer.html"></div>
-	<!-- footer section -->
+	
+	<!-- footer section for development-->
 	<footer class="ftco-footer ftco-bg-dark ftco-section">
 		<div class="container">
 			<div class="row mb-5">
@@ -188,7 +190,7 @@
 			<div class="row">
 				<div class="col-md-12 text-center">
 
-					<p>
+					<p style="font-size:70%;">
 						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 						Copyright &copy;
 						<script>document.write(new Date().getFullYear());</script> All rights reserved | Made by HIPNUC
@@ -221,6 +223,10 @@
 	<script src="js/jquery.animateNumber.min.js"></script>
 	<script src="js/scrollax.min.js"></script>
 	<script src="js/main.js"></script>
+	<script src="https://unpkg.com/vue/dist/vue.js"></script>
+	<script src="https://unpkg.com/vue-i18n/dist/vue-i18n.js"></script>
+
+	<script src="lang/en.js"></script> 
 
 
 </body>
