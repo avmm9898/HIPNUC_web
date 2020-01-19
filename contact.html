@@ -28,8 +28,8 @@
 
 <body>
 
-  	<!-- navbar -->
-	<nav class="navbar px-md-0 navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+	<!-- navbar -->
+	<nav class="navbar px-md-0 navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="navbar">
 		<div class="container-fluid px-md-5">
 		  <a class="navbar-brand" href="index.html">HIPNUC <span>Electronic</span></a>
 		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
@@ -38,10 +38,10 @@
 		  </button>
 		  <div class="collapse navbar-collapse" id="ftco-nav">
 			<ul class="navbar-nav ml-auto">
-			  <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-			  <li class="nav-item"><a href="products.html" class="nav-link">Products</a></li>
-			  <li class="nav-item"><a href="documentation.html" class="nav-link">Documentation</a></li>
-			  <li class="nav-item"><a href="contact.html" class="nav-link">Contact&Purchase</a></li>
+			  <li id="language" class="nav-item"><a href="index.html" class="nav-link">{{ $t("word.home") }}</a></li>
+			  <li class="nav-item"><a href="products.html" class="nav-link">{{ $t("word.products") }}</a></li>
+			  <li class="nav-item"><a href="documentation.html" class="nav-link">{{ $t("word.documentation") }}</a></li>
+			  <li class="nav-item"><a href="contact.html" class="nav-link">{{ $t("word.contact") }}</a></li>
 			</ul>
 		  </div>
 		</div>
@@ -87,7 +87,7 @@
           <p><span>Phone (Mr.Hsu) : +886 0908179107 </span></p>
           <p><span>Line ID : avmm9898</span></p>
           <p><span>Email : </span> <a href="mailto:avmm9898@gmail.com">avmm9898@gmail.com</a></p>
-          
+
           <a class="btn py-3 px-4" href="http://upcmcu.taobao.com/ ">Buy on Ruten ></a>
 
         </div>

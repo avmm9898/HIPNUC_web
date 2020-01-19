@@ -1,24 +1,26 @@
 const messages = {
     en: {
-      message: {
-        hello: 'hello',
-        minwt:'minwt'
+      word: {
+        home: 'Home',
+        products:'Products',
+        documentation:'Documentation',
+        contact:'Contact&Purchase'
       }
     },
     tw: {
-      message: {
+      word: {
         hello: '哈囉',
         minwt:'梅問題'
       }
     },
     cn: {
-      message: {
+      word: {
         hello: '哈啰',
         minwt:'梅问题'
       }
     },
     jp: {
-      message: {
+      word: {
         hello: 'ハロー',
         minwt:'メイウンディー'
       }
