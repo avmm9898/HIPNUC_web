@@ -1,4 +1,4 @@
-changeLang = function (sel){
+function changeLang(){
   this.lang = localStorage.getItem('locale') || 'en';
   
   if ( this.lang === 'cn' ) {
