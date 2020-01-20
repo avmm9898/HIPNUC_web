@@ -1,5 +1,3 @@
-
-
 const messages = {
   en: {
     navbar: {
@@ -79,7 +77,7 @@ function init_lang() {
   var tmp_lang = getCookie("lang");
   if (tmp_lang == "en" || tmp_lang == "cn" || tmp_lang == "tw")
     i18n.locale = tmp_lang
-  new Vue({ i18n }).$mount('#div1');
+  new Vue({ i18n }).$mount('#navbar_lang');
   new Vue({ i18n }).$mount('#div2');
 
 }

@@ -31,8 +31,36 @@
 <body>
 
   <!-- navbar -->
-
-  <div id="div1"></div>
+	<nav id="navbar_lang" class="navbar px-md-0 navbar-expand-lg  navbar-dark  bg-dark ftco-navbar-light">
+		<div class="container-fluid px-md-5">
+			<a class="navbar-brand" href="index.html">HIPNUC <span>Electronic</span></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+				aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="oi oi-menu"></span> Menu
+			</button>
+			<div class="collapse navbar-collapse" id="ftco-nav">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item"><a href="index.html" class="nav-link">{{ $t("navbar.home") }}</a></li>
+					<li class="nav-item"><a href="products.html" class="nav-link">{{ $t("navbar.products") }}</a></li>
+					<li class="nav-item"><a href="documentation.html"
+							class="nav-link">{{ $t("navbar.documentation") }}</a></li>
+					<li class="nav-item"><a href="contact.html" class="nav-link">{{ $t("navbar.contact") }}</a></li>
+					<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#"
+							id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+							aria-expanded="false">{{ $t("navbar.language") }}</a>
+						<!-- .dropdown-menu 下拉選單內容 -->
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<a class="dropdown-item" href="index.html" onclick="doCookieSetup('lang', 'en')">English</a>
+							<a class="dropdown-item" href="index.html" onclick="doCookieSetup('lang', 'cn')">简体中文</a>
+							<a class="dropdown-item" href="index.html" onclick="doCookieSetup('lang', 'tw')">繁體中文</a>
+						</div>
+					</li>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- END nav -->
 
 
   <section class="intro-bg intro-bg-2" style="background-image: url('images/intro-background.jpg');"
@@ -82,7 +110,7 @@
   </section>
 
 
-  <div w3-include-html="footer.html"></div>
+ 
 
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
@@ -93,8 +121,6 @@
 
   <script src="lang/vue.js"></script>
   <script src="lang/vuei18n.js"></script>
-  <script src="js/w3.js"></script>
-
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
   <script src="js/popper.min.js"></script>
@@ -108,25 +134,8 @@
   <script src="js/jquery.animateNumber.min.js"></script>
   <script src="js/scrollax.min.js"></script>
   <script src="js/main.js"></script>
-
-
-  <script>
-
-
-    $("#div1").load("navbar.html");
-
-    $.getScript("lang/lang_pack.js",function(){
-             alert("載入成功！");
-        });
-
-    /*console.log(i18n.locale);*/
-
-
-    /*console.log(i18n.locale);*/
-    /*var userLang = navigator.language || navigator.userLanguage;*/
-
-
-  </script>
+  <script src="lang/lang_pack.js"></script>
+  <script>init_lang()</script>
 </body>
 
 </html>
