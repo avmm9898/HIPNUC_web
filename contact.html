@@ -31,63 +31,59 @@
 <body>
 
   <!-- navbar -->
-	<nav id="navbar_lang" class="navbar px-md-0 navbar-expand-lg  navbar-dark  bg-dark ftco-navbar-light">
-		<div class="container-fluid px-md-5">
-			<a class="navbar-brand" href="index.html">HIPNUC <span>Electronic</span></a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
-				aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="oi oi-menu"></span> Menu
-			</button>
-			<div class="collapse navbar-collapse" id="ftco-nav">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item"><a href="index.html" class="nav-link">{{ $t("navbar.home") }}</a></li>
-					<li class="nav-item"><a href="products.html" class="nav-link">{{ $t("navbar.products") }}</a></li>
-					<li class="nav-item"><a href="documentation.html"
-							class="nav-link">{{ $t("navbar.documentation") }}</a></li>
-					<li class="nav-item"><a href="contact.html" class="nav-link">{{ $t("navbar.contact") }}</a></li>
-					<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#"
-							id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
-							aria-expanded="false">{{ $t("navbar.language") }}</a>
-						<!-- .dropdown-menu 下拉選單內容 -->
-						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-							<a class="dropdown-item" href="index.html" onclick="doCookieSetup('lang', 'en')">English</a>
-							<a class="dropdown-item" href="index.html" onclick="doCookieSetup('lang', 'cn')">简体中文</a>
-							<a class="dropdown-item" href="index.html" onclick="doCookieSetup('lang', 'tw')">繁體中文</a>
-						</div>
-					</li>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</nav>
-	<!-- END nav -->
+  <nav id="navbar_lang" class="navbar px-md-0 navbar-expand-lg  navbar-dark  bg-dark ftco-navbar-light">
+    <div class="container-fluid px-md-5">
+      <a class="navbar-brand" href="index.html">HIPNUC <span>Electronic</span></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+        aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span> Menu
+      </button>
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a href="index.html" class="nav-link">{{ $t("navbar.home") }}</a></li>
+          <li class="nav-item"><a href="products.html" class="nav-link">{{ $t("navbar.products") }}</a></li>
+          <li class="nav-item"><a href="documentation.html" class="nav-link">{{ $t("navbar.documentation") }}</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">{{ $t("navbar.contact") }}</a></li>
+          <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ $t("navbar.language") }}</a>
+            <!-- .dropdown-menu 下拉選單內容 -->
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="index.html" onclick="doCookieSetup('lang', 'en')">English</a>
+              <a class="dropdown-item" href="index.html" onclick="doCookieSetup('lang', 'cn')">简体中文</a>
+              <a class="dropdown-item" href="index.html" onclick="doCookieSetup('lang', 'tw')">繁體中文</a>
+            </div>
+          </li>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- END nav -->
 
-
+  <!-- intro -->
   <section class="intro-bg intro-bg-2" style="background-image: url('images/intro-background.jpg');"
-    data-stellar-background-ratio="0.5">
+    data-stellar-background-ratio="0.5" >
     <div class="overlay"></div>
-    <div class="container">
-      <div class="row no-gutters slider-text align-items-end justify-content-center">
-        <div class="col-md-9 ftco-animate pb-5 text-center">
+    <div class="container" >
+      <div class="row no-gutters slider-text align-items-end justify-content-center" >
+        <div class="col-md-9 ftco-animate pb-5 text-center " style="margin-bottom: 2%;">
           <h1 class="mb-3 bread">Contact & Purchase</h1>
-          <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i
-                  class="ion-ios-arrow-forward"></i></a></span> <span>Contact <i
-                class="ion-ios-arrow-forward"></i></span></p>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="div2" class="ftco-section contact-section">
+  <!-- content -->
+  <section id="div2" class="ftco-section">
     <div class="container">
-      <div class="row d-flex mb-5 contact-info">
+      <div class="row d-flex mb-5">
         <div class="col-md-12 mb-4">
           <h1 class="h1">{{ $t('content.title') }}</h1>
           <p>If you need samples, bulk purchase, or other supports, please contact our office.</p>
         </div>
-        <div class="w-100"></div>
-        <div class="col-md-6">
-          <h2>Beijing (Head Office)</h2>
+
+        <div class="col-md-6 mb-4">
+          <h3>Beijing Head Office</h3>
           <p><span>Address : </span> B01-1-1001, Fuli Yunhe No.10, Zhaodengyu St, Tongzhou, Beijing, China</p>
           <p><span>Phone (Mr.Liu) : </span> +86 18612030435</p>
           <p><span>Email : </span> <a href="mailto:18612030435@163.com">18612030435@163.com</a></p>
@@ -96,8 +92,8 @@
           <p></p>
 
         </div>
-        <div class="col-md-6">
-          <h2>Taipei</h2>
+        <div class="col-md-6 mb-4">
+          <h3>Taipei</h3>
           <p><span>Address : 11F-1, No. 15, Heyi Road, Banqiao District New Taipei City, 220 </span></p>
           <p><span>Phone (Mr.Hsu) : +886 0908179107 </span></p>
           <p><span>Line ID : avmm9898</span></p>
@@ -106,11 +102,23 @@
           <a class="btn py-3 px-4" href="http://upcmcu.taobao.com/ ">Buy on Ruten ></a>
 
         </div>
+        <div class="col-md-12" style="padding-top: 2rem;">
+          <h1 class="h1">Business Partner</h1>
+          <p>We welcome you all no matter you're researcher, student, maker or campany.
+            These are parts of campanies that have been using our products.</p>
+
+        </div>
+        <div class="col-sm-2 "><img src="images/logo/yunji.png"></div>
+        <div class="col-sm-2 "><img src="images/logo/bluechip.png"></div>
+        <div class="col-sm-2 "><img src="images/logo/bohhom.png"></div>
+        <div class="col-sm-2 "><img src="images/logo/gaussian.png"></div>
+        <div class="col-sm-2 "><img src="images/logo/ubtech.png"></div>
+        <div class="col-sm-2 "><img src="images/logo/narwal.png"></div>
       </div>
   </section>
 
 
- 
+
 
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
