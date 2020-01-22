@@ -1,5 +1,9 @@
 site_name: My Docs
-theme: readthedocs
+theme: material
+plugins:
+  - search
+  - minify:
+      minify_html: true
 markdown_extensions:
   - pymdownx.arithmatex
   - pymdownx.betterem:
@@ -18,5 +22,5 @@ markdown_extensions:
       custom_checkbox: true
   - pymdownx.tilde
 extra_javascript:
-  - 'javascripts/extra.js'
+  - 'extra.js'
   - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'

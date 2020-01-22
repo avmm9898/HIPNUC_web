@@ -417,23 +417,14 @@ In some cases the IMU sensor needs to be installed tilted or vertically. This co
 
 ex.`AT+URFR=C00,C01,C02,C10,C11,C12,C20,C21,C22` 
 
-where
-$$
-\C_{nn}
-$$
-support float and double type.
+where $C_{nn}$ support float and double type.
+
 $$
 \left\{\begin{array}{l}{X} \\ {Y} \\ {Z}\end{array}\right\}_{U}=\left[\begin{array}{lll}{C 00} & {C 01} & {C 02} \\ {C 10} & {C 11} & {C 12} \\ {C 20} & {C 21} & {C 22}\end{array}\right] \cdot\left\{\begin{array}{l}{X} \\ {Y} \\ {Z}\end{array}\right\}_{B}
 $$
-where
-$$
-\left\{\begin{array}{l}{X} \\ {Y} \\ {Z}\end{array}\right\}_{U}
-$$
-are the measurement data after coordinate system correction, and
-$$
-\left\{\begin{array}{l}{X} \\ {Y} \\ {Z}\end{array}\right\}_{B}
-$$
-are the measurement data before coordinate system calibration.
+
+where $\left\{\begin{array}{l}{X} \\ {Y} \\ {Z}\end{array}\right\}_{U}$ 
+are the measurement data after coordinate system correction, and $\left\{\begin{array}{l}{X} \\ {Y} \\ {Z}\end{array}\right\}_{B}$ are the measurement data before coordinate system calibration.
 
 Some examples of commands：
 
