@@ -1,6 +1,12 @@
-# User Guides/用戶指南/用户指南
-Check the left navigation bar for user guides of our products.
+# Introduction/簡介
+Check the multi-language user guides of our products.
+We've supported those languages:
 
-請在左側導航欄中查看我們產品的用戶指南。
+歡迎查看我們產品的多語言用戶指南。
+我們已支持以下語言：
 
-請在左侧导航栏中查看我们产品的用户指南。
+
+
+- 简体版
+- 繁體版
+- En Version

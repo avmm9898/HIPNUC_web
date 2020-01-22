@@ -1,10 +1,10 @@
-site_name: HiPNUC
+site_name: HiPNUC Documentation
 
 theme:
   name: material
   palette:
-      primary: 'white'
-      accent: 'white'
+      primary: 'Black'
+      accent: 'Black'
   feature:
     tabs: true
   logo:
