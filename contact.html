@@ -29,36 +29,37 @@
 </head>
 
 <body>
-
   <!-- navbar -->
-  <nav id="navbar_lang" class="navbar px-md-0 navbar-expand-lg  navbar-dark  bg-dark ftco-navbar-light">
-    <div class="container-fluid px-md-5">
-      <a class="navbar-brand" href="index.html">HIPNUC <span>Electronic</span></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
-        aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="oi oi-menu"></span> Menu
-      </button>
-      <div class="collapse navbar-collapse" id="ftco-nav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a href="index.html" class="nav-link">{{ $t("navbar.home") }}</a></li>
-          <li class="nav-item"><a href="products.html" class="nav-link">{{ $t("navbar.products") }}</a></li>
-          <li class="nav-item"><a href="documentation.html" class="nav-link">{{ $t("navbar.documentation") }}</a></li>
-          <li class="nav-item"><a href="contact.html" class="nav-link">{{ $t("navbar.contact") }}</a></li>
-          <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
-              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ $t("navbar.language") }}</a>
-            <!-- .dropdown-menu 下拉選單內容 -->
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="index.html" onclick="doCookieSetup('lang', 'en')">English</a>
-              <a class="dropdown-item" href="index.html" onclick="doCookieSetup('lang', 'cn')">简体中文</a>
-              <a class="dropdown-item" href="index.html" onclick="doCookieSetup('lang', 'tw')">繁體中文</a>
-            </div>
-          </li>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <!-- END nav -->
+  <nav id="language" class="navbar px-md-0 navbar-expand-lg  navbar-dark  bg-dark ftco-navbar-light">
+		<div class="container-fluid px-md-5">
+			<a class="navbar-brand" href="index.html">HIPNUC <span>Electronic</span></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+				aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="oi oi-menu"></span> Menu
+			</button>
+			<div class="collapse navbar-collapse" id="ftco-nav">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item"><a href="index.html" class="nav-link">{{ $t("navbar.home") }}</a></li>
+					<li class="nav-item"><a href="products.html" class="nav-link">{{ $t("navbar.products") }}</a></li>
+					<li class="nav-item"><a href="mkdocs/site/index.html"
+							class="nav-link">{{ $t("navbar.documentation") }}</a></li>
+					<li class="nav-item"><a href="contact.html" class="nav-link">{{ $t("navbar.contact") }}</a></li>
+					<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#"
+							id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+							aria-expanded="false">{{ $t("navbar.language") }}</a>
+						<!-- .dropdown-menu 下拉選單內容 -->
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<a class="dropdown-item" href="index.html" onclick="doCookieSetup('lang', 'en')">English</a>
+							<a class="dropdown-item" href="index.html" onclick="doCookieSetup('lang', 'cn')">简体中文</a>
+							<a class="dropdown-item" href="index.html" onclick="doCookieSetup('lang', 'tw')">繁體中文</a>
+						</div>
+					</li>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- END nav -->
 
   <!-- intro -->
   <section class="intro-bg intro-bg-2" style="background-image: url('images/header-bg.jpg');"
