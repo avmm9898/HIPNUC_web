@@ -8,7 +8,7 @@ theme:
   feature:
     tabs: true
   logo:
-    icon: 'undo'
+    icon: 'home'
   
 plugins:
   - search
