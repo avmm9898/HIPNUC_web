@@ -49,9 +49,9 @@
 							aria-expanded="false">{{ $t("navbar.language") }}</a>
 						<!-- .dropdown-menu 下拉選單內容 -->
 						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-							<a class="dropdown-item" href="index.html" onclick="doCookieSetup('lang', 'en')">English</a>
-							<a class="dropdown-item" href="index.html" onclick="doCookieSetup('lang', 'cn')">简体中文</a>
-							<a class="dropdown-item" href="index.html" onclick="doCookieSetup('lang', 'tw')">繁體中文</a>
+							<a class="dropdown-item" href="contact.html" onclick="doCookieSetup('lang', 'en')">English</a>
+							<a class="dropdown-item" href="contact.html" onclick="doCookieSetup('lang', 'cn')">简体中文</a>
+							<a class="dropdown-item" href="contact.html" onclick="doCookieSetup('lang', 'tw')">繁體中文</a>
 						</div>
 					</li>
 					</li>
@@ -68,45 +68,43 @@
     <div class="container" >
       <div class="row no-gutters slider-text align-items-end justify-content-center" >
         <div class="col-md-9 ftco-animate pb-5 text-center " style="margin-bottom: 2%;">
-          <h1 class="mb-3 bread">Contact & Purchase</h1>
+          <h1 id="div2" class="mb-3 bread">{{ $t("contact.intro") }}</h1>
         </div>
       </div>
     </div>
   </section>
 
   <!-- content -->
-  <section id="div2" class="ftco-section">
+  <section id="div3" class="ftco-section">
     <div class="container">
       <div class="row d-flex mb-5">
         <div class="col-md-12 mb-4">
-          <h1 class="h1">{{ $t('content.title') }}</h1>
-          <p>If you need samples, bulk purchase, or other supports, please contact our office.</p>
+          <h1 class="h1">{{ $t('contact.title1') }}</h1>
+          <p>{{ $t('contact.content1') }}</p>
         </div>
 
         <div class="col-md-6 mb-4">
-          <h3>Beijing Head Office</h3>
-          <p><span>Address : </span> B01-1-1001, Fuli Yunhe No.10, Zhaodengyu St, Tongzhou, Beijing, China</p>
-          <p><span>Phone (Mr.Liu) : </span> +86 18612030435</p>
-          <p><span>Email : </span> <a href="mailto:18612030435@163.com">18612030435@163.com</a></p>
-          <a href="http://upcmcu.taobao.com/ " class="btn py-3 px-4">Buy on Taobao >
+          <h3>{{ $t('contact.beijing') }}</h3>
+          <p><span>{{ $t('contact.b_address') }}</span></p>
+          <p><span>{{ $t('contact.b_phone') }}</span></p>
+          <p><span>Email : <a href="mailto:18612030435@163.com">18612030435@163.com</a></span></p>
+          <a href="http://upcmcu.taobao.com/ " class="btn py-3 px-4">{{ $t('contact.taobao') }} >
           </a>
           <p></p>
 
         </div>
         <div class="col-md-6 mb-4">
-          <h3>Taipei</h3>
-          <p><span>Address : 11F-1, No. 15, Heyi Road, Banqiao District New Taipei City, 220 </span></p>
-          <p><span>Phone (Mr.Hsu) : +886 0908179107 </span></p>
+          <h3>{{ $t('contact.taipei') }}</h3>
+          <p><span>{{ $t('contact.tw_phone') }}</span></p>
           <p><span>Line ID : avmm9898</span></p>
           <p><span>Email : </span> <a href="mailto:avmm9898@gmail.com">avmm9898@gmail.com</a></p>
 
-          <a class="btn py-3 px-4" href="http://upcmcu.taobao.com/ ">Buy on Ruten ></a>
+          <a class="btn py-3 px-4" href="http://upcmcu.taobao.com/ ">{{ $t('contact.ruten') }}</a>
 
         </div>
         <div class="col-md-12" style="padding-top: 2rem;">
-          <h1 class="h1">Business Partner</h1>
-          <p>We welcome you all no matter you're researcher, student, maker or campany.
-            These are parts of campanies that have been using our products.</p>
+          <h1 class="h1">{{ $t('contact.title2') }}</h1>
+          <p>{{ $t('contact.content2') }}</p>
 
         </div>
         <div class="col-sm-2 "><img src="images/logo/yunji.png"></div>
@@ -140,9 +138,10 @@
   <script src="js/jquery.animateNumber.min.js"></script>
   <script src="js/scrollax.min.js"></script>
   <script src="js/main.js"></script>
-  <script src="lang/lang_pack.js"></script>
   <script src="lang/vue.js"></script>
   <script src="lang/vuei18n.js"></script>
+  <script src="lang/lang_pack.js"></script>
+  
   <script>init_lang()</script>
 </body>
 

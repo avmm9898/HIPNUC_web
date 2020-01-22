@@ -50,9 +50,9 @@
 							aria-expanded="false">{{ $t("navbar.language") }}</a>
 						<!-- .dropdown-menu 下拉選單內容 -->
 						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-							<a class="dropdown-item" href="index.html" onclick="doCookieSetup('lang', 'en')">English</a>
-							<a class="dropdown-item" href="index.html" onclick="doCookieSetup('lang', 'cn')">简体中文</a>
-							<a class="dropdown-item" href="index.html" onclick="doCookieSetup('lang', 'tw')">繁體中文</a>
+							<a class="dropdown-item" href="#" onclick="doCookieSetup('lang', 'en')">English</a>
+							<a class="dropdown-item" href="#" onclick="doCookieSetup('lang', 'cn')">简体中文</a>
+							<a class="dropdown-item" href="#" onclick="doCookieSetup('lang', 'tw')">繁體中文</a>
 						</div>
 					</li>
 					</li>
@@ -201,21 +201,7 @@
 	<script src="lang/vue.js"></script>
 	<script src="lang/vuei18n.js"></script>
 	<script src="lang/lang_pack.js"></script>
-	<script>
-
-		/*console.log(i18n.locale);*/
-		/*var userLang = navigator.language || navigator.userLanguage;*/
-		var i18n = new VueI18n({
-			locale: 'en',
-			messages,
-		})
-		var tmp_lang = getCookie("lang");
-		if (tmp_lang == "en" ||tmp_lang == "cn"||tmp_lang == "tw")
-			i18n.locale = tmp_lang
-		new Vue({ i18n }).$mount('#language');
-		/*console.log(i18n.locale);*/
-
-	</script>
+	<script>init_lang()</script>
 
 </body>
 
