@@ -1,5 +1,5 @@
 site_name: HiPNUC Documentation/產品文檔
-
+site_url: 'https://avmm9898.github.io/HIPNUC_web/index.html'
 theme:
   name: material
   palette:
