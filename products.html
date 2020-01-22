@@ -28,7 +28,7 @@
 
 <body>
   <!-- navbar -->
-  <nav id="language" class="navbar px-md-0 navbar-expand-lg  navbar-dark  bg-dark ftco-navbar-light">
+  <nav id="navbar" class="navbar px-md-0 navbar-expand-lg  navbar-dark  bg-dark ftco-navbar-light">
     <div class="container-fluid px-md-5">
       <a class="navbar-brand" href="index.html">HIPNUC <span>Electronic</span></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
@@ -46,9 +46,9 @@
               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ $t("navbar.language") }}</a>
             <!-- .dropdown-menu 下拉選單內容 -->
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="#" onclick="doCookieSetup('lang', 'en')">English</a>
-              <a class="dropdown-item" href="#" onclick="doCookieSetup('lang', 'cn')">简体中文</a>
-              <a class="dropdown-item" href="#" onclick="doCookieSetup('lang', 'tw')">繁體中文</a>
+              <a class="dropdown-item" href="products.html" onclick="doCookieSetup('lang', 'en')">English</a>
+              <a class="dropdown-item" href="products.html" onclick="doCookieSetup('lang', 'cn')">简体中文</a>
+              <a class="dropdown-item" href="products.html" onclick="doCookieSetup('lang', 'tw')">繁體中文</a>
             </div>
           </li>
           </li>
@@ -64,7 +64,7 @@
     <div class="container">
       <div class="row no-gutters slider-text align-items-end justify-content-center">
         <div class="col-md-9 ftco-animate pb-5 text-center">
-          <h1 class="mb-3 bread">Products</h1>
+          <h1 id="div1" class="mb-3 bread">{{ $t("navbar.products") }}</h1>
         </div>
       </div>
     </div>
@@ -72,7 +72,7 @@
 
   
   <!-- footer section for development-->
-  <footer id="language" class="ftco-footer ftco-bg-dark ftco-section">
+  <footer id="footer" class="ftco-footer ftco-bg-dark ftco-section">
     <div class="container">
       <div class="row mb-5">
         <div class="col-md">
@@ -82,7 +82,7 @@
               {{ $t("footer.about_content") }}
             </p>
             <ul style="font-size:80%;">
-              <li><a href=https://github.com/ftco/products>{{ $t("footer.about_content") }} <span
+              <li><a href=https://github.com/ftco/products>{{ $t("footer.github") }} <span
                   class="ion-ios-arrow-forward"></span></a></li>
             </ul>
           </div>
