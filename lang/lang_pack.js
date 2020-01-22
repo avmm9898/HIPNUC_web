@@ -20,6 +20,22 @@ const messages = {
       ruten:'Buy on Ruten >',
       title2: 'Business Partner',
       content2: 'We welcome you all no matter you are researcher, student, maker or company. These are parts of our customers.'
+    },
+    footer:{
+      about_title:'About HiPNUC',
+      about_content:'HiPNUC is dedicated to develope cost-effective IMU/AHRS with high quality, providing mature and advanced integrated navigation modules.',     
+      github:'Visit our github',
+      library_title:'Our Library',
+      lib1:'Digital filering with matlab',
+      lib2:'Mathematic basis of rotation',
+      lib3:'Basic concepts of 3D inertial sensors and attitude',
+      lib4:'Notes of MIT linear algebra',
+      lib5:'Basic concepts of IMU/VRU/AHRS/6-axis/9-axis',
+      opentime_title:'Business Hours',
+      opentime1:'Monday to Friday : 09:00-19:00',
+      opentime2:'Saturday : 09:00-17:00',
+      sales1:'Sales (Beijing)',
+      sales2:'Sales (Taipei)'
     }
 
   },
@@ -46,7 +62,24 @@ const messages = {
       title2: '合作夥伴',
       content2: '無論您是研究人員，學生，創客或是公司，我們都竭誠歡迎您。以下是使用我們產品的部分客戶。'
 
+    },
+    footer:{
+      about_title:'關於超核電子',
+      about_content:'HiPNIC 超核電子致力於開發具有高成本效益的高質量IMU / AHRS。多年的低成本MEMS傳感器算法開發經驗，提供成熟和先進的集成導航模組，為客戶提供最具性價比的姿態檢測方案。',     
+      github:'前往我們的Github',
+      library_title:'圖書館',
+      lib1:'Matlab 數字濾波入門',
+      lib2:'旋轉的數學表示-四元數與歐拉角以及相互轉化',
+      lib3:'三軸慣性傳感器和姿態解算的基本概念',
+      lib4:'MIT線性代數筆記',
+      lib5:'IMU/VRU/AHRS/6軸9軸等基本概念',
+      opentime_title:'服務時間',
+      opentime1:'周一至周五 : 09:00-19:00',
+      opentime2:'周六至周日 : 09:00-17:00',
+      sales1:'銷售點 (北京)',
+      sales2:'銷售點 (台北)'
     }
+    
   },
   cn: {
     navbar: {
