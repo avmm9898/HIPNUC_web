@@ -29,35 +29,34 @@
 <body>
   <!-- navbar -->
   <nav id="language" class="navbar px-md-0 navbar-expand-lg  navbar-dark  bg-dark ftco-navbar-light">
-		<div class="container-fluid px-md-5">
-			<a class="navbar-brand" href="index.html">HIPNUC <span>Electronic</span></a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
-				aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="oi oi-menu"></span> Menu
-			</button>
-			<div class="collapse navbar-collapse" id="ftco-nav">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item"><a href="index.html" class="nav-link">{{ $t("navbar.home") }}</a></li>
-					<li class="nav-item"><a href="products.html" class="nav-link">{{ $t("navbar.products") }}</a></li>
-					<li class="nav-item"><a href="mkdocs/site/index.html"
-							class="nav-link">{{ $t("navbar.documentation") }}</a></li>
-					<li class="nav-item"><a href="contact.html" class="nav-link">{{ $t("navbar.contact") }}</a></li>
-					<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#"
-							id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
-							aria-expanded="false">{{ $t("navbar.language") }}</a>
-						<!-- .dropdown-menu 下拉選單內容 -->
-						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-							<a class="dropdown-item" href="#" onclick="doCookieSetup('lang', 'en')">English</a>
-							<a class="dropdown-item" href="#" onclick="doCookieSetup('lang', 'cn')">简体中文</a>
-							<a class="dropdown-item" href="#" onclick="doCookieSetup('lang', 'tw')">繁體中文</a>
-						</div>
-					</li>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</nav>
-	<!-- END nav -->
+    <div class="container-fluid px-md-5">
+      <a class="navbar-brand" href="index.html">HIPNUC <span>Electronic</span></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+        aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span> Menu
+      </button>
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a href="index.html" class="nav-link">{{ $t("navbar.home") }}</a></li>
+          <li class="nav-item"><a href="products.html" class="nav-link">{{ $t("navbar.products") }}</a></li>
+          <li class="nav-item"><a href="mkdocs/site/index.html" class="nav-link">{{ $t("navbar.documentation") }}</a>
+          </li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">{{ $t("navbar.contact") }}</a></li>
+          <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ $t("navbar.language") }}</a>
+            <!-- .dropdown-menu 下拉選單內容 -->
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#" onclick="doCookieSetup('lang', 'en')">English</a>
+              <a class="dropdown-item" href="#" onclick="doCookieSetup('lang', 'cn')">简体中文</a>
+              <a class="dropdown-item" href="#" onclick="doCookieSetup('lang', 'tw')">繁體中文</a>
+            </div>
+          </li>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- END nav -->
 
   <section class="intro-bg intro-bg-2" style="background-image: url('images/header-bg.jpg');"
     data-stellar-background-ratio="0.5">
@@ -71,38 +70,78 @@
     </div>
   </section>
 
-  <section class="ftco-section contact-section">
+  
+  <!-- footer section for development-->
+  <footer id="language" class="ftco-footer ftco-bg-dark ftco-section">
     <div class="container">
-      <div class="row d-flex mb-5 contact-info">
-        <div class="col-md-12 mb-4">
-          <h1 class="h1">Sample Requests &amp; Supports</h1>
-          <p>If you need samples, bulk purchase, or other supports, please contact our office.</p>
+      <div class="row mb-5">
+        <div class="col-md">
+          <div class="ftco-footer-widget">
+            <h2 class="ftco-heading-2">{{ $t("footer.about_title") }}</h2>
+            <p style="font-size:80%;text-align:justify;text-justify:inter-ideograph;">
+              {{ $t("footer.about_content") }}
+            </p>
+            <ul style="font-size:80%;">
+              <li><a href=https://github.com/ftco/products>{{ $t("footer.about_content") }} <span
+                  class="ion-ios-arrow-forward"></span></a></li>
+            </ul>
+          </div>
         </div>
-        <div class="w-100"></div>
-        <div class="col-md-6">
-          <h2>Beijing (Head Office)</h2>
-          <p><span>Address : </span> B01-1-1001, Fuli Yunhe No.10, Zhaodengyu St, Tongzhou, Beijing, China</p>
-          <p><span>Phone (Mr.Hsu) : </span> +86 18612030435</p>
-          <p><span>Email : </span> <a href="mailto:18612030435@163.com">18612030435@163.com</a></p>
-          <a href="http://upcmcu.taobao.com/ " class="btn py-3 px-4">Buy on Taobao >
-          </a>
-          <p></p>
+        <div class="col-md">
+          <div class="ftco-footer-widget">
+            <h2 class="ftco-heading-2">{{ $t("footer.library_title") }}</h2>
+            <ul style="font-size:80%">
+              <li><a href=https://zhuanlan.zhihu.com/p/65483011>{{ $t("footer.lib1") }} <span
+                  class="ion-ios-arrow-forward"></span></a></li>
+              <li><a href=https://zhuanlan.zhihu.com/p/60301874>{{ $t("footer.lib2") }} <span
+                  class="ion-ios-arrow-forward"></span></a></li>
+              <li><a href=https://zhuanlan.zhihu.com/p/56073859>{{ $t("footer.lib3") }} <span
+                  class="ion-ios-arrow-forward"></span></a></li>
+              <li><a href=https://zhuanlan.zhihu.com/p/58379051>{{ $t("footer.lib4") }} <span
+                  class="ion-ios-arrow-forward"></span></a></li>
+              <li><a href=https://zhuanlan.zhihu.com/p/58379051>{{ $t("footer.lib5") }} <span
+                  class="ion-ios-arrow-forward"></span></a></li>
 
+            </ul>
+          </div>
         </div>
-        <div class="col-md-6">
-          <h2>Taipei</h2>
-          <p><span>Address : 11F-1, No. 15, Heyi Road, Banqiao District New Taipei City, 220 </span></p>
-          <p><span>Phone (Mr.Hsu) : </span> +886 0908179107</p>
-          <p><span>Email : </span> <a href="mailto:avmm9898@gmail.com">avmm9898@gmail.com</a></p>
-
-          <a class="btn py-3 px-4" href="http://upcmcu.taobao.com/ ">Buy on Ruten ></a>
-
+        <div class="col-md">
+          <div class="ftco-footer-widget">
+            <h2 class="ftco-heading-2">{{ $t("footer.opentime_title") }}</h2>
+            <p style="font-size:80%;">{{ $t("footer.opentime1") }}</p>
+            <p style="font-size:80%;">{{ $t("footer.opentime2") }}</p>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="ftco-footer-widget">
+            <h2 class="ftco-heading-2">{{ $t("footer.sales1") }}</h2>
+            <p style="font-size:80%;"><a href="tel:+8618612030435" class="icon icon-phone"> +86
+                18612030435</a></p>
+            <p style="font-size:80%;"><a href="mailto:18612030435@163.com" class="icon icon-envelope">
+                18612030435@163.com</a></p>
+            <h2 class="ftco-heading-2">{{ $t("footer.sales2") }}</h2>
+            <p style="font-size:80%;"><a href="tel:+886 0988592841" class="icon icon-phone"> +886
+                0908179107</a></p>
+            <p style="font-size:80%;"><a href="mailto:avmm9898@gmail.com" class="icon icon-envelope">
+                avmm9898@gmail.com</a></p>
+          </div>
         </div>
       </div>
-  </section>
+      <div class="row">
+        <div class="col-md-12 text-center">
 
-
-  <div w3-include-html="footer.html"></div>
+          <p style="font-size:70%;">
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;
+            <script>document.write(new Date().getFullYear());</script> All rights reserved | Made by
+            ftco
+            and <a href="https://colorlib.com" target="_blank">Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
