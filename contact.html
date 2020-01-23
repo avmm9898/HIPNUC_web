@@ -2,35 +2,35 @@
 <html lang="en">
 
 <head>
-  <title>HIPNUC IMU - Innovating together</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>HIPNUC IMU - Innovating together</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i&display=swap"
-    rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i&display=swap"
+		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+	<link rel="stylesheet" href="css/animate.css">
 
-  <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-  <link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
 
-  <link rel="stylesheet" href="css/owl.carousel.min.css">
-  <link rel="stylesheet" href="css/owl.theme.default.min.css">
-  <link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="css/aos.css">
 
-  <link rel="stylesheet" href="css/aos.css">
+	<link rel="stylesheet" href="css/ionicons.min.css">
 
-  <link rel="stylesheet" href="css/ionicons.min.css">
-
-  <link rel="stylesheet" href="css/flaticon.css">
-  <link rel="stylesheet" href="css/icomoon.css">
-  <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/flaticon.css">
+	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="css/style.css">
 
 
 </head>
 
 <body>
-  <!-- navbar -->
-  <nav id="navbar" class="navbar px-md-0 navbar-expand-lg  navbar-dark  bg-dark ftco-navbar-light">
+	<!-- navbar -->
+	<nav id="navbar" class="navbar px-md-0 navbar-expand-lg  navbar-dark  bg-dark ftco-navbar-light">
 		<div class="container-fluid px-md-5">
 			<a class="navbar-brand" href="index.html">HIPNUC <span>Electronic</span></a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
@@ -41,15 +41,16 @@
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item"><a href="index.html" class="nav-link">{{ $t("navbar.home") }}</a></li>
 					<li class="nav-item"><a href="products.html" class="nav-link">{{ $t("navbar.products") }}</a></li>
-					<li class="nav-item"><a href="mkdocs/site/index.html"
-							class="nav-link">{{ $t("navbar.documentation") }}</a></li>
+					<li class="nav-item"><a href="javascript:doc_center_lang()"
+							class="nav-link">{{ $t("navbar.documentation") }}</a>
+					</li>
 					<li class="nav-item"><a href="contact.html" class="nav-link">{{ $t("navbar.contact") }}</a></li>
-					<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#"
-							id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
-							aria-expanded="false">{{ $t("navbar.language") }}</a>
+					<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"
+							aria-haspopup="true" aria-expanded="true"><i class="material-icons">language</i></a>
 						<!-- .dropdown-menu 下拉選單內容 -->
 						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-							<a class="dropdown-item" href="contact.html" onclick="doCookieSetup('lang', 'en')">English</a>
+							<a class="dropdown-item" href="contact.html"
+								onclick="doCookieSetup('lang', 'en')">English</a>
 							<a class="dropdown-item" href="contact.html" onclick="doCookieSetup('lang', 'cn')">简体中文</a>
 							<a class="dropdown-item" href="contact.html" onclick="doCookieSetup('lang', 'tw')">繁體中文</a>
 						</div>
@@ -61,61 +62,61 @@
 	</nav>
 	<!-- END nav -->
 
-  <!-- intro -->
-  <section class="intro-bg intro-bg-2" style="background-image: url('images/header-bg.jpg');"
-    data-stellar-background-ratio="0.5" >
-    <div class="overlay"></div>
-    <div class="container" >
-      <div class="row no-gutters slider-text align-items-end justify-content-center" >
-        <div class="col-md-9 ftco-animate pb-5 text-center " style="margin-bottom: 2%;">
-          <h1 id="div1" class="mb-3 bread">{{ $t("navbar.contact") }}</h1>
-        </div>
-      </div>
-    </div>
-  </section>
+	<!-- intro -->
+	<section class="intro-bg intro-bg-2" style="background-image: url('images/header-bg.jpg');"
+		data-stellar-background-ratio="0.5">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row no-gutters slider-text align-items-end justify-content-center">
+				<div class="col-md-9 ftco-animate pb-5 text-center " style="margin-bottom: 2%;">
+					<h1 id="div1" class="mb-3 bread">{{ $t("navbar.contact") }}</h1>
+				</div>
+			</div>
+		</div>
+	</section>
 
-  <!-- content -->
-  <section id="div2" class="ftco-section">
-    <div class="container">
-      <div class="row d-flex mb-5">
-        <div class="col-md-12 mb-4">
-          <h1 class="h1">{{ $t('contact.title1') }}</h1>
-          <p>{{ $t('contact.content1') }}</p>
-        </div>
+	<!-- content -->
+	<section id="div2" class="ftco-section">
+		<div class="container">
+			<div class="row d-flex mb-5">
+				<div class="col-md-12 mb-4">
+					<h1 class="h1">{{ $t('contact.title1') }}</h1>
+					<p>{{ $t('contact.content1') }}</p>
+				</div>
 
-        <div class="col-md-6 mb-4">
-          <h3>{{ $t('contact.beijing') }}</h3>
-          <p><span>{{ $t('contact.b_address') }}</span></p>
-          <p><span>{{ $t('contact.b_phone') }}</span></p>
-          <p><span>Email : <a href="mailto:18612030435@163.com">18612030435@163.com</a></span></p>
-          <a href="http://upcmcu.taobao.com/ " class="btn py-3 px-4">{{ $t('contact.taobao') }} >
-          </a>
-          <p></p>
+				<div class="col-md-6 mb-4">
+					<h3>{{ $t('contact.beijing') }}</h3>
+					<p><span>{{ $t('contact.b_address') }}</span></p>
+					<p><span>{{ $t('contact.b_phone') }}</span></p>
+					<p><span>Email : <a href="mailto:18612030435@163.com">18612030435@163.com</a></span></p>
+					<a href="http://upcmcu.taobao.com/ " class="btn py-3 px-4">{{ $t('contact.taobao') }} >
+					</a>
+					<p></p>
 
-        </div>
-        <div class="col-md-6 mb-4">
-          <h3>{{ $t('contact.taipei') }}</h3>
-          <p><span>{{ $t('contact.tw_phone') }}</span></p>
-          <p><span>Line ID : avmm9898</span></p>
-          <p><span>Email : </span> <a href="mailto:avmm9898@gmail.com">avmm9898@gmail.com</a></p>
+				</div>
+				<div class="col-md-6 mb-4">
+					<h3>{{ $t('contact.taipei') }}</h3>
+					<p><span>{{ $t('contact.tw_phone') }}</span></p>
+					<p><span>Line ID : avmm9898</span></p>
+					<p><span>Email : </span> <a href="mailto:avmm9898@gmail.com">avmm9898@gmail.com</a></p>
 
-          <a class="btn py-3 px-4" href="http://upcmcu.taobao.com/ ">{{ $t('contact.ruten') }}</a>
+					<a class="btn py-3 px-4" href="http://upcmcu.taobao.com/ ">{{ $t('contact.ruten') }}</a>
 
-        </div>
-        <div class="col-md-12" style="padding-top: 2rem;">
-          <h1 class="h1">{{ $t('contact.title2') }}</h1>
-          <p>{{ $t('contact.content2') }}</p>
+				</div>
+				<div class="col-md-12" style="padding-top: 2rem;">
+					<h1 class="h1">{{ $t('contact.title2') }}</h1>
+					<p>{{ $t('contact.content2') }}</p>
 
-        </div>
-        <div class="col-sm-2 "><img src="images/logo/yunji.png"></div>
-        <div class="col-sm-2 "><img src="images/logo/bluechip.png"></div>
-        <div class="col-sm-2 "><img src="images/logo/bohhom.png"></div>
-        <div class="col-sm-2 "><img src="images/logo/gaussian.png"></div>
-        <div class="col-sm-2 "><img src="images/logo/ubtech.png"></div>
-        <div class="col-sm-2 "><img src="images/logo/narwal.png"></div>
-      </div>
-  </section>
-  <!-- footer section for development-->
+				</div>
+				<div class="col-sm-2 "><img src="images/logo/yunji.png"></div>
+				<div class="col-sm-2 "><img src="images/logo/bluechip.png"></div>
+				<div class="col-sm-2 "><img src="images/logo/bohhom.png"></div>
+				<div class="col-sm-2 "><img src="images/logo/gaussian.png"></div>
+				<div class="col-sm-2 "><img src="images/logo/ubtech.png"></div>
+				<div class="col-sm-2 "><img src="images/logo/narwal.png"></div>
+			</div>
+	</section>
+	<!-- footer section for development-->
 	<footer id="footer" class="ftco-footer ftco-bg-dark ftco-section">
 		<div class="container">
 			<div class="row mb-5">
@@ -189,30 +190,30 @@
 
 
 
-  <!-- loader -->
-  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
-      <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
-      <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
-        stroke="#F96D00" /></svg></div>
+	<!-- loader -->
+	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+				stroke="#F96D00" /></svg></div>
 
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/jquery.waypoints.min.js"></script>
-  <script src="js/jquery.stellar.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/jquery.animateNumber.min.js"></script>
-  <script src="js/scrollax.min.js"></script>
-  <script src="js/main.js"></script>
-  <script src="lang/vue.js"></script>
-  <script src="lang/vuei18n.js"></script>
-  <script src="lang/lang_pack.js"></script>
-  
-  <script>init_lang()</script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-migrate-3.0.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/aos.js"></script>
+	<script src="js/jquery.animateNumber.min.js"></script>
+	<script src="js/scrollax.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="lang/vue.js"></script>
+	<script src="lang/vuei18n.js"></script>
+	<script src="lang/lang_pack.js"></script>
+
+	<script>init_lang()</script>
 </body>
 
 </html>

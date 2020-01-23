@@ -177,6 +177,21 @@ function listCookie() {
   }
   document.writeln("</table>");
 }
+function doc_center_lang() {
+  var tmp_lang = getCookie("lang");
+  var short_cut = "";
+  if (tmp_lang == "en")
+    short_cut = "mkdocs_en/site/index.html";
+  else if (tmp_lang == "cn")
+    short_cut = "mkdocs_cn/site/index.html";
+  else if (tmp_lang == "tw")
+    short_cut = "mkdocs_tw/site/index.html";
+  else
+    short_cut = "mkdocs_en/site/index.html";
+  window.location.assign(short_cut);
+}
+
+
 function init_lang() {
   var i18n = new VueI18n({
     locale: 'en',
