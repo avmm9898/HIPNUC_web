@@ -1,5 +1,5 @@
 site_name: HiPNUC Documentation
-site_url: https://avmm9898.github.io/HIPNUC_web/index.html
+#site_url: the url to main page should be put into installed material theme folder
 theme:
   name: material
   palette:
