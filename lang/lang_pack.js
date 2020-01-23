@@ -177,7 +177,7 @@ function listCookie() {
   }
   document.writeln("</table>");
 }
-function doc_center_lang() {
+function doc_center() {
   var tmp_lang = getCookie("lang");
   var short_cut = "";
   if (tmp_lang == "en")
