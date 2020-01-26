@@ -39,8 +39,7 @@
         <ul class="navbar-nav ml-auto">
           <li class="nav-item"><a href="index.html" class="nav-link">{{ $t("navbar.home") }}</a></li>
           <li class="nav-item"><a href="products.html" class="nav-link">{{ $t("navbar.products") }}</a></li>
-          <li class="nav-item"><a href="javascript:doc_center()"
-              class="nav-link">{{ $t("navbar.documentation") }}</a>
+          <li class="nav-item"><a href="javascript:doc_center()" class="nav-link">{{ $t("navbar.documentation") }}</a>
           </li>
           <li class="nav-item"><a href="contact.html" class="nav-link">{{ $t("navbar.contact") }}</a></li>
           <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"
@@ -57,8 +56,8 @@
       </div>
     </div>
   </nav>
-  <!-- END nav -->
 
+  <!-- intro background -->
   <section class="intro-bg intro-bg-2" style="background-image: url('images/header-bg.jpg');"
     data-stellar-background-ratio="0.5">
     <div class="overlay"></div>
@@ -71,6 +70,261 @@
     </div>
   </section>
 
+  <!-- product table 1 -->
+  <div class="container pt-5 col-md-8">
+    <H2 class="pb-5">SPEC</H2>
+    <table class="table text-center ">
+      <thead>
+        <tr>
+          <th class="align-middle col-md-3" scope="col">Product</th>
+          <th class="align-middle" scope="col">
+            <p>Hi221</p><img style="max-width:50%;" src="images/product/HI221.png">
+          </th>
+          <th class="align-middle" scope="col">
+            <p>Hi226</p><img style="max-width:50%;" src="images/product/HI226.png">
+          </th>
+          <th class="align-middle" scope="col">
+            <p>Hi229</p><img style="max-width:50%;" src="images/product/HI229.png">
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Type</th>
+          <td>IMU, VRU, AHRS</td>
+          <td>IMU, VRU</td>
+          <td>IMU, VRU, AHRS</td>
+        </tr>
+        <tr>
+          <th scope="row">Data Interface</th>
+          <td>UART + Wireless</td>
+          <td>UART</td>
+          <td>UART</td>
+        </tr>
+        <tr>
+          <th scope="row">Size (WxLxH) mm</th>
+          <td>20 x 38 x 8.5</td>
+          <td>12 x 12 x 2.6</td>
+          <td>12 x 12 x 2.6</td>
+        </tr>
+        <tr>
+          <th scope="row">Gyroscope</th>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <th scope="row">Accelerometer</th>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <th scope="row">Magnetometer</th>
+          <td>Yes</td>
+          <td>No</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <th scope="row">Power Comsumption</th>
+          <td>30mA @3.3V</td>
+          <td>15mA @3.3V</td>
+          <td>20mA @3.3V</td>
+        </tr>
+      </tbody>
+    </table>
+
+
+    <!-- product table 2 -->
+    <div class="panel-group" id="accordion">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h2 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+              Accuracy <i class="material-icons">menu</i>
+            </a>
+          </h2>
+          <p>Note : Dynamic accuracy was measured on turntable at angular velocity < 200 °/s </p> </div> <div id="collapse1"
+              class="panel-collapse collapse in">
+              <div class="panel-body">
+                <table class="table text-center ">
+                  <thead>
+                    <tr>
+                      <th class="align-middle col-md-3" scope="col">Product</th>
+                      <th class="align-middle" scope="col"> Hi221 </th>
+                      <th class="align-middle" scope="col"> Hi226 </th>
+                      <th class="align-middle" scope="col"> Hi229 </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th class="col-md-3" scope="row">Static Roll&Pitch</th>
+                      <td class="align-middle">0.2 °</td>
+                      <td class="align-middle">0.3 °</td>
+                      <td class="align-middle">0.3 °</td>
+                    </tr>
+                
+                    <tr>
+                      <th class="col-md-3" scope="row">Dynamic Roll&Pitch</th>
+                      <td class="align-middle">0.5 °</td>
+                      <td class="align-middle">2.5 °</td>
+                      <td class="align-middle">2.5 °</td>
+                    </tr>
+                    <tr>
+                      <th class="col-md-3" scope="row">Dynamic Heading Angle</th>
+                      <td class="align-middle">-</td>
+                      <td class="align-middle">-</td>
+                      <td class="align-middle">3.0° without magnetic interference</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h2 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+              Gyroscope <i class="material-icons">menu</i>
+            </a>
+          </h2>
+          <p>Show the sensitivities and resoltions of gyroscope.</p>
+        </div>
+        <div id="collapse2" class="panel-collapse collapse in">
+          <div class="panel-body">
+            <table class="table text-center ">
+              <thead>
+                <tr>
+                  <th class="align-middle col-md-3" scope="col">Product</th>
+                  <th class="align-middle" scope="col"> Hi221 </th>
+                  <th class="align-middle" scope="col"> Hi226 </th>
+                  <th class="align-middle" scope="col"> Hi229 </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th class="col-md-3" scope="row">Range</th>
+                  <td class="align-middle">± 2000 °/s</td>
+                  <td class="align-middle">± 2000 °/s</td>
+                  <td class="align-middle">± 2000 °/s</td>
+                </tr>
+                <tr>
+                  <th class="col-md-3" scope="row">g-sensitivity</th>
+                  <td class="align-middle">0.1 ° /s/g</td>
+                  <td class="align-middle">0.1 ° /s/g</td>
+                  <td class="align-middle">0.1 ° /s/g</td>
+                </tr>
+                <tr>
+                  <th class="col-md-3" scope="row">Zero Offset Stability</th>
+                  <td class="align-middle">1 °/s</td>
+                  <td class="align-middle">10 °/hr</td>
+                  <td class="align-middle">10 °/hr</td>
+                </tr>
+                <tr>
+                  <th class="col-md-3" scope="row">Cross-axis Sensitivity</th>
+                  <td class="align-middle">0.2~0.5%</td>
+                  <td class="align-middle">0.2~0.5%</td>
+                  <td class="align-middle">0.2~0.5%</td>
+                </tr>
+              </tbody>
+            </table>
+          
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h2 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+              Accelerometer <i class="material-icons">menu</i>
+            </a>
+          </h2>
+          <p>Show the sensitivities and resoltions of accelerometer.</p>
+          <p>Note : 1G = 1x (Gravitational acceleration)</p>
+        </div>
+        <div id="collapse3" class="panel-collapse collapse in">
+          <div class="panel-body">
+            <table class="table text-center ">
+              <thead>
+                <tr>
+                  <th class="align-middle col-md-3" scope="col">Product</th>
+                  <th class="align-middle" scope="col"> Hi221 </th>
+                  <th class="align-middle" scope="col"> Hi226 </th>
+                  <th class="align-middle" scope="col"> Hi229 </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th class="col-md-3" scope="row">Range</th>
+                  <td class="align-middle">± 8 G</td>
+                  <td class="align-middle">± 8 G</td>
+                  <td class="align-middle">± 8 G</td>
+                </tr>
+                <tr>
+                  <th class="col-md-3" scope="row">Zero Offset</th>
+                  <td class="align-middle">10 mg</td>
+                  <td class="align-middle">10 mg</td>
+                  <td class="align-middle">10 mg</td>
+                </tr>
+                <tr>
+                  <th class="col-md-3" scope="row">Cross-axis Sensitivity</th>
+                  <td class="align-middle">0.2~0.5 %</td>
+                  <td class="align-middle">0.2~0.5 %</td>
+                  <td class="align-middle">0.2~0.5 %</td>
+                </tr>
+              </tbody>
+            </table>
+          
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h2 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+              Magnetometer <i class="material-icons">menu</i>
+            </a>
+          </h2>
+          <p>Show the sensitivities and resoltions of magnetometer.</p>
+        </div>
+        <div id="collapse4" class="panel-collapse collapse in">
+          <div class="panel-body">
+            <table class="table text-center ">
+              <thead>
+                <tr>
+                  <th class="align-middle col-md-3" scope="col">Product</th>
+                  <th class="align-middle" scope="col"> Hi221 </th>
+                  <th class="align-middle" scope="col"> Hi226 </th>
+                  <th class="align-middle" scope="col"> Hi229 </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th class="col-md-3" scope="row">Range</th>
+                  <td class="align-middle">± 2 Gauss</td>
+                  <td class="align-middle">-</td>
+                  <td class="align-middle">± 8 Gauss</td>
+                </tr>
+                <tr>
+                  <th class="col-md-3" scope="row">Zero Offset</th>
+                  <td class="align-middle">± 3 µT</td>
+                  <td class="align-middle">-</td>
+                  <td class="align-middle">± 3 µT</td>
+                </tr>
+                <tr>
+                  <th class="col-md-3" scope="row">Cross-axis Sensitivity</th>
+                  <td class="align-middle">0.2~1 %/Gauss</td>
+                  <td class="align-middle">-</td>
+                  <td class="align-middle">0.2~0.6 %/Gauss</td>
+                </tr>
+              </tbody>
+            </table>
+          
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- footer section for development-->
   <footer id="footer" class="ftco-footer ftco-bg-dark ftco-section">
