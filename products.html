@@ -48,7 +48,7 @@
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               <a class="dropdown-item" href="products.html" onclick="doCookieSetup('lang', 'en')">English</a>
               <a class="dropdown-item" href="products.html" onclick="doCookieSetup('lang', 'cn')">简体中文</a>
-              <a class="dropdown-item" href="products.html" onclick="doCookieSetup('lang', 'tw')">繁體中文</a>
+              <a class="dropdown-item" href="products.html" onclick="doCookieSetup('lang', 'tc')">繁體中文</a>
             </div>
           </li>
 
@@ -242,7 +242,7 @@
               {{ $t("footer.about_content") }}
             </p>
             <ul style="font-size:80%;">
-              <li><a href=https://github.com/ftco/products>{{ $t("footer.github") }} <span
+              <li><a href=https://github.com/hipnuc/products>{{ $t("footer.github") }} <span
                   class="ion-ios-arrow-forward"></span></a></li>
             </ul>
           </div>
@@ -329,7 +329,7 @@
     function init_lang() {
       var i18n = new VueI18n({ locale: 'en', messages: messages });
       var tmp_lang = getCookie("lang");
-      if (tmp_lang == "en" || tmp_lang == "cn" || tmp_lang == "tw")
+      if (tmp_lang == "en" || tmp_lang == "cn" || tmp_lang == "tc")
         i18n.locale = tmp_lang
       new Vue({ i18n: i18n }).$mount('#navbar');
       new Vue({ i18n: i18n }).$mount('#intro');

@@ -47,7 +47,7 @@ const messages = {
     }
 
   },
-  tw: {
+  tc: {
     navbar: {
       home: '首頁',
       products: '產品型錄',
@@ -184,8 +184,8 @@ function doc_center() {
     short_cut = "mkdocs_en/site/index.html";
   else if (tmp_lang == "cn")
     short_cut = "mkdocs_cn/site/index.html";
-  else if (tmp_lang == "tw")
-    short_cut = "mkdocs_tw/site/index.html";
+  else if (tmp_lang == "tc")
+    short_cut = "mkdocs_tc/site/index.html";
   else
     short_cut = "mkdocs_en/site/index.html";
   window.location.assign(short_cut);
