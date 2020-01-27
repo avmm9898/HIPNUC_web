@@ -51,7 +51,7 @@
               <a class="dropdown-item" href="products.html" onclick="doCookieSetup('lang', 'tw')">繁體中文</a>
             </div>
           </li>
-          </li>
+
         </ul>
       </div>
     </div>
@@ -64,7 +64,7 @@
     <div class="container">
       <div class="row no-gutters slider-text align-items-end justify-content-center">
         <div class="col-md-9 ftco-animate pb-5 text-center">
-          <h1 id="div1" class="mb-3 bread">{{ $t("navbar.products") }}</h1>
+          <h1 id="intro" class="mb-3 bread">{{ $t("navbar.products") }}</h1>
         </div>
       </div>
     </div>
@@ -73,9 +73,8 @@
 
 
   <!-- product table 1 -->
-  <section class="intro-bg" style="background-image: url('images/VR.jpg');"
-    data-stellar-background-ratio="0.5">
-    
+  <section class="intro-bg" style="background-image: url('images/VR.jpg');" data-stellar-background-ratio="0.5">
+
     <div class="container pt-5 pb-5 col-md-8">
       <div class="tech-table pl-5 pr-5" id="accordion">
 
@@ -85,7 +84,7 @@
         <table class="table text-center">
           <thead>
             <tr>
-              <th class="col-md-3" scope="col">Product</th>
+              <th scope="col">Product</th>
               <td class="tech-table__column-title" scope="col">
                 <span>Hi221</span>
               </td>
@@ -100,14 +99,14 @@
           <tbody>
             <tr>
               <th>Image</th>
-              <td>
-                <img style="max-width:80%;" src="images/product/HI221.png">
+              <td >
+                <img style="width: 80%;" data-sizes="auto" src="images/product/HI221.png">
               </td>
               <td>
-                <img style="max-width:80%;" src="images/product/HI226.png">
+                <img style="width: 80%;" data-sizes="auto" src="images/product/HI226.png">
               </td>
               <td>
-                <img style="max-width:80%;" src="images/product/HI229.png">
+                <img style="width: 80%;" data-sizes="auto" src="images/product/HI229.png">
               </td>
             </tr>
             <tr>
@@ -293,10 +292,8 @@
 
           <p style="font-size:70%;">
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright &copy;
-            <script>document.write(new Date().getFullYear());</script> All rights reserved | Made by
-            HiPNUC
-            and <a href="https://colorlib.com" target="_blank">Colorlib</a>
+            Copyright &copy; 2020 All rights reserved | Made by HiPNUC and <a href="https://colorlib.com"
+              target="_blank">Colorlib</a>
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
           </p>
         </div>
@@ -305,10 +302,12 @@
   </footer>
 
   <!-- loader -->
-  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
-      <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
-      <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
-        stroke="#F96D00" /></svg></div>
+  <div id="ftco-loader" class="show fullscreen">
+    <svg class="circular" width="48px" height="48px" xmlns="http://www.w3.org/2000/svg" version="1.1">
+      <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee">
+        <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+          stroke="#F96D00">
+    </svg></div>
 
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
@@ -326,7 +325,19 @@
   <script src="lang/lang_pack.js"></script>
   <script src="lang/vue.js"></script>
   <script src="lang/vuei18n.js"></script>
-  <script>init_lang()</script>
+  <script>
+    function init_lang() {
+      var i18n = new VueI18n({ locale: 'en', messages: messages });
+      var tmp_lang = getCookie("lang");
+      if (tmp_lang == "en" || tmp_lang == "cn" || tmp_lang == "tw")
+        i18n.locale = tmp_lang
+      new Vue({ i18n: i18n }).$mount('#navbar');
+      new Vue({ i18n: i18n }).$mount('#intro');
+      
+      new Vue({ i18n: i18n }).$mount('#footer');
+    }
+
+    init_lang()</script>
 
 </body>
 

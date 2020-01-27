@@ -1921,6 +1921,7 @@ pre code {
   width: 100%;
   margin-bottom: 1rem;
   background-color: transparent;
+  font-size: 14px;
 }
 .tech-table {
   background-color: #F4F4F4;
@@ -1936,6 +1937,7 @@ pre code {
   border-bottom: 2px solid #D7D7D7;
   border-right: 5px solid #f4f4f4e7;
   vertical-align: middle;
+  width: 30%;
   
 }
 .table td {
@@ -1945,6 +1947,7 @@ pre code {
   border-right: 3px solid #f4f4f4e7;
   background-color: #EBEBEB;
   vertical-align: middle;
+  width: 23.33%;
 }
 
 .table thead th {

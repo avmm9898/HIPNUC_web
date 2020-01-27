@@ -71,11 +71,12 @@
 			<div class="row no-gutters slider-text js-fullheight align-items-center justify-content-start"
 				data-scrollax-parent="true">
 				<div class="container-fluid ftco-animate">
-					<div id="div1">
+					<div id="intro">
 						<h1 style="font-size:450%;">{{ $t("index.intro") }}</h1>
 						<h1 style="font-size:180%;margin-top:1em">{{ $t("index.intro2") }}
 						</h1>
-						<h2 style="margin-top:6em"><a href="products.html" class="btn-custom mr-md-4">{{ $t("navbar.products") }}
+						<h2 style="margin-top:6em"><a href="products.html"
+								class="btn-custom mr-md-4">{{ $t("navbar.products") }}
 								<span class="ion-ios-arrow-forward"></span></a>
 							<a href="contact.html" class="btn-custom">{{ $t("navbar.contact") }}<span
 									class="ion-ios-arrow-forward"></span></a>
@@ -86,7 +87,7 @@
 		</div>
 	</div>
 	<!-- footer buying bar-->
-	<section id="" class="ftco-section ftco-no-pt ftco-no-pb bg-primary">
+	<section id="buyingbar" class="ftco-section ftco-no-pt ftco-no-pb bg-primary">
 		<div class="container py-2">
 			<div class="row d-flex justify-content-center">
 				<div class="col-md-12 ftco-animate d-flex align-items-center">
@@ -166,10 +167,8 @@
 
 					<p style="font-size:70%;">
 						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-						Copyright &copy;
-						<script>document.write(new Date().getFullYear());</script> All rights reserved | Made by
-						HiPNUC
-						and <a href="https://colorlib.com" target="_blank">Colorlib</a>
+						Copyright &copy; 2020 All rights reserved | Made by HiPNUC and <a href="https://colorlib.com"
+							target="_blank">Colorlib</a>
 						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 					</p>
 				</div>
@@ -202,7 +201,20 @@
 	<script src="lang/vue.js"></script>
 	<script src="lang/vuei18n.js"></script>
 	<script src="lang/lang_pack.js"></script>
-	<script>init_lang()</script>
+	<script>
+		function init_lang() {
+			var i18n = new VueI18n({ locale: 'en', messages: messages });
+			var tmp_lang = getCookie("lang");
+			if (tmp_lang == "en" || tmp_lang == "cn" || tmp_lang == "tw")
+				i18n.locale = tmp_lang
+			new Vue({ i18n: i18n }).$mount('#navbar');
+			new Vue({ i18n: i18n }).$mount('#intro');
+
+			new Vue({ i18n: i18n }).$mount('#footer');
+		}
+
+		init_lang()
+	</script>
 
 </body>
 
