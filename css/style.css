@@ -11938,8 +11938,8 @@ width: 50%; }
   right: 0;
   bottom: 0;
   content: '';
-  opacity: .4;
-  background: #000000;
+  opacity: .6;
+  background: #ffffff;
 }
 
 @media (min-width: 992px) {
@@ -11947,10 +11947,10 @@ width: 50%; }
   width: 100%; } 
 }
 .ftco-consultation .half h2 {
-  font-weight: 900; 
+  font-weight: 700; 
 }
 .ftco-consultation .half h3 {
-  font-weight: 700; 
+  font-weight: 500; 
 }
 @media (max-width: 767.98px) {
   .ftco-counter .counter-wrap {
