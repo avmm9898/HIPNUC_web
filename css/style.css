@@ -11209,16 +11209,16 @@ h5,
   right: 0;
   bottom: 0;
   content: '';
-  opacity: .6;
+  opacity: .5;
   background: #000000;
 }
 
 .intro-bg.intro-bg-2 {
-  height: 300px;
+  height: 200px;
 }
 
 .intro-bg.intro-bg-2 .slider-text {
-  height: 300px;
+  height: 200px;
 }
 
 .slider-text h1 {
@@ -11912,7 +11912,43 @@ textarea.form-control {
   color: #000000;
   font-size: 48px;
 }
+.ftco-consultation {
+  background-position: top center !important;
+  position: relative; 
+}
+.ftco-consultation .overlay-right {
+    position: absolute;
+    top: 5rem;
+    right: 2rem;
+    bottom: 5rem;
+    width: 100%;
+    content: '';
+    opacity: .8;
+    background: #fdfdfd; }
+@media (min-width: 992px) {
+.ftco-consultation .overlay-right {
+width: 50%; } 
+}
 
+
+.ftco-consultation .overlay-left {
+  position: absolute;
+  top: 5rem;
+  left: 3rem;
+  bottom: 5rem;
+  width: 100%;
+  content: '';
+  opacity: .8;
+  background: #fdfdfd; 
+}
+
+@media (min-width: 992px) {
+  .ftco-consultation .overlay-left {
+  width: 50%; } 
+}
+.ftco-consultation .half h2 {
+  font-weight: 600; 
+}
 @media (max-width: 767.98px) {
   .ftco-counter .counter-wrap {
     margin-bottom: 20px;
