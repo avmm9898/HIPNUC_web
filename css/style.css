@@ -11923,7 +11923,7 @@ textarea.form-control {
     bottom: 5rem;
     width: 100%;
     content: '';
-    opacity: .8;
+    opacity: .5;
     background: #fdfdfd; }
 @media (min-width: 992px) {
 .ftco-consultation .overlay-right {
@@ -11931,23 +11931,26 @@ width: 50%; }
 }
 
 
-.ftco-consultation .overlay-left {
+.ftco-consultation .overlay {
   position: absolute;
-  top: 5rem;
-  left: 3rem;
-  bottom: 5rem;
-  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   content: '';
-  opacity: .8;
-  background: #fdfdfd; 
+  opacity: .4;
+  background: #000000;
 }
 
 @media (min-width: 992px) {
-  .ftco-consultation .overlay-left {
-  width: 50%; } 
+  .ftco-consultation .overlay {
+  width: 100%; } 
 }
 .ftco-consultation .half h2 {
-  font-weight: 600; 
+  font-weight: 900; 
+}
+.ftco-consultation .half h3 {
+  font-weight: 700; 
 }
 @media (max-width: 767.98px) {
   .ftco-counter .counter-wrap {
