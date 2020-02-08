@@ -8666,6 +8666,10 @@ button.bg-dark:focus {
   padding-top: 3rem !important;
 }
 
+.pt-7,
+.py-7 {
+  padding-top: 5rem !important;
+}
 .pr-5,
 .px-5 {
   padding-right: 3rem !important;
@@ -10951,9 +10955,10 @@ h5,
 
 
 .ftco-navbar-light {
-  background: transparent !important;
+  background: #222831 !important;
   position: absolute;
-  top: 20px;
+  padding-top: 15px;
+  top: 0;
   left: 0;
   right: 0;
   z-index: 3;
@@ -11224,11 +11229,11 @@ h5,
 }
 
 .intro-bg.intro-bg-2 {
-  height: 200px;
+  height: 110px;
 }
 
 .intro-bg.intro-bg-2 .slider-text {
-  height: 200px;
+  height: 110px;
 }
 
 .slider-text h1 {
