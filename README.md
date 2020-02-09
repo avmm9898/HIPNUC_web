@@ -23,3 +23,8 @@ Anaconda3\envs\env_name\Lib\site-packages\material
 才能正確導向主網頁連結
 
 在mkdocs_cn\  底下使用 mkdocs build --clean 以生成新的網頁
+
+--------------------------------------------------------------------------
+SEO:
+robots.txt 是限制搜尋引擎檢索特定資料夾的功能
+sidemap.xml 依照結構填入所有網頁地址就好
