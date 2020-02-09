@@ -14,8 +14,12 @@ HI226 等等
 
 md 檔擺在如 mkdocs_cn\docs\hi221\hi221um_cn.md
 
+--------------------------------------------------------------------------
+
 使用的是 material 主題，需要將把替換包內的內容替換到如
 
 Anaconda3\envs\env_name\Lib\site-packages\material
 
 才能正確導向主網頁連結
+
+在mkdocs_cn\  底下使用 mkdocs build --clean 以生成新的網頁
