@@ -420,8 +420,9 @@
     <div class="overlay"></div>
 
     <div class="container-fluid px-md-5" style="text-align:center">
-      <div  class="row no-gutters slider-text js-fullheight align-items-center justify-content-start" data-scrollax-parent="true">
-        <div  class="container-fluid ftco-animate">
+      <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-start"
+        data-scrollax-parent="true">
+        <div class="container-fluid ftco-animate">
           <h1>Uranus</h1>
           <h1 id="software1" style="font-size:160%;" class="pb-3">{{$t('products.software_intro')}}</h1>
           <a id="software2" class="btn py-3 px-4"
@@ -553,19 +554,19 @@
   </script>
   <script>
     var tmp_lang = getCookie("lang");
-    function collapse(id) {
+    function collapse(id, btn) {
       if ($(id).is(":visible") == false) {
         if (tmp_lang == "cn" || tmp_lang == "tc")
-          $(".pushme").text('收起');
+          $(btn).text('收起');
         else
-          $(".pushme").text('Less');
+          $(btn).text('Less');
         $(id).collapse('show');
       }
       else if ($(id).is(":visible") == true) {
         if (tmp_lang == "cn" || tmp_lang == "tc")
-          $(".pushme2").text('更多');
+          $(btn).text('更多');
         else
-          $(".pushme2").text('More');
+          $(btn).text('More');
         $(id).collapse('hide');
       }
     }
@@ -578,14 +579,22 @@
         $(".pushme").text('更多');
       else
         $(".pushme").text('More');
+      if (tmp_lang == "cn" || tmp_lang == "tc")
+        $(".pushme2").text('收起');
+      else
+        $(".pushme2").text('Less');
+      if (tmp_lang == "cn" || tmp_lang == "tc")
+        $(".pushme2").text('更多');
+      else
+        $(".pushme2").text('More');
 
     });
 
     $(".pushme").click(function () {
-      collapse("#collapse1");
+      collapse("#collapse1", ".pushme");
     })
     $(".pushme2").click(function () {
-      collapse("#collapse2");
+      collapse("#collapse2", ".pushme2");
     })
   </script>
 
