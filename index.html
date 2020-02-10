@@ -3,20 +3,27 @@
 
 
 <head>
-	<title>HiPNUC IMU - 超核電子 多點無線IMU 慣性測量單元 姿態量測</title>
-	<title>測試網頁</title>
-	<meta name="description" content="IMU(Inertial measurement unit)、AHRS，提供姿態檢測，機器人動作捕捉，導航與定位服務，
-	擁有製造多點無線姿態節點能力的專業製造服務商">
-	<meta name="keywords" content="wireless IMU, AHRS, 慣性測量儀, 姿態檢測, 姿態測量, 無線IMU">
+	<title>HiPNUC- Wireless IMU | Motion Sensor | IMU (Inertial Sensors) | 9-DOF Sensor | Development Kits</title>
+	<link rel="alternate" hreflang="en" href="http://www.hipnuc.com/index.html" />
+	<link rel="alternate" hreflang="en-us" href="http://www.hipnuc.com/index.html" />
+	<link rel="alternate" hreflang="zh-Hans" href="http://www.hipnuc.com/index_cn.html" />
+	<link rel="alternate" hreflang="zh-Hant" href="http://www.hipnuc.com/index_tc.html" />
+	<link rel="alternate" hreflang="x-default" href="http://www.hipnuc.com/index.html" />
+
+
+	<meta name="description"
+		content="We provide IMU (Inertial measurement unit), AHRS, attitude measurement, robot motion capture, navigation and positioning services.
+	A professional manufacturing and service provider with the ability to manufacture multi-point wireless motion sensors.">
+
+
+	<meta name="keywords" content="gyroscope, inertial measuring sensor, attitude sensor, wireless IMU, motion sensor">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-	<link rel="stylesheet" href="css/icomoon.css">
-	
-	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/poppins_font.css">
+	<link rel="stylesheet" href="css/material_icon.css">
+	<link rel="stylesheet" href="css/icomoon_minified.css">
+	<link rel="stylesheet" href="css/animate_minified.css">
 	<link rel="stylesheet" href="css/style_minified.css">
 
 
@@ -47,7 +54,6 @@
 							<a class="dropdown-item" href="index.html" onclick="doCookieSetup('lang', 'cn')">简体中文</a>
 							<a class="dropdown-item" href="index.html" onclick="doCookieSetup('lang', 'tc')">繁體中文</a>
 						</div>
-					</li>
 					</li>
 				</ul>
 			</div>
@@ -174,12 +180,27 @@
 	<!-- loader -->
 	<div id="ftco-loader" class="show fullscreen">
 		<svg class="circular" width="48px" height="48px" xmlns="http://www.w3.org/2000/svg" version="1.1">
-		  <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee">
-			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
-			  stroke="#F96D00">
+			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee">
+				<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+					stroke="#F96D00">
 		</svg></div>
 
+	<script src="lang/vue.js"></script>
+	<script src="lang/vuei18n.js"></script>
+	<script src="lang/lang_pack.js"></script>
+	<script>
+		function init_lang() {
+			var i18n = new VueI18n({ locale: 'en', messages: messages });
+			var tmp_lang = getCookie("lang");
+			if (tmp_lang == "en" || tmp_lang == "cn" || tmp_lang == "tc")
+				i18n.locale = tmp_lang
+			new Vue({ i18n: i18n }).$mount('#navbar');
+			new Vue({ i18n: i18n }).$mount('#intro');
+			new Vue({ i18n: i18n }).$mount('#footer');
+		}
 
+		init_lang();
+	</script>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery-migrate-3.0.1.min.js"></script>
 	<script src="js/popper.min.js"></script>
@@ -193,23 +214,7 @@
 	<script src="js/jquery.animateNumber.min.js"></script>
 	<script src="js/scrollax.min.js"></script>
 	<script src="js/main.js"></script>
-	<script src="lang/vue.js"></script>
-	<script src="lang/vuei18n.js"></script>
-	<script src="lang/lang_pack.js"></script>
-	<script>
-		function init_lang() {
-			var i18n = new VueI18n({ locale: 'en', messages: messages });
-			var tmp_lang = getCookie("lang");
-			if (tmp_lang == "en" || tmp_lang == "cn" || tmp_lang == "tc")
-				i18n.locale = tmp_lang
-			new Vue({ i18n: i18n }).$mount('#navbar');
-			new Vue({ i18n: i18n }).$mount('#intro');
 
-			new Vue({ i18n: i18n }).$mount('#footer');
-		}
-
-		init_lang()
-	</script>
 
 </body>
 
