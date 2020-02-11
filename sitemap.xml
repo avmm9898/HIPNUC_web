@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://www.hipnuc.com/</loc>
-  </url>
-  <url>
-    <loc>https://www.hipnuc.com/index_cn.html</loc>
-  </url>
-  <url>
-    <loc>https://www.hipnuc.com/index_tc.html</loc>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+ <url>
+    <loc>https://www.hipnuc.com/index.html</loc>
+    <xhtml:link 
+               rel="alternate"
+               hreflang="zh-Hans"
+               href="https://www.hipnuc.com/index_cn.html"/>
+    <xhtml:link 
+               rel="alternate"
+               hreflang="zh-Hant"
+               href="https://www.hipnuc.com/index_tc.html"/>
+    <xhtml:link 
+               rel="alternate"
+               hreflang="en"
+               href="https://www.hipnuc.com/index.html"/>
   </url>
   <url>
     <loc>https://www.hipnuc.com/products.html</loc>
