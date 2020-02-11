@@ -103,7 +103,7 @@
                     <tr>
                       <th>{{ $t('products.table_image')}}</th>
                       <td>
-                        <img style="width: 80%;max-height: 150px;" data-sizes="auto" src="images/product/HI221.webp">
+                        <img style="width: 80%;max-height: 150px;max-width: 150px;max-width: 150px" data-sizes="auto" src="images/product/HI221.png">
                       </td>
                     </tr>
                     <tr>
@@ -175,11 +175,11 @@
                       <th scope="row">{{ $t('products.table_avg_time')}}</th>
                       <td>8 hours</td>
                     </tr>
-
-                    <th class="pt-3" scope="row">
-                      <span style="font-size: 20px;">{{ $t('products.gyro')}}</span>
-                    </th>
-                    <td></td>
+                    <tr>
+                      <th class="pt-3" scope="row">
+                        <span style="font-size: 20px;">{{ $t('products.gyro')}}</span>
+                      </th>
+                      <td></td>
                     </tr>
                     <tr>
                       <th scope="row">{{ $t('products.table_range')}}</th>
@@ -250,10 +250,10 @@
                     <tr>
                       <th>{{ $t('products.table_image')}}</th>
                       <td>
-                        <img style="width: 80%;max-height: 150px;" data-sizes="auto" src="images/product/HI226.webp">
+                        <img style="width: 80%;max-height: 150px;max-width: 150px;" data-sizes="auto" src="images/product/HI226.png">
                       </td>
                       <td>
-                        <img style="width: 80%;max-height: 150px;" data-sizes="auto" src="images/product/HI229.webp">
+                        <img style="width: 80%;max-height: 150px;max-width: 150px;" data-sizes="auto" src="images/product/HI229.png">
                       </td>
                     </tr>
                     <tr>
@@ -405,7 +405,7 @@
     </div>
 
   </section>
-  <section class="intro-bg js-fullheight" style="background-image: url('images/uranus/uranus.webp');">
+  <section class="intro-bg js-fullheight" style="background-image: url('images/uranus/uranus.png');">
 
     <div class="overlay"></div>
 
@@ -532,6 +532,7 @@
       var tmp_lang = getCookie("lang");
       if (tmp_lang == "en" || tmp_lang == "cn" || tmp_lang == "tc")
         i18n.locale = tmp_lang
+
       new Vue({ i18n: i18n }).$mount('#navbar');
       new Vue({ i18n: i18n }).$mount('#hi221_cover');
       new Vue({ i18n: i18n }).$mount('#hi226_cover');
