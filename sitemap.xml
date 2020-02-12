@@ -19,9 +19,33 @@
   </url>
   <url>
     <loc>https://www.hipnuc.com/products.html</loc>
+     <xhtml:link 
+               rel="alternate"
+               hreflang="zh-Hans"
+               href="https://www.hipnuc.com/products_cn.html"/>
+    <xhtml:link 
+               rel="alternate"
+               hreflang="zh-Hant"
+               href="https://www.hipnuc.com/products_tc.html"/>
+    <xhtml:link 
+               rel="alternate"
+               hreflang="en"
+               href="https://www.hipnuc.com/products.html"/>
   </url>
   <url>
     <loc>https://www.hipnuc.com/contact.html</loc>
+         <xhtml:link 
+               rel="alternate"
+               hreflang="zh-Hans"
+               href="https://www.hipnuc.com/contact_cn.html"/>
+    <xhtml:link 
+               rel="alternate"
+               hreflang="zh-Hant"
+               href="https://www.hipnuc.com/contact_tc.html"/>
+    <xhtml:link 
+               rel="alternate"
+               hreflang="en"
+               href="https://www.hipnuc.com/contact.html"/>
   </url>
   <url>
     <loc>https://www.hipnuc.com/mkdocs_cn/site/index.html</loc>
