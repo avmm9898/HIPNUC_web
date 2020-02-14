@@ -13,6 +13,11 @@
 	"提供 IMU(Inertial measurement unit)、AHRS，姿態檢測，動作捕捉，導航與定位等服務，並擁有製造多點無線姿態節點能力的專業製造服務商">
 	<meta name="keywords" content="電子羅盤,無線IMU購買">
 	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/poppins_font.css">
+	<link rel="stylesheet" href="css/material_icon.css">
+	<link rel="stylesheet" href="css/icomoon_minified.css">
+	<link rel="stylesheet" href="css/animate_minified.css">
+	<link rel="stylesheet" href="css/style_minified.css">
 	<script type="application/ld+json">
 		{
 		  "@context": "https://schema.org",
@@ -65,18 +70,201 @@
 		  }]
 		}
 	</script>
-</head>
-
-<body>
-	<div><h1>無線IMU、電子羅盤 產品購買 - 超核電子</h1></div>
 	<script>
 		function doCookieSetup(name, lang) {
 			document.cookie = name + "=" + escape(lang);
 		}
 		doCookieSetup('lang', 'tc')
-		window.location.assign("http://www.hipnuc.com/contact.html");
 	</script>
+</head>
 
+<body>
+	<!-- navbar -->
+	<nav id="navbar" class="navbar px-md-0 navbar-expand-lg  navbar-dark  bg-dark ftco-navbar-light">
+		<div class="container-fluid px-md-5">
+			<a class="navbar-brand" href="index.html">HIPNUC <span>Electronic</span></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+				aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="oi oi-menu"></span> Menu
+			</button>
+			<div class="collapse navbar-collapse" id="ftco-nav">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item"><a href="index_tc.html" class="nav-link">{{ $t("navbar.home") }}</a></li>
+					<li class="nav-item"><a href="products_tc.html" class="nav-link">{{ $t("navbar.products") }}</a></li>
+					<li class="nav-item"><a href="javascript:doc_center()"
+							class="nav-link">{{ $t("navbar.documentation") }}</a>
+					</li>
+					<li class="nav-item"><a href="contact_tc.html" class="nav-link">{{ $t("navbar.contact") }}</a></li>
+					<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"
+							aria-haspopup="true" aria-expanded="true"><i class="material-icons">language</i></a>
+						<!-- .dropdown-menu 下拉選單內容 -->
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<a class="dropdown-item" href="contact.html"
+								onclick="doCookieSetup('lang', 'en')">English</a>
+							<a class="dropdown-item" href="contact_cn.html" onclick="doCookieSetup('lang', 'cn')">简体中文</a>
+							<a class="dropdown-item" href="contact_tc.html" onclick="doCookieSetup('lang', 'tc')">繁體中文</a>
+						</div>
+					</li>
+
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- END nav -->
+
+	<!-- content -->
+	<section id="content" class="ftco-section">
+		<div class="container pt-7">
+			<div class="row d-flex mb-5">
+				<div class="col-md-12 mb-4">
+					<h1 class="h1">{{ $t('contact.title1') }}</h1>
+					<p>{{ $t('contact.content1') }}</p>
+				</div>
+
+				<div class="col-md-6 mb-4">
+					<h3>{{ $t('contact.beijing') }}</h3>
+					<p><span>{{ $t('contact.b_address') }}</span></p>
+					<p><span>{{ $t('contact.b_phone') }}</span></p>
+					<p><span>Email : <a style="color: black;"
+								href="mailto:liuguobing@hipnuc.com">liuguobing@hipnuc.com</a></span></p>
+					<a class="btn py-3 px-4" href="http://upcmcu.taobao.com/">{{ $t('contact.taobao') }}</a>
+					<p></p>
+
+				</div>
+				<div class="col-md-6 mb-4">
+					<h3>{{ $t('contact.taipei') }}</h3>
+					<p><span>{{ $t('contact.tw_phone') }}</span></p>
+					<p><span>Line ID : avmm9898</span></p>
+					<p><span>Email : </span> <a style="color: black;"
+							href="mailto:avmm9898@gmail.com">avmm9898@gmail.com</a></p>
+
+					<a class="btn py-3 px-4"
+						href="https://class.ruten.com.tw/user/index00.php?s=hipnuc_tw">{{ $t('contact.ruten') }}</a>
+
+				</div>
+				<div class="col-md-12" style="padding-top: 2rem;">
+					<h1 class="h1">{{ $t('contact.title2') }}</h1>
+					<p>{{ $t('contact.content2') }}</p>
+
+				</div>
+				<div class="col-sm-2 "><img src="images/logo/yunji.png"></div>
+				<div class="col-sm-2 "><img src="images/logo/bluechip.png"></div>
+				<div class="col-sm-2 "><img src="images/logo/bohhom.png"></div>
+				<div class="col-sm-2 "><img src="images/logo/gaussian.png"></div>
+				<div class="col-sm-2 "><img src="images/logo/ubtech.png"></div>
+				<div class="col-sm-2 "><img src="images/logo/narwal.png"></div>
+			</div>
+	</section>
+	<!-- footer section for development-->
+	<footer id="footer" class="ftco-footer ftco-bg-dark ftco-section">
+		<div class="container">
+			<div class="row mb-5">
+				<div class="col-md">
+					<div class="ftco-footer-widget">
+						<h2 class="ftco-heading-2">{{ $t("footer.about_title") }}</h2>
+						<p style="font-size:80%;text-align:justify;text-justify:inter-ideograph;">
+							{{ $t("footer.about_content") }}
+						</p>
+						<ul style="font-size:80%;">
+							<li><a href=https://github.com/hipnuc/products>{{ $t("footer.github") }} <span
+										class="ion-ios-arrow-forward"></span></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md">
+					<div class="ftco-footer-widget">
+						<h2 class="ftco-heading-2">{{ $t("footer.library_title") }}</h2>
+						<ul style="font-size:80%">
+							<li><a href=https://zhuanlan.zhihu.com/p/65483011>{{ $t("footer.lib1") }} <span
+										class="ion-ios-arrow-forward"></span></a></li>
+							<li><a href=https://zhuanlan.zhihu.com/p/60301874>{{ $t("footer.lib2") }} <span
+										class="ion-ios-arrow-forward"></span></a></li>
+							<li><a href=https://zhuanlan.zhihu.com/p/56073859>{{ $t("footer.lib3") }} <span
+										class="ion-ios-arrow-forward"></span></a></li>
+							<li><a href=https://zhuanlan.zhihu.com/p/58379051>{{ $t("footer.lib4") }} <span
+										class="ion-ios-arrow-forward"></span></a></li>
+							<li><a href=https://zhuanlan.zhihu.com/p/58379051>{{ $t("footer.lib5") }} <span
+										class="ion-ios-arrow-forward"></span></a></li>
+
+						</ul>
+					</div>
+				</div>
+				<div class="col-md">
+					<div class="ftco-footer-widget">
+						<h2 class="ftco-heading-2">{{ $t("footer.opentime_title") }}</h2>
+						<p style="font-size:80%;">{{ $t("footer.opentime1") }}</p>
+						<p style="font-size:80%;">{{ $t("footer.opentime2") }}</p>
+					</div>
+				</div>
+				<div class="col-md">
+					<div class="ftco-footer-widget">
+						<h2 class="ftco-heading-2">{{ $t("footer.sales1") }}</h2>
+						<p style="font-size:80%;"><a href="tel:+8618612030435" class="icon icon-phone"> +86
+								18612030435</a></p>
+						<p style="font-size:80%;"><a href="mailto:liuguobing@hipnuc.com" class="icon icon-envelope">
+							liuguobing@hipnuc.com</a></p>
+						<h2 class="ftco-heading-2">{{ $t("footer.sales2") }}</h2>
+						<p style="font-size:80%;"><a href="tel:+886 0988592841" class="icon icon-phone"> +886
+								0908179107</a></p>
+						<p style="font-size:80%;"><a href="mailto:avmm9898@gmail.com" class="icon icon-envelope">
+								avmm9898@gmail.com</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 text-center">
+
+					<p style="font-size:70%;">
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						Copyright &copy; 2020 All rights reserved | Made by HiPNUC and <a href="https://colorlib.com"
+							target="_blank">Colorlib</a>
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+	<!-- loader -->
+	<div id="ftco-loader" class="show fullscreen">
+		<svg class="circular" width="48px" height="48px" xmlns="http://www.w3.org/2000/svg" version="1.1">
+			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee">
+				<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+					stroke="#F96D00">
+		</svg></div>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-migrate-3.0.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/aos.js"></script>
+	<script src="js/jquery.animateNumber.min.js"></script>
+	<script src="js/scrollax.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="lang/vue.js"></script>
+	<script src="lang/vuei18n.js"></script>
+	<script src="lang/lang_pack.js"></script>
+	<script>
+		function init_lang() {
+			var i18n = new VueI18n({ locale: 'en', messages: messages });
+			var tmp_lang = getCookie("lang");
+			if (tmp_lang == "en" || tmp_lang == "cn" || tmp_lang == "tc")
+				i18n.locale = tmp_lang
+			new Vue({ i18n: i18n }).$mount('#navbar');
+			new Vue({ i18n: i18n }).$mount('#intro');
+			new Vue({ i18n: i18n }).$mount('#content');
+			new Vue({ i18n: i18n }).$mount('#footer');
+		}
+
+		init_lang();
+	</script>
 </body>
 
 </html>

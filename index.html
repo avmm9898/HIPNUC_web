@@ -75,7 +75,12 @@
 		  }]
 		}
 	</script>
-
+	<script>
+		function doCookieSetup(name, lang) {
+			document.cookie = name + "=" + escape(lang);
+		}
+		doCookieSetup('lang', 'en')
+	</script>
 </head>
 
 <body>
@@ -100,8 +105,8 @@
 						<!-- .dropdown-menu 下拉選單內容 -->
 						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 							<a class="dropdown-item" href="index.html" onclick="doCookieSetup('lang', 'en')">English</a>
-							<a class="dropdown-item" href="index.html" onclick="doCookieSetup('lang', 'cn')">简体中文</a>
-							<a class="dropdown-item" href="index.html" onclick="doCookieSetup('lang', 'tc')">繁體中文</a>
+							<a class="dropdown-item" href="index_cn.html" onclick="doCookieSetup('lang', 'cn')">简体中文</a>
+							<a class="dropdown-item" href="index_tc.html" onclick="doCookieSetup('lang', 'tc')">繁體中文</a>
 						</div>
 					</li>
 				</ul>
