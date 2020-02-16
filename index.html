@@ -76,10 +76,37 @@
 		}
 	</script>
 	<script>
-		function doCookieSetup(name, lang) {
-			document.cookie = name + "=" + escape(lang);
+		function getCookieValueByIndex(startIndex) {
+			var endIndex = document.cookie.indexOf(";", startIndex);
+			if (endIndex == -1) endIndex = document.cookie.length;
+			return unescape(document.cookie.substring(startIndex, endIndex));
 		}
-		doCookieSetup('lang', 'en')
+		function getCookie(name) {
+			var arg = escape(name) + "=";
+			var nameLen = arg.length;
+			var cookieLen = document.cookie.length;
+			var i = 0;
+			while (i < cookieLen) {
+				var j = i + nameLen;
+				if (document.cookie.substring(i, j) == arg) return getCookieValueByIndex(j);
+				i = document.cookie.indexOf(" ", i) + 1;
+				if (i == 0) break;
+			}
+			return null;
+		}
+		var tmp_lang = getCookie("lang");
+		var short_cut = "";
+
+
+		if (tmp_lang == "cn") {
+			short_cut = "index_cn.html";
+			window.location.assign(short_cut);
+		}
+		else if (tmp_lang == "tc") {
+			short_cut = "index_tc.html";
+			window.location.assign(short_cut);
+		}
+
 	</script>
 </head>
 
@@ -238,7 +265,6 @@
 				<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
 					stroke="#F96D00">
 		</svg></div>
-
 
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery-migrate-3.0.1.min.js"></script>
