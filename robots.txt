@@ -5,7 +5,6 @@ Disallow: /css/
 Disallow: /js/
 Disallow: /lang/
 Disallow: /fonts/
-Disallow: /images/
 Disallow: /scss/
 
 # Group 2
