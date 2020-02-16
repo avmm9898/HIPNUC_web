@@ -11,4 +11,4 @@ Disallow: /images/
 User-agent: *
 Allow: /
 
-Sitemap: http://www.example.com/sitemap.xml
+Sitemap: http://www.hipnuc.com/sitemap.xml
