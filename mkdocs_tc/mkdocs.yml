@@ -1,5 +1,5 @@
 site_name: HiPNUC 文件中心
-#site_url: 'https://avmm9898.github.io/HIPNUC_web/index.html'
+site_url: 'http://www.hipnuc.com/'
 theme:
   name: material
   palette:

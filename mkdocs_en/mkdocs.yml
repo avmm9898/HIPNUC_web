@@ -1,5 +1,5 @@
 site_name: HiPNUC Documentation
-#site_url: the url to main page should be put into installed material theme folder
+site_url: 'http://www.hipnuc.com/'
 theme:
   name: material
   palette:

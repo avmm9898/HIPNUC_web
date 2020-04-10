@@ -1,5 +1,14 @@
 site_name: HiPNUC 文件中心
-#site_url: 'https://avmm9898.github.io/HIPNUC_web/index.html'
+site_url: 'http://www.hipnuc.com/index_cn.html'
+
+
+nav:
+  -  文档中心: 
+      - index.md
+  -  产品手册:
+      - HI226/HI229: hi229/hi229um_cn.md
+      - HI221: hi221/hi221um_cn.md
+
 theme:
   name: material
   palette:
@@ -21,8 +30,8 @@ markdown_extensions:
   - pymdownx.caret
   - pymdownx.critic
   - pymdownx.details
-  - pymdownx.emoji:
-      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+ # - pymdownx.emoji:
+ #     emoji_generator: !!python/name:pymdownx.emoji.to_svg
   - pymdownx.inlinehilite
   - pymdownx.magiclink
   - pymdownx.mark
