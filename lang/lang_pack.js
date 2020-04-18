@@ -145,7 +145,7 @@ const messages = {
     },
     footer: {
       about_title: '關於超核電子',
-      about_content: 'HiPNIC 超核電子致力於開發具有高成本效益的高質量IMU / AHRS。多年的低成本MEMS傳感器算法開發經驗，提供成熟和先進的集成導航模組，為客戶提供最具性價比的姿態檢測方案。',
+      about_content: 'HiPNUC 超核電子致力於開發具有高成本效益的高品質IMU / AHRS。多年的低成本MEMS傳感器算法開發經驗，提供成熟和先進的集成導航模組，為客戶提供最具性價比的姿態檢測方案。',
       github: '前往我們的Github',
       library_title: '圖書館',
       lib1: 'Matlab 數字濾波入門',
@@ -226,7 +226,7 @@ const messages = {
     },
     footer: {
       about_title: '关于超核电子',
-      about_content: 'HiPNIC 超核电子致力于开发具有高成本效益的高质量IMU / AHRS。多年的低成本MEMS传感器算法开发经验，提供成熟和先进的集成导航模组，为客户提供最具性价比的姿态检测方案。',
+      about_content: 'HiPNUC 超核电子致力于开发具有高成本效益的高质量IMU / AHRS。多年的低成本MEMS传感器算法开发经验，提供成熟和先进的集成导航模组，为客户提供最具性价比的姿态检测方案。',
       github: '前往我们的Github',
       library_title: '图书馆',
       lib1: 'Matlab 数字滤波入门',
