@@ -1,5 +1,5 @@
 <h1>欢迎至 超核电子HiPNUC 软体中心<br>
-<h2>(Welcome to software center of HiPNUC )</h2>
+(Welcome to software center of HiPNUC )
 </h1>
 
 <details markdown="1">
