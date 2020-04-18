@@ -2,8 +2,8 @@
 
 
 <details markdown="1">
-<summary>超核電子 HiPNUC 軟體中心介紹(繁體)<font color=gray size=72>color=gray</font></summary>
-
+<summary>超核電子 HiPNUC 軟體中心介紹(繁體)</summary>
+<font size=4>我是变大的字</font>
 ## 歡迎至超核電子軟體中心
 ## 提供開源範例與官方姿態記錄軟體
 
