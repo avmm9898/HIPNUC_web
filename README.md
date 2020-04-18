@@ -2,7 +2,7 @@
 
 
 <details markdown="1">
-<summary><h1>繁體中文</h1></summary>
+<h1><summary>繁體中文</summary></h1>
 
 | 文件夾            | 說明               |
 | ---------------- | ------------------ |
