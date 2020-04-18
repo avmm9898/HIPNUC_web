@@ -1,6 +1,6 @@
-<h1>欢迎至 超核电子HiPNUC 软体中心<br>
+<center><h1>欢迎至 超核电子HiPNUC 软体中心<br>
 (Welcome to software center of HiPNUC )
-</h1>
+</h1></center>
 
 ## 软件中心简介(简)
 
