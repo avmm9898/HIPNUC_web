@@ -1,6 +1,7 @@
 <h1 align="center">欢迎至 超核电子HiPNUC 软体中心<br>
 (Welcome to software center of HiPNUC )
 </h1>
+<br>
 
 ## 软件中心简介(简)
 
@@ -17,8 +18,8 @@
 | hardware         | 硬件资料           |
 | windows_pc_tools | 上位机             |
 | usb_uart_drivers | 串口驱动程序       |
-
 </details>
+
 <br>
 
 ## 軟體中心簡介(繁)
@@ -39,8 +40,9 @@
 | usb_uart_drivers | USB驅動程序，支援 Windows 與 Linux      |
 
 [下載全部](https://github.com/hipnuc/products/archive/master.zip)
-
 </details>
+
+<br>
 
 ## Introduction of software center
 <details markdown="1">
@@ -60,7 +62,6 @@ The following provides open-source examples and official attitude recording soft
 | usb_uart_drivers | USB drivers for Windows and Linux        |
 
 [Download All](https://github.com/hipnuc/products/archive/master.zip)
-
 </details>
 
 
