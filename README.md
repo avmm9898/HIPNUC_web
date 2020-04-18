@@ -2,7 +2,7 @@
 
 
 <details markdown="1">
-<summary>繁體中文</summary>
+<summary><h1>繁體中文</h1></summary>
 
 | 文件夾            | 說明               |
 | ---------------- | ------------------ |
@@ -18,10 +18,8 @@
 
 <details markdown="1" open="">
 <summary>简体中文</summary>
- 
 
-
-本仓库包含了所有HI2XX的产品资料，包含文档，例程及配套软件和驱动程序。
+## 本仓库包含了所有HI2XX的产品资料，包含文档，例程及配套软件和驱动程序。
 
 | 文件夹           | 说明               |
 | ---------------- | ------------------ |
@@ -34,7 +32,7 @@
 </details>
 
 <details markdown="1">
-<summary>简体中文</summary>
+<summary>English</summary>
 
 | Folder           | Description                              |
 | ---------------- | ---------------------------------------- |
