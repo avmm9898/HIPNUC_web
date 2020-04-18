@@ -4,13 +4,13 @@
 <details markdown="1" open="">
 <summary>繁體中文</summary>
 
-    | 文件夾            | 說明               |
-    | ---------------- | ------------------ |
-    | doc              | 產品用戶手冊       |
-    | examples         | 接收程序原始碼及各語言範例 |
-    | hardware         | 硬體資料           |
-    | windows_pc_tools | 官方主程式，僅支援 Windows             |
-    | usb_uart_drivers | USB驅動程序，支援 Windows 與 Linux      |
+| 文件夾            | 說明               |
+| ---------------- | ------------------ |
+| doc              | 產品用戶手冊       |
+| examples         | 接收程序原始碼及各語言範例 |
+| hardware         | 硬體資料           |
+| windows_pc_tools | 官方主程式，僅支援 Windows             |
+| usb_uart_drivers | USB驅動程序，支援 Windows 與 Linux      |
 
 [下載全部](https://github.com/hipnuc/products/archive/master.zip)
 
@@ -19,30 +19,30 @@
 <details markdown="1" open="1">
 <summary>简体中文</summary>
 
-    本仓库包含了所有HI2XX的产品资料，包含文档，例程及配套软件和驱动程序。
-    
-    | 文件夹           | 说明               |
-    | ---------------- | ------------------ |
-    | doc              | 产品用户手册       |
-    | examples         | 接收程序示例及源码 |
-    | hardware         | 硬件资料           |
-    | windows_pc_tools | 上位机             |
-    | usb_uart_drivers | 串口驱动程序       |
+本仓库包含了所有HI2XX的产品资料，包含文档，例程及配套软件和驱动程序。
+
+| 文件夹           | 说明               |
+| ---------------- | ------------------ |
+| doc              | 产品用户手册       |
+| examples         | 接收程序示例及源码 |
+| hardware         | 硬件资料           |
+| windows_pc_tools | 上位机             |
+| usb_uart_drivers | 串口驱动程序       |
 
 </details>
 
 <details markdown="1" open="">
-    <summary>简体中文</summary>
+<summary>简体中文</summary>
 
-    | Folder           | Description                              |
-    | ---------------- | ---------------------------------------- |
-    | doc              | User Guide                               |
-    | examples         | Simple example of data receiving |
-    | hardware         | Hardware documentation                   |
-    | windows_pc_tools | Uranus software for Windows               |
-    | usb_uart_drivers | USB drivers for Windows and Linux        |
-    
-    [Download All](https://github.com/hipnuc/products/archive/master.zip)
+| Folder           | Description                              |
+| ---------------- | ---------------------------------------- |
+| doc              | User Guide                               |
+| examples         | Simple example of data receiving |
+| hardware         | Hardware documentation                   |
+| windows_pc_tools | Uranus software for Windows               |
+| usb_uart_drivers | USB drivers for Windows and Linux        |
+
+[Download All](https://github.com/hipnuc/products/archive/master.zip)
 
 </details>
 
