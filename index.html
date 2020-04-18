@@ -3,7 +3,7 @@
 
 
 <head>
-	<title>Wireless IMU,Motion Sensor,Eletrical Compass|HiPNUC|9-axis Inertial Sensor|Arduino&RPI</title>
+	<title>HiPNUC|Wireless IMU,Motion Sensor,Eletrical Compass|9-axis Inertial Sensor|Arduino&RPI</title>
 	<link rel="alternate" hreflang="en" href="http://www.hipnuc.com/index.html" />
 	<link rel="alternate" hreflang="zh-Hans" href="http://www.hipnuc.com/index_cn.html" />
 	<link rel="alternate" hreflang="zh-Hant" href="http://www.hipnuc.com/index_tc.html" />
@@ -23,62 +23,8 @@
 	<link rel="stylesheet" href="css/animate_minified.css">
 	<link rel="stylesheet" href="css/style_minified.css">
 
-	<script type="application/ld+json">
-		[ {
-			"@context" : "http://schema.org",
-			"@type" : "Product",
-			"name" : "HI229",
-			"image" : "http://www.hipnuc.com/images/product/HI229.png",
-			"description" : "9-axis IMU",
-			"url" : "https://www.hipnuc.com/products.html",
-			"brand" : {
-			  	"@type" : "Brand",
-			  	"name" : "HiPNUC"
-			},
-			"offers" : {
-				"@type" : "Offer",
-        		"price" : "30",
-        		"priceCurrency" : "USD",
-			  	"url": "https://class.ruten.com.tw/user/index00.php?s=hipnuc_tw"
-			}
-			
-		  },{
-			"@context" : "http://schema.org",
-			"@type" : "Product",
-			"name" : "HI226",
-			"image" : "http://www.hipnuc.com/images/product/HI226.png",
-			"description" : "6-axis IMU",
-			"url" : "https://www.hipnuc.com/products.html",
-			"brand" : {
-			  	"@type" : "Brand",
-			  	"name" : "HiPNUC"
-			},
-			"offers" : {
-			  	"@type" : "Offer",
-        		"price" : "23",
-        		"priceCurrency" : "USD",
-			  	"url": "https://class.ruten.com.tw/user/index00.php?s=hipnuc_tw"
-			
-			}
-		  }, {
-			"@context" : "http://schema.org",
-			"@type" : "Product",
-			"name" : "HI221",
-			"image" : "http://www.hipnuc.com/images/product/HI221.png",
-			"description" : "Wireless 9-axis IMU for multi points",
-			"url" : "https://www.hipnuc.com/products.html",
-			"brand" : {
-			  	"@type" : "Brand",
-			  	"name" : "HiPNUC"
-			},
-			"offers" : {
-			  	"@type" : "Offer",
-        		"price" : "55",
-        		"priceCurrency" : "USD",
-			  	"url": "https://class.ruten.com.tw/user/index00.php?s=hipnuc_tw"
-			}
-		  } ]
-	</script>
+
+
 	<script>
 		function getCookieValueByIndex(startIndex) {
 			var endIndex = document.cookie.indexOf(";", startIndex);
@@ -98,9 +44,10 @@
 			}
 			return null;
 		}
+
 		var tmp_lang = getCookie("lang");
 		var short_cut = "";
-
+		var sys = "";
 
 		if (tmp_lang == "cn") {
 			short_cut = "index_cn.html";
@@ -109,6 +56,18 @@
 		else if (tmp_lang == "tc") {
 			short_cut = "index_tc.html";
 			window.location.assign(short_cut);
+		}
+		else if (tmp_lang != "en") {
+			sys = (navigator.language || navigator.userLanguage || navigator.browserLanguage || navigator.systemLanguage).toLowerCase();
+			if (sys == "zh-cn" || sys == "zh-sg") {
+				short_cut = "index_cn.html";
+				window.location.assign(short_cut);
+			}
+			else if (sys == "zh-tw") {
+				short_cut = "index_tc.html";
+				window.location.assign(short_cut);
+			}
+
 		}
 
 	</script>

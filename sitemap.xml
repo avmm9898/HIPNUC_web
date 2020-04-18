@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
  <url>
-    <loc>https://www.hipnuc.com/index.html</loc>
+    <loc>https://www.hipnuc.com/index_cn.html</loc>
     <xhtml:link 
                rel="alternate"
                hreflang="zh-Hans"
@@ -18,7 +18,7 @@
                href="https://www.hipnuc.com/index.html"/>
   </url>
   <url>
-    <loc>https://www.hipnuc.com/products.html</loc>
+    <loc>https://www.hipnuc.com/products_cn.html</loc>
      <xhtml:link 
                rel="alternate"
                hreflang="zh-Hans"
@@ -33,7 +33,7 @@
                href="https://www.hipnuc.com/products.html"/>
   </url>
   <url>
-    <loc>https://www.hipnuc.com/contact.html</loc>
+    <loc>https://www.hipnuc.com/contact_cn.html</loc>
          <xhtml:link 
                rel="alternate"
                hreflang="zh-Hans"
