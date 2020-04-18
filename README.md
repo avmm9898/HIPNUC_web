@@ -1,7 +1,7 @@
 # HIPNUC  產品資料
 
 
-<details markdown="1" open="">
+<details markdown="1">
 <summary>繁體中文</summary>
 
 | 文件夾            | 說明               |
@@ -16,7 +16,7 @@
 
 </details>
 
-<details markdown="1" open="1">
+<details markdown="1" open="">
 <summary>简体中文</summary>
 
 本仓库包含了所有HI2XX的产品资料，包含文档，例程及配套软件和驱动程序。
@@ -31,7 +31,7 @@
 
 </details>
 
-<details markdown="1" open="">
+<details markdown="1">
 <summary>简体中文</summary>
 
 | Folder           | Description                              |
