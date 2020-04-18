@@ -1,5 +1,18 @@
 # HIPNUC_web
 
+<details markdown="1" open="1">
+<summary>什么是tinper</summary>
+
+| 文件夾           | 說明               |
+| ---------------- | ------------------ |
+| doc              | 產品用戶手冊       |
+| examples         | 接收程序原始碼及各語言範例 |
+| hardware         | 硬體資料           |
+| windows_pc_tools         | 官方主程式，僅支援 Windows             |
+| usb_uart_drivers | USB驅動程序，支援 Windows 與 Linux      |
+</details>
+
+
 lang/lang_pack.js 是包含所有文本的js檔
 
 在各 page 當中設定變數，頁面載入時會把變數內容換成 JS 檔的
