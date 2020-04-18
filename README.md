@@ -2,7 +2,7 @@
 
 
 <details markdown="1">
-<summary><font color=gray size=72>超核電子 HiPNUC 軟體中心介紹(繁體)</font></summary>
+<summary>超核電子 HiPNUC 軟體中心介紹(繁體)</summary>
 ## 歡迎至超核電子軟體中心
 ## 提供開源範例與官方姿態記錄軟體
  | 資料夾            | 說明               |
