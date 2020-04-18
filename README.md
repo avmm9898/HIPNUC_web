@@ -5,7 +5,7 @@
 ## 软件中心简介(简)
 
 <details markdown="1" open="">
-<summary></summary>
+<summary>展开</summary>
 
 <h3> 本仓库包含了所有HI2XX的产品资料，包含文档，例程及配套软件和驱动程序。<br>
 </h3>
