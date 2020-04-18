@@ -1,6 +1,6 @@
-<center><h1>欢迎至 超核电子HiPNUC 软体中心<br>
+<h1 style="text-align:center">欢迎至 超核电子HiPNUC 软体中心<br>
 (Welcome to software center of HiPNUC )
-</h1></center>
+</h1>
 
 ## 软件中心简介(简)
 
@@ -19,7 +19,7 @@
 | usb_uart_drivers | 串口驱动程序       |
 
 </details>
-<br><br><br><br>
+<br>
 
 ## 軟體中心簡介(繁)
 <details markdown="1">
