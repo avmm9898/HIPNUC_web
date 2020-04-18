@@ -3,15 +3,17 @@
 
 <details markdown="1">
 <summary>超核電子 HiPNUC 軟體中心介紹(繁體)</summary>
+
 ## 歡迎至超核電子軟體中心
 ## 提供開源範例與官方姿態記錄軟體
- | 資料夾            | 說明               |
- | ---------------- | ------------------ |
- | doc              | 產品用戶手冊       |
- | examples         | 接收程序原始碼及各語言範例 |
- | hardware         | 硬體資料           |
- | windows_pc_tools | 官方主程式，僅支援 Windows             |
- | usb_uart_drivers | USB驅動程序，支援 Windows 與 Linux      |
+
+| 資料夾            | 說明               |
+| ---------------- | ------------------ |
+| doc              | 產品用戶手冊       |
+| examples         | 接收程序原始碼及各語言範例 |
+| hardware         | 硬體資料           |
+| windows_pc_tools | 官方主程式，僅支援 Windows             |
+| usb_uart_drivers | USB驅動程序，支援 Windows 與 Linux      |
 
 [下載全部](https://github.com/hipnuc/products/archive/master.zip)
 
