@@ -1,20 +1,24 @@
-# HIPNUC  產品資料
-
+<h1>欢迎至 超核电子HiPNUC 软体中心<br>
+<h2>(Welcome to software center of HiPNUC )</h2>
+</h1>
 
 <details markdown="1">
-<summary>超核電子 HiPNUC 軟體中心介紹(繁體)</summary>
+<summary>軟體使用簡介(繁體)(點擊展開) </summary>
 
-<h2> 
-歡迎至超核電子軟體中心<br>
-提供開源範例與官方姿態記錄軟體<br>
-</h2>
-
+<h3> 
+<br>
+本公司產品與軟體持續維護更新，<br>
+為用戶提供更良好的使用體驗與功能，<br>
+並提供開源範例與官方姿態記錄軟體，<br>
+用戶可藉由範例與使用手冊自行創造更多應用。<br>
+<br>
+</h3>
 
 
 | 資料夾            | 說明               |
 | ---------------- | ------------------ |
 | doc              | 產品用戶手冊       |
-| examples         | 接收程序原始碼及各語言範例 |
+| examples         | 接收程式原始碼及各語言範例 |
 | hardware         | 硬體資料           |
 | windows_pc_tools | 官方主程式，僅支援 Windows             |
 | usb_uart_drivers | USB驅動程序，支援 Windows 與 Linux      |
