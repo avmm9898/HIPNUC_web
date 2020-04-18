@@ -1,8 +1,8 @@
 # HIPNUC  產品資料
 
 
-<h1><details markdown="1"></h1>
-<summary>繁體中文</summary>
+<h1><details markdown="1">
+<summary>繁體中文</summary></h1>
 
 | 文件夾            | 說明               |
 | ---------------- | ------------------ |
