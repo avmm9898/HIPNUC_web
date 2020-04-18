@@ -2,7 +2,7 @@
 
 
 <h1><details markdown="1">
-<summary>繁體中文</summary></h1>
+<summary>繁體中文</summary>
 
 | 文件夾            | 說明               |
 | ---------------- | ------------------ |
@@ -14,7 +14,7 @@
 
 [下載全部](https://github.com/hipnuc/products/archive/master.zip)
 
-</details>
+</details></h1>
 
 <details markdown="1" open="">
 <summary>简体中文</summary>
