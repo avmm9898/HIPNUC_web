@@ -3,10 +3,9 @@
 </h1>
 
 <details markdown="1">
-<summary>軟體使用簡介(繁體)(點擊展開) </summary>
+<summary><p><font size="14">軟體使用簡介(繁體)</font></p></summary>
 
 <h3> 
-<br>
 本公司產品與軟體持續維護更新，<br>
 為用戶提供更良好的使用體驗與功能，<br>
 並提供開源範例與官方姿態記錄軟體，<br>
