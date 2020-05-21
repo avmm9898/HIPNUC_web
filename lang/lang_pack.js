@@ -15,7 +15,7 @@ const messages = {
       title1: 'Sample Requests & Supports',
       content1: 'If you need samples, bulk purchase, or other supports, please contact our office.',
       beijing: 'Beijing Head Office',
-      b_address: 'Address : B01-1-1001, Fuli Yunhe No.10, Zhaodengyu St, Tongzhou, Beijing, China',
+      b_address: 'Address : 340, 3rd Floor, Singularity Center, Building 1, No. 1 Yard East Road, Shahe Town, Changping District, Beijing',
       b_phone: 'Phone (Mr.Liu) : +86 18612030435',
       taobao: 'Buy on Taobao >',
       taipei: 'Taipei',
