@@ -89,9 +89,13 @@
 						aria-haspopup="true" aria-expanded="true">{{ $t("navbar.products") }}</a>
 					<!-- .dropdown-menu 下拉選單內容 -->
 					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-						<a class="dropdown-item" href="HI226_229.html">HI226&HI229</a>
-						<a class="dropdown-item" href="HI221.html">HI221</a>
-						<a class="dropdown-item" href="CH110.html">CH110</a>
+						<a class="dropdown-item disabled">{{ $t("navbar.industrial") }}</a>        
+						<a class="dropdown-item" href="HI226_229.html">&nbsp&nbsp&nbsp&nbsp{{ $t("navbar.hi226") }}</a>
+						<a class="dropdown-item" href="HI226_229.html">&nbsp&nbsp&nbsp&nbsp{{ $t("navbar.hi229") }}</a>
+						<a class="dropdown-item" href="CH110.html">&nbsp&nbsp&nbsp&nbsp{{ $t("navbar.ch110") }}</a>
+						<a class="dropdown-item disabled">{{ $t("navbar.wireless") }}</a>   
+						<a class="dropdown-item" href="HI221.html">&nbsp&nbsp&nbsp&nbsp{{ $t("navbar.hi221") }}</a>
+						
 					</div>
 				</li>
 					<li class="nav-item"><a href="javascript:doc_center()"
