@@ -27,6 +27,7 @@ const messages = {
     products: {
       hi221_intro: 'Wireless and high-speed data acquisition for multi points and motion capturing.',
       hi226_intro: 'Mainly target for robot heading measurement, high speed attitude acquisition and motion stabilization equipment.',
+      ch110_intro: 'Solid quality for you. CH110 is a IP67 waterproof design IMU, supporting 232/485/CAN interface',
       table_hi221_h1: 'Wireless IMU, VRU, AHRS Modules',
       table_hi221_app1: 'Wireless data acquisition for multi points',
       table_hi221_app2: 'High-speed data acquisition',
@@ -38,6 +39,9 @@ const messages = {
       table_hi229_app1:'Virtual reality',
       table_hi229_app2:'Measurement of high-speed dynamic attitude',
       table_hi229_app3:'Electronic compass',
+      table_ch110_h1: 'Industrial Design IMU',
+      table_ch110_app1: 'For industrial robot and AGV.',
+      table_ch110_app2: 'IP67 design',
       table_image: 'Image',
       table_product: 'Product',
       table_applications: 'Applications',
@@ -45,7 +49,7 @@ const messages = {
       table_data_interface: 'Data Interface',
       table_size: 'Size (WxLxH) mm',
       table_wireless_rate: 'Maximum of Wireless Transmission Rate',
-      table_uart_rate: 'Maximum of UART Output Rate',
+      table_uart_rate: 'Output Rate (UART)',
       table_avg_standby: 'Average Standby Current',
       table_avg_working: 'Average Working Current',
       table_avg_time: 'Average Working Time',
@@ -82,8 +86,8 @@ const messages = {
   tc: {
     navbar: {
       home: '首頁',
-      products: '產品型錄',
-      documentation: '文件中心',
+      products: '產品',
+      documentation: '資料下載',
       contact: '聯絡與購買',
       language: '語言',
     },
@@ -94,6 +98,7 @@ const messages = {
     products: {
       hi221_intro: '無線和高速數據採集，並且可用於多點運動捕捉。',
       hi226_intro: '主要用於機器人航向測量，高速姿態採集和運動穩定設備。',
+      ch110_intro: 'CH110擁有堅實可靠的設計，搭配高規格IP67防水防塵，支援232/485/CAN連接端口，適用於工業機器人與AGV等。',
       table_hi221_h1: '無線 IMU，VRU，AHRS 模組',
       table_hi221_app1: '多點無線數據採集',
       table_hi221_app2: '高速數據採集',
@@ -105,6 +110,9 @@ const messages = {
       table_hi229_app1:'虛擬實境',
       table_hi229_app2:'高速動態姿態測量',
       table_hi229_app3:'電子羅盤',
+      table_ch110_h1: '工業設計慣性測量儀',
+      table_ch110_app1: '適用工業機器人，AGV',
+      table_ch110_app2: 'IP67 防水防塵',
       table_image: '圖片',
       table_product: '產品型號',
       table_applications: '主要應用領域',
@@ -112,7 +120,7 @@ const messages = {
       table_data_interface: '數據接口',
       table_size: '尺寸 (寬x長x高) mm',
       table_wireless_rate: '最大無線傳輸速率',
-      table_uart_rate: '最大UART傳輸速率',
+      table_uart_rate: 'UART傳輸速率',
       table_avg_standby: '平均待機電流',
       table_avg_working: '平均工作電流 ',
       table_avg_time: '平均工作時長',
@@ -133,7 +141,7 @@ const messages = {
       title1: '樣本申請與銷售支援',
       content1: '如果您需要申請樣品，批量購買或其他支援與服務，請聯絡我們的辦公室。',
       beijing: '北京總公司',
-      b_address: '地址 : 北京市通州區趙登禹大街富力運河十號B01-1-1001',
+      b_address: '地址 : 北北京市昌平區沙河鎮能源東路1號院1號樓奇點中心3層340',
       b_phone: '連絡電話 (劉先生) : +86 18612030435',
       taobao: '前往淘寶購買 >',
       taipei: '台灣代理',
@@ -163,8 +171,8 @@ const messages = {
   cn: {
     navbar: {
       home: '首页',
-      products: '产品型录',
-      documentation: '文件中心',
+      products: '产品',
+      documentation: '资料下载',
       contact: '联络与购买',
       language: '语言',
     },
@@ -175,6 +183,7 @@ const messages = {
     products: {
       hi221_intro: '无线和高速数据采集，並且可用于多点运动捕捉。',
       hi226_intro: '主要用于机器人航向测量，高速姿态采集和运动稳定设备。',
+      ch110_intro: 'CH110拥有坚实可靠的设计，高规格IP67防水防尘，支持232/485 / CAN接口，适用于工业机器人与AGV。',
       table_hi221_h1: '无线 IMU，VRU，AHRS 模块',
       table_hi221_app1: '多点无线数据采集',
       table_hi221_app2: '高速数据采集',
@@ -186,6 +195,9 @@ const messages = {
       table_hi229_app1:'虚拟实境',
       table_hi229_app2:'高速动态姿态测量',
       table_hi229_app3:'电子罗盘',
+      table_ch110_h1: '工业设计姿态感测产品',
+      table_ch110_app1: '适用工业机器人，AGV',
+      table_ch110_app2: 'IP67 防水防尘',
       table_image: '图片',
       table_product: '产品型号',
       table_applications: '主要应用领域',
@@ -193,7 +205,7 @@ const messages = {
       table_data_interface: '数据接口',
       table_size: '尺寸 (宽x长x高) mm',
       table_wireless_rate: '最大无线传输速率',
-      table_uart_rate: '最大UART传输速率',
+      table_uart_rate: 'UART传输速率',
       table_avg_standby: '平均待机电流',
       table_avg_working: '平均工作电流 ',
       table_avg_time: '平均工作时长',
@@ -214,8 +226,8 @@ const messages = {
       title1: '样本申请与销售支援',
       content1: '如果您需要申请样品，批量购买或其他支援与服务，请联络我们的办公室。',
       beijing: '北京总公司',
-      b_address: '地址 : 北京市通州区赵登禹大街富力运河十号B01-1-1001',
-      b_phone: '连络电话 (刘先生) : +86 18612030435',
+      b_address: '地址 : 北京市昌平区沙河镇能源东路1号院1号楼奇点中心3层340',
+      b_phone: '连络电话 (刘国兵) : +86 18612030435',
       taobao: '前往淘宝购买 >',
       taipei: '台湾代理',
       tw_phone: '联络电话 (许先生) : +886 0908179107',
@@ -245,6 +257,7 @@ const messages = {
 
 function doCookieSetup(name, lang) {
   document.cookie = name + "=" + escape(lang);
+  window.location.reload();
 }
 function getCookie(name) {
   var arg = escape(name) + "=";

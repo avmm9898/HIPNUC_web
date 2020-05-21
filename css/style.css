@@ -3079,16 +3079,16 @@ textarea.form-control.is-invalid {
   z-index: 1000;
   display: none;
   float: left;
-  min-width: 7rem;
+  min-width: 8rem;
 
   margin: 0 0;
-  font-size: 100%;
-  color: #212529;
+  font-size: 90%;
+  color: rgb(37, 26, 49);
   text-align: left;
   list-style: none;
-  background-color: #fff;
+  background-color: rgb(37, 26, 49);
   background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.15);
+  border: 3px solid rgba(0, 0, 0, 0.562);
   border-radius: 1.5rem;
 }
 
@@ -3262,14 +3262,14 @@ textarea.form-control.is-invalid {
 .dropdown-item {
   display: block;
   width: 100%;
-  padding: 0.25rem 0rem 0.25rem 1.5rem;
+  padding: 0.1rem 0.5rem 0.1rem 0.1rem;
   clear: both;
   font-weight: 400;
-  color: #212529;
-  text-align: inherit;
+  color: #f3f3f3;
+  text-align: center;
   white-space: nowrap;
-  background-color: transparent;
-  border: 0;
+  background-color: rgb(37, 26, 49);
+
 }
 
 .dropdown-item:first-child {
@@ -3284,9 +3284,9 @@ textarea.form-control.is-invalid {
 
 .dropdown-item:hover,
 .dropdown-item:focus {
-  color: #16181b;
+  color: #f7f7f7;
   text-decoration: none;
-  background-color: rgb(130, 180, 220);
+  background-color: rgb(80, 108, 131);
 }
 
 .dropdown-item.active,

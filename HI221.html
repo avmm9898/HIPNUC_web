@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+	<title>HI221 | HiPNUC</title>
+	<link rel="alternate" hreflang="en" href="http://www.hipnuc.com/products.html" />
+	<link rel="alternate" hreflang="zh-Hans" href="http://www.hipnuc.com/products_cn.html" />
+	<link rel="alternate" hreflang="zh-Hant" href="http://www.hipnuc.com/products_tc.html" />
+	<link rel="alternate" hreflang="x-default" href="http://www.hipnuc.com/products.html" />
+
+	<meta name="description" content="超核產品介紹:IMU(Inertial measurement unit)、AHRS，姿態檢測，動作捕捉，導航與定位等產品">
+	<meta name="keywords" content="電子羅盤模組,無線IMU">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="css/poppins_font.css">
+	<link rel="stylesheet" href="css/material_icon.css">
+	<link rel="stylesheet" href="css/icomoon_minified.css">
+	<link rel="stylesheet" href="css/animate_minified.css">
+	<link rel="stylesheet" href="css/style_minified.css">
+
+</head>
+
+<body>
+	<!-- navbar -->
+	<nav id="navbar" class="navbar px-md-0 navbar-expand-lg  navbar-dark  bg-dark ftco-navbar-light">
+		<div class="container-fluid px-md-5">
+			<a class="navbar-brand" href="index.html">HIPNUC <span>Electronic</span></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+				aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="oi oi-menu"></span> Menu
+			</button>
+			<div class="collapse navbar-collapse" id="ftco-nav">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item"><a href="index.html" class="nav-link">{{ $t("navbar.home") }}</a></li>
+					<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"
+							aria-haspopup="true" aria-expanded="true">{{ $t("navbar.products") }}</a>
+						<!-- .dropdown-menu 下拉選單內容 -->
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<a class="dropdown-item" href="HI226_229.html">HI226&HI229</a>
+							<a class="dropdown-item" href="HI221.html">HI221</a>
+							<a class="dropdown-item" href="CH110.html">CH110</a>
+						</div>
+					</li>
+					<li class="nav-item"><a href="javascript:doc_center()"
+							class="nav-link">{{ $t("navbar.documentation") }}</a>
+					</li>
+					<li class="nav-item"><a href="contact.html" class="nav-link">{{ $t("navbar.contact") }}</a></li>
+					<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"
+							aria-haspopup="true" aria-expanded="true"><i class="material-icons">language</i></a>
+						<!-- .dropdown-menu 下拉選單內容 -->
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<a class="dropdown-item" href="#" onclick="doCookieSetup('lang', 'en')">English</a>
+							<a class="dropdown-item" href="#" onclick="doCookieSetup('lang', 'cn')">简体中文</a>
+							<a class="dropdown-item" href="#" onclick="doCookieSetup('lang', 'tc')">繁體中文</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+
+	<!-- pretty cover image section-->
+	<section class="ftco-consultation ftco-section js-fullheight img"
+		style="background-image: url(images/hi221-cover.jpg);">
+
+		<div class="container">
+			<div class="row d-md-flex justify-content-end">
+				<div class="col-md-6 half p-3 p-md-5 ftco-animate heading-section">
+
+					<h2 class="sm-6">HI221</h2>
+					<h3 id="hi221_cover" class="sm-6">{{ $t('products.hi221_intro') }}</h3>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- product table-->
+	<section class="intro-bg " style="background-image: url('images/library.jpg'); min-height: 850px;">
+		<div class="overlay"></div>
+		<div id='table' class="container-fluid">
+			<!-- product table HI221 -->
+			<div class="container pt-5 pb-5 col-md-8">
+				<div class="tech-table table-responsive-sm" style="padding-left: 3%;padding-right: 3%;" id="accordion">
+
+					<H2>{{ $t('products.table_hi221_h1')}}</H2>
+
+					<table class="table text-center">
+						<thead>
+							<tr>
+								<th scope="col">{{ $t('products.table_product')}}</th>
+								<td class="tech-table__column-title" scope="col">
+									<span>HI221</span>
+								</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>{{ $t('products.table_image')}}</th>
+								<td>
+									<img style="width: 80%;max-height: 150px;max-width: 150px;max-width: 150px"
+										data-sizes="auto" src="images/product/HI221.png" alt="Wireless IMU Module">
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">{{ $t('products.table_applications')}}</th>
+								<td>
+									<div class="container-fluid" align ="center">
+										<ul style="padding-left:5%;">
+											<li>{{ $t('products.table_hi221_app1')}}</li>
+											<li>{{ $t('products.table_hi221_app2')}}</li>
+											<li>{{ $t('products.table_hi221_app3')}}</li>
+										</ul>
+
+									</div>
+
+								</td>
+							</tr>
+
+							<tr>
+								<th scope="row">{{ $t('products.gyro')}}</th>
+								<td>✓</td>
+							</tr>
+							<tr>
+								<th scope="row">{{ $t('products.acce')}}</th>
+								<td>✓</td>
+							</tr>
+							<tr>
+								<th scope="row">{{ $t('products.magnet')}}</th>
+								<td>✓</td>
+							</tr>
+							<tr>
+								<th scope="row">{{ $t('products.table_hi221_max_number')}}</th>
+								<td>8</td>
+							</tr>
+
+							<tr>
+								<th scope="row">{{ $t('products.table_download')}}</th>
+								<td><a class="btn"
+										href="https://github.com/hipnuc/products">{{ $t('products.download')}}</a>
+								</td>
+							</tr>
+
+
+						</tbody>
+						<tbody id="collapse1" class="collapse in none">
+							<tr>
+								<th scope="row">{{ $t('products.table_data_interface')}}</th>
+								<td>{{ $t('products.table_hi221_data_interface')}}</td>
+							</tr>
+
+							<tr>
+								<th scope="row">{{ $t('products.table_size')}}</th>
+								<td>20 x 38 x 8.5</td>
+							</tr>
+							<tr>
+								<th scope="row">{{ $t('products.table_wireless_rate')}}</th>
+								<td>100 Hz</td>
+							</tr>
+							<tr>
+								<th scope="row">{{ $t('products.table_uart_rate')}}</th>
+								<td>200 Hz</td>
+							</tr>
+							<tr>
+								<th scope="row">{{ $t('products.table_avg_standby')}}</th>
+								<td>20 uA @3.3V</td>
+							</tr>
+							<tr>
+								<th scope="row">{{ $t('products.table_avg_working')}}</th>
+								<td>30 mA @3.3V</td>
+							</tr>
+							<tr>
+								<th scope="row">{{ $t('products.table_avg_time')}}</th>
+								<td>8 hours</td>
+							</tr>
+							<tr>
+								<th class="pt-3" scope="row">
+									<span style="font-size: 20px;">{{ $t('products.gyro')}}</span>
+								</th>
+								<td></td>
+							</tr>
+							<tr>
+								<th scope="row">{{ $t('products.table_range')}}</th>
+								<td>± 2000 °/s</td>
+							</tr>
+							<tr>
+								<th scope="row">{{ $t('products.table_sampling_rate')}}</th>
+								<td>2000 Hz</td>
+							</tr>
+							<tr>
+								<th class="pt-3" scope="row">
+									<span style="font-size: 20px;">{{ $t('products.acce')}}</span>
+								</th>
+								<td></td>
+							</tr>
+							<tr>
+								<th scope="row">{{ $t('products.table_range')}}</th>
+								<td>± 8 G</td>
+							</tr>
+							<tr>
+								<th scope="row">{{ $t('products.table_sampling_rate')}}</th>
+								<td>125 Hz</td>
+							</tr>
+							<tr>
+								<th class="pt-3" scope="row">
+									<span style="font-size: 20px;">{{ $t('products.magnet')}}</span>
+								</th>
+								<td></td>
+							</tr>
+							<tr>
+								<th scope="row">{{ $t('products.table_range')}}</th>
+								<td>± 8 Gauss</td>
+							</tr>
+							<tr>
+								<th scope="row">{{ $t('products.table_sampling_rate')}}</th>
+								<td>100 Hz</td>
+							</tr>
+						</tbody>
+
+					</table>
+					<p>{{ $t('products.table_gravity_note')}}</p>
+					<div class="pt-3 text-center">
+						<button class="btn pushme"
+							style="vertical-align:middle"><span>{{ $t('products.table_more')}}</span></button>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+
+	<section class="intro-bg js-fullheight" style="background-image: url('images/uranus/uranus.png');">
+
+		<div class="overlay"></div>
+
+		<div class="container-fluid px-md-5" style="text-align:center">
+			<div class="row no-gutters slider-text js-fullheight align-items-center justify-content-start"
+				data-scrollax-parent="true">
+				<div class="container-fluid ftco-animate">
+					<h1>Uranus</h1>
+					<h1 id="software1" style="font-size:160%;" class="pb-3">{{$t('products.software_intro')}}</h1>
+					<a id="software2" class="btn py-3 px-4"
+						href="https://github.com/hipnuc/products/tree/master/windows_pc_tools">{{$t('products.download')}}</a>
+
+					<!--
+			<div class="col-sm-6 pt-3 mx-auto" ><img style="-webkit-filter:drop-shadow(5px 5px 5px #333);" src="images/uranus/features.png"></div>
+			-->
+				</div>
+			</div>
+
+		</div>
+
+
+	</section>
+
+
+
+
+	<!-- footer section for development-->
+	<footer id="footer" class="ftco-footer ftco-bg-dark ftco-section">
+		<div class="container">
+			<div class="row mb-5">
+				<div class="col-md">
+					<div class="ftco-footer-widget">
+						<h2 class="ftco-heading-2">{{ $t("footer.about_title") }}</h2>
+						<p style="font-size:80%;text-align:justify;text-justify:inter-ideograph;">
+							{{ $t("footer.about_content") }}
+						</p>
+						<ul style="font-size:80%;">
+							<li><a href=https://github.com/hipnuc/products>{{ $t("footer.github") }} <span
+										class="ion-ios-arrow-forward"></span></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md">
+					<div class="ftco-footer-widget">
+						<h2 class="ftco-heading-2">{{ $t("footer.library_title") }}</h2>
+						<ul style="font-size:80%">
+							<li><a href=https://zhuanlan.zhihu.com/p/65483011>{{ $t("footer.lib1") }} <span
+										class="ion-ios-arrow-forward"></span></a></li>
+							<li><a href=https://zhuanlan.zhihu.com/p/60301874>{{ $t("footer.lib2") }} <span
+										class="ion-ios-arrow-forward"></span></a></li>
+							<li><a href=https://zhuanlan.zhihu.com/p/56073859>{{ $t("footer.lib3") }} <span
+										class="ion-ios-arrow-forward"></span></a></li>
+							<li><a href=https://zhuanlan.zhihu.com/p/58379051>{{ $t("footer.lib4") }} <span
+										class="ion-ios-arrow-forward"></span></a></li>
+							<li><a href=https://zhuanlan.zhihu.com/p/58379051>{{ $t("footer.lib5") }} <span
+										class="ion-ios-arrow-forward"></span></a></li>
+
+						</ul>
+					</div>
+				</div>
+				<div class="col-md">
+					<div class="ftco-footer-widget">
+						<h2 class="ftco-heading-2">{{ $t("footer.opentime_title") }}</h2>
+						<p style="font-size:80%;">{{ $t("footer.opentime1") }}</p>
+						<p style="font-size:80%;">{{ $t("footer.opentime2") }}</p>
+					</div>
+				</div>
+				<div class="col-md">
+					<div class="ftco-footer-widget">
+						<h2 class="ftco-heading-2">{{ $t("footer.sales1") }}</h2>
+						<p style="font-size:80%;"><a href="tel:+8618612030435" class="icon icon-phone"> +86
+								18612030435</a></p>
+						<p style="font-size:80%;"><a href="mailto:liuguobing@hipnuc.com" class="icon icon-envelope">
+								liuguobing@hipnuc.com</a></p>
+						<h2 class="ftco-heading-2">{{ $t("footer.sales2") }}</h2>
+						<p style="font-size:80%;"><a href="tel:+886 0988592841" class="icon icon-phone"> +886
+								0908179107</a></p>
+						<p style="font-size:80%;"><a href="mailto:hipnuctw@gmail.com" class="icon icon-envelope">
+								hipnuctw@gmail.com</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 text-center">
+
+					<p style="font-size:70%;">
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						Copyright &copy; 2020 All rights reserved | Made by HiPNUC and <a href="https://colorlib.com"
+							target="_blank">Colorlib</a>
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- loader -->
+	<div id="ftco-loader" class="show fullscreen">
+		<svg class="circular" width="48px" height="48px" xmlns="http://www.w3.org/2000/svg" version="1.1">
+			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee">
+				<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+					stroke="#F96D00">
+		</svg></div>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-migrate-3.0.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/aos.js"></script>
+	<script src="js/jquery.animateNumber.min.js"></script>
+	<script src="js/scrollax.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="lang/vue.js"></script>
+	<script src="lang/vuei18n.js"></script>
+	<script src="lang/lang_pack.js"></script>
+
+	<script>
+		function init_lang() {
+			var i18n = new VueI18n({ locale: 'en', fallbackLocale: 'en', messages: messages });
+			var tmp_lang = getCookie("lang");
+			if (tmp_lang == "en" || tmp_lang == "cn" || tmp_lang == "tc")
+				i18n.locale = tmp_lang
+
+			new Vue({ i18n: i18n }).$mount('#navbar');
+			new Vue({ i18n: i18n }).$mount('#hi221_cover');
+			new Vue({ i18n: i18n }).$mount('#hi226_cover');
+			new Vue({ i18n: i18n }).$mount('#table');
+			new Vue({ i18n: i18n }).$mount('#software1');
+			new Vue({ i18n: i18n }).$mount('#software2');
+			new Vue({ i18n: i18n }).$mount('#footer');
+		}
+		init_lang()
+
+
+	</script>
+	<script>
+		var tmp_lang = getCookie("lang");
+		function collapse(id, btn) {
+			if ($(id).is(":visible") == false) {
+				if (tmp_lang == "cn" || tmp_lang == "tc")
+					$(btn).text('收起');
+				else
+					$(btn).text('Less');
+				$(id).collapse('show');
+			}
+			else if ($(id).is(":visible") == true) {
+				if (tmp_lang == "cn" || tmp_lang == "tc")
+					$(btn).text('更多');
+				else
+					$(btn).text('More');
+				$(id).collapse('hide');
+			}
+		}
+		$(document).ready(function () {
+			if (tmp_lang == "cn" || tmp_lang == "tc")
+				$(".pushme").text('收起');
+			else
+				$(".pushme").text('Less');
+			if (tmp_lang == "cn" || tmp_lang == "tc")
+				$(".pushme").text('更多');
+			else
+				$(".pushme").text('More');
+			if (tmp_lang == "cn" || tmp_lang == "tc")
+				$(".pushme2").text('收起');
+			else
+				$(".pushme2").text('Less');
+			if (tmp_lang == "cn" || tmp_lang == "tc")
+				$(".pushme2").text('更多');
+			else
+				$(".pushme2").text('More');
+
+		});
+
+		$(".pushme").click(function () {
+			collapse("#collapse1", ".pushme");
+		})
+		$(".pushme2").click(function () {
+			collapse("#collapse2", ".pushme2");
+		})
+	</script>
+
+
+</body>
+
+</html>

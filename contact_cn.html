@@ -9,8 +9,7 @@
 	<link rel="alternate" hreflang="zh-Hant" href="http://www.hipnuc.com/contact_tc.html" />
 	<link rel="alternate" hreflang="x-default" href="http://www.hipnuc.com/contact.html" />
 
-	<meta name="description"
-		content="购买姿态检测，机器人动作捕捉，导航与定位产品">
+	<meta name="description" content="购买姿态检测，机器人动作捕捉，导航与定位产品">
 	<meta name="keywords" content="购买,电子罗盘,无线IMU">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -19,7 +18,7 @@
 	<link rel="stylesheet" href="css/icomoon_minified.css">
 	<link rel="stylesheet" href="css/animate_minified.css">
 	<link rel="stylesheet" href="css/style_minified.css">
-	
+
 </head>
 
 <body>
@@ -34,7 +33,15 @@
 			<div class="collapse navbar-collapse" id="ftco-nav">
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item"><a href="index_cn.html" class="nav-link">{{ $t("navbar.home") }}</a></li>
-					<li class="nav-item"><a href="products_cn.html" class="nav-link">{{ $t("navbar.products") }}</a></li>
+					<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"
+							aria-haspopup="true" aria-expanded="true">{{ $t("navbar.products") }}</a>
+						<!-- .dropdown-menu 下拉選單內容 -->
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<a class="dropdown-item" href="HI226_229.html">HI226&HI229</a>
+							<a class="dropdown-item" href="HI221.html">HI221</a>
+							<a class="dropdown-item" href="CH110.html">CH110</a>
+						</div>
+					</li>
 					<li class="nav-item"><a href="javascript:doc_center()"
 							class="nav-link">{{ $t("navbar.documentation") }}</a>
 					</li>
@@ -45,8 +52,10 @@
 						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 							<a class="dropdown-item" href="contact.html"
 								onclick="doCookieSetup('lang', 'en')">English</a>
-							<a class="dropdown-item" href="contact_cn.html" onclick="doCookieSetup('lang', 'cn')">简体中文</a>
-							<a class="dropdown-item" href="contact_tc.html" onclick="doCookieSetup('lang', 'tc')">繁體中文</a>
+							<a class="dropdown-item" href="contact_cn.html"
+								onclick="doCookieSetup('lang', 'cn')">简体中文</a>
+							<a class="dropdown-item" href="contact_tc.html"
+								onclick="doCookieSetup('lang', 'tc')">繁體中文</a>
 						</div>
 					</li>
 
@@ -77,7 +86,6 @@
 				</div>
 				<div class="col-md-6 mb-4">
 					<h3>{{ $t('contact.taipei') }}</h3>
-					<p><span>{{ $t('contact.tw_phone') }}</span></p>
 					<p><span>Line ID : avmm9898</span></p>
 					<p><span>Email : </span> <a style="color: black;"
 							href="mailto:hipnuctw@gmail.com">hipnuctw@gmail.com</a></p>
@@ -146,7 +154,7 @@
 						<p style="font-size:80%;"><a href="tel:+8618612030435" class="icon icon-phone"> +86
 								18612030435</a></p>
 						<p style="font-size:80%;"><a href="mailto:liuguobing@hipnuc.com" class="icon icon-envelope">
-							liuguobing@hipnuc.com</a></p>
+								liuguobing@hipnuc.com</a></p>
 						<h2 class="ftco-heading-2">{{ $t("footer.sales2") }}</h2>
 						<p style="font-size:80%;"><a href="tel:+886 0988592841" class="icon icon-phone"> +886
 								0908179107</a></p>
