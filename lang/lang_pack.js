@@ -110,7 +110,7 @@ const messages = {
     products: {
       hi221_intro: '無線、高速數據採集，且可用於多點動作捕捉。',
       hi226_intro: '主要用於機器人航向測量，高速姿態採集和運動穩定設備。',
-      ch110_intro: 'IP67防水防塵，支援 USB/RS232/RS485/CAN 介面，適用於移動機器人、無人駕駛等應用，提供堅實可靠的設計。',
+      ch110_intro: 'IP67 防水防塵，支援 USB、RS232、RS485、CAN 介面，適用於移動機器人、無人駕駛等應用，提供堅實可靠的設計。',
       table_hi221_h1: '無線 IMU，VRU，AHRS 模組',
       table_hi221_app1: '多點無線數據採集',
       table_hi221_app2: '高速數據採集',
