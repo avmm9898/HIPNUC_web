@@ -31,8 +31,7 @@
     --breakpoint-md: 768px;
     --breakpoint-lg: 992px;
     --breakpoint-xl: 1200px;
-    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Helvetica", "Arial","LiHei Pro","黑體-繁","微軟正黑體", sans-serifㄝ
-      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Helvetica", "Arial","LiHei Pro","微軟正黑體","微軟雅黑體", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
       "Liberation Mono", "Courier New", monospace;
   }
@@ -66,9 +65,7 @@
   
   body {
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-      "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
-      "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: "Helvetica", "Arial","LiHei Pro","微軟正黑體","微軟雅黑體", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
@@ -201,8 +198,7 @@
   code,
   kbd,
   samp {
-    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
-      "Courier New", monospace;
+    font-family: "Helvetica", "Arial","LiHei Pro","微軟正黑體","微軟雅黑體", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-size: 1em;
   }
   
@@ -6134,9 +6130,7 @@
     z-index: 1070;
     display: block;
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-      "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
-      "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: "Helvetica", "Arial","LiHei Pro","微軟正黑體","微軟雅黑體", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-style: normal;
     font-weight: 400;
     line-height: 1.5;
@@ -6261,9 +6255,7 @@
     z-index: 1060;
     display: block;
     max-width: 276px;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-      "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
-      "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: "Helvetica", "Arial","LiHei Pro","微軟正黑體","微軟雅黑體", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-style: normal;
     font-weight: 400;
     line-height: 1.5;
@@ -10662,8 +10654,7 @@
   }
   
   .text-monospace {
-    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
-      "Courier New", monospace;
+    font-family: "Helvetica", "Arial","LiHei Pro","微軟正黑體","微軟雅黑體", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
   
   .text-justify {
@@ -11005,7 +10996,7 @@
   }
   
   body {
-    font-family: "Poppins", Arial, sans-serif;
+    font-family: "Helvetica", "Arial","LiHei Pro","微軟正黑體","微軟雅黑體", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     background: #fff;
     font-size: 16px;
     line-height: 1.8;
@@ -11290,7 +11281,7 @@
   .navbar-brand {
     font-weight: 700;
     font-size: 20px;
-    font-family: "Poppins", Arial, sans-serif;
+    font-family: "Helvetica", "Arial","LiHei Pro","微軟正黑體","微軟雅黑體", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     line-height: 1;
     text-transform: uppercase;
   }
@@ -11336,7 +11327,7 @@
     color: #fff;
     line-height: 1.2;
     font-weight: 700;
-    font-family: "Poppins", Arial, sans-serif;
+    font-family: "Helvetica", "Arial","LiHei Pro","微軟正黑體","微軟雅黑體", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
   
   @media (max-width: 991.98px) {
@@ -11348,7 +11339,7 @@
   .slider-text .subheading {
     font-size: 16px;
     color: rgba(255, 255, 255, 0.9);
-    font-family: "Poppins", Arial, sans-serif;
+    font-family: "Helvetica", "Arial","LiHei Pro","微軟正黑體","微軟雅黑體", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-weight: 600;
   }
   
