@@ -1,0 +1,39 @@
+site_name: HiPNUC 文件中心
+site_url: 'http://www.hipnuc.com/'
+theme:
+  name: material
+  palette:
+      primary: 'Black'
+      accent: 'Black'
+  feature:
+    tabs: false
+  logo:
+    icon: 'home'
+  
+plugins:
+  - search
+  - minify:
+      minify_html: true
+markdown_extensions:
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+extra_javascript:
+  - 'extra.js'
+  - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
+# Copyright
+copyright: 'Copyright &copy; 2016 - 2020 HiPNUC'
+
