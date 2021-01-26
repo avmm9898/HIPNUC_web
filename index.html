@@ -3,27 +3,19 @@
 
 
 <head>
-	<title>HiPNUC|Wireless IMU,Motion Sensor,Eletrical Compass|9-axis Inertial Sensor|Arduino&RPI</title>
-	<link rel="alternate" hreflang="en" href="http://www.hipnuc.com/index.html" />
-	<link rel="alternate" hreflang="zh-Hans" href="http://www.hipnuc.com/index_cn.html" />
-	<link rel="alternate" hreflang="zh-Hant" href="http://www.hipnuc.com/index_tc.html" />
-	<link rel="alternate" hreflang="x-default" href="http://www.hipnuc.com/index.html" />
+	<title id="title">多轴姿态检测 | 工业级、无线 IMU | 穿戴动作捕捉 | HiPNUC超核</title>
+
 
 	<meta name="description"
-		content="We provide IMU (Inertial measurement unit), AHRS, attitude measurement, robot motion capture, navigation and positioning services.
-	A professional manufacturing and service provider with the ability to manufacture multi-point wireless motion sensors.">
-
-	<meta name="keywords" content="wirelessIMU, motionsensor">
+		content="IMU(Inertial measurement unit)、AHRS，提供姿态检测，机器人动作捕捉，导航与定位服务，拥有制造多点无线姿态节点能力的专业制造服务商">
+	<meta name="keywords" content="无线IMU,IMU,姿态检测,慣性測量">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
 	<link rel="stylesheet" href="css/poppins_font.css">
 	<link rel="stylesheet" href="css/material_icon.css">
 	<link rel="stylesheet" href="css/icomoon_minified.css">
 	<link rel="stylesheet" href="css/animate_minified.css">
 	<link rel="stylesheet" href="css/style_minified.css">
-
-
 
 	<script>
 		function getCookieValueByIndex(startIndex) {
@@ -44,33 +36,39 @@
 			}
 			return null;
 		}
+		function doCookieSetup(name, lang) {
+			document.cookie = name + "=" + escape(lang);
+			window.location.reload();
+		}
 
 		var tmp_lang = getCookie("lang");
-		var short_cut = "";
 		var sys = "";
+		if (tmp_lang == "en")
+			document.getElementById("title").innerHTML = "wireless, industrial IMU/AHRS | HiPNUC"
+		else if (tmp_lang == "tc")
+			document.getElementById("title").innerHTML = "多軸姿態檢測 | 工業級、無線 IMU | 穿戴動作捕捉 | HiPNUC超核"
+		else
+			document.getElementById("title").innerHTML = "多轴姿态检测 | 工业级、无线 IMU | 穿戴动作捕捉 | HiPNUC超核"
 
-		if (tmp_lang == "cn") {
-			short_cut = "index_cn.html";
-			window.location.assign(short_cut);
-		}
-		else if (tmp_lang == "tc") {
-			short_cut = "index_tc.html";
-			window.location.assign(short_cut);
-		}
-		else if (tmp_lang != "en") {
+		if (tmp_lang != "en" && tmp_lang != "tc" && tmp_lang != "cn") {
 			sys = (navigator.language || navigator.userLanguage || navigator.browserLanguage || navigator.systemLanguage).toLowerCase();
 			if (sys == "zh-cn" || sys == "zh-sg") {
-				short_cut = "index_cn.html";
-				window.location.assign(short_cut);
+				doCookieSetup('lang', 'cn')
+				document.getElementById("title").innerHTML = "多轴姿态检测 | 工业级、无线 IMU | 穿戴动作捕捉 | HiPNUC超核"
 			}
 			else if (sys == "zh-tw") {
-				short_cut = "index_tc.html";
-				window.location.assign(short_cut);
+				doCookieSetup('lang', 'tc')
+				document.getElementById("title").innerHTML = "多軸姿態檢測 | 工業級、無線 IMU | 穿戴動作捕捉 | HiPNUC超核"
+			}
+			else {
+				doCookieSetup('lang', 'en')
+				document.getElementById("title").innerHTML = "wireless, industrial IMU/AHRS | HiPNUC"
 			}
 
 		}
 
 	</script>
+
 </head>
 
 <body>
@@ -86,29 +84,37 @@
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item"><a href="index.html" class="nav-link">{{ $t("navbar.home") }}</a></li>
 					<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"
-						aria-haspopup="true" aria-expanded="true">{{ $t("navbar.products") }}</a>
-					<!-- .dropdown-menu 下拉選單內容 -->
-					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-						<a class="dropdown-item disabled">{{ $t("navbar.industrial") }}</a>        
-						<a class="dropdown-item" href="HI226_229.html">&nbsp&nbsp&nbsp&nbsp{{ $t("navbar.hi226") }}</a>
-						<a class="dropdown-item" href="HI226_229.html">&nbsp&nbsp&nbsp&nbsp{{ $t("navbar.hi229") }}</a>
-						<a class="dropdown-item" href="CH110.html">&nbsp&nbsp&nbsp&nbsp{{ $t("navbar.ch110") }}</a>
-						<a class="dropdown-item disabled">{{ $t("navbar.wireless") }}</a>   
-						<a class="dropdown-item" href="HI221.html">&nbsp&nbsp&nbsp&nbsp{{ $t("navbar.hi221") }}</a>
-						
-					</div>
-				</li>
-					<li class="nav-item"><a href="javascript:doc_center()"
-							class="nav-link">{{ $t("navbar.documentation") }}</a>
+							aria-haspopup="true" aria-expanded="true">{{ $t("navbar.products") }}</a>
+						<!-- .dropdown-menu 下拉選單內容 -->
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							
+							<a class="dropdown-item disabled">{{ $t("navbar.lowcost") }}</a>
+							<a class="dropdown-item"
+								href="HI226_229.html">&nbsp&nbsp&nbsp&nbsp{{ $t("navbar.hi226") }}</a>
+							<a class="dropdown-item"
+								href="HI226_229.html">&nbsp&nbsp&nbsp&nbsp{{ $t("navbar.hi229") }}</a>
+							<a class="dropdown-item disabled">{{ $t("navbar.high_precision") }}</a>
+							<a class="dropdown-item" href="CH100.html">&nbsp&nbsp&nbsp&nbsp{{ $t("navbar.ch100") }}</a>
+							<a class="dropdown-item" href="CH110.html">&nbsp&nbsp&nbsp&nbsp{{ $t("navbar.ch110") }}</a>
+							
+							<a class="dropdown-item disabled">{{ $t("navbar.wireless") }}</a>
+							<a class="dropdown-item" href="HI221.html">&nbsp&nbsp&nbsp&nbsp{{ $t("navbar.hi221") }}</a>
+							<a class="dropdown-item disabled">{{ $t("navbar.usb_conversion") }}</a>
+							<a class="dropdown-item" href="datahub.html">&nbsp&nbsp&nbsp&nbsp{{ $t("navbar.HI210x") }}</a>
+							<a class="dropdown-item" href="datahub.html">&nbsp&nbsp&nbsp&nbsp{{ $t("navbar.HI394x") }}</a>
+
+						</div>
+					</li>
+					<li class="nav-item"><a href="datahub.html" class="nav-link">{{ $t("navbar.documentation") }}</a>
 					</li>
 					<li class="nav-item"><a href="contact.html" class="nav-link">{{ $t("navbar.contact") }}</a></li>
 					<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"
 							aria-haspopup="true" aria-expanded="true"><i class="material-icons">language</i></a>
 						<!-- .dropdown-menu 下拉選單內容 -->
 						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-							<a class="dropdown-item" href="index.html" onclick="doCookieSetup('lang', 'en')">English</a>
-							<a class="dropdown-item" href="index_cn.html" onclick="doCookieSetup('lang', 'cn')">简体中文</a>
-							<a class="dropdown-item" href="index_tc.html" onclick="doCookieSetup('lang', 'tc')">繁體中文</a>
+							<a class="dropdown-item" href="#" onclick="doCookieSetup('lang', 'en')">English</a>
+							<a class="dropdown-item" href="#" onclick="doCookieSetup('lang', 'cn')">简体中文</a>
+							<a class="dropdown-item" href="#" onclick="doCookieSetup('lang', 'tc')">繁體中文</a>
 						</div>
 					</li>
 				</ul>
@@ -126,11 +132,10 @@
 				data-scrollax-parent="true">
 				<div class="container-fluid ftco-animate pt-7">
 					<div id="intro">
-						<h1 style="font-size:400%;">{{ $t("index.intro") }}</h1>
-						<h1 style="font-size:170%;margin-top:1em">{{ $t("index.intro2") }}
+						<h1 style="font-size:450%;">{{ $t("index.intro") }}</h1>
+						<h1 style="font-size:180%;margin-top:1em">{{ $t("index.intro2") }}
 						</h1>
 						<h2 style="margin-top:10%">
-							
 							<a href="contact.html" class="btn-custom">{{ $t("navbar.contact") }} ><span
 									class="ion-ios-arrow-forward"></span></a>
 						</h2>
@@ -206,11 +211,10 @@
 						<h2 class="ftco-heading-2">{{ $t("footer.sales1") }}</h2>
 						<p style="font-size:80%;"><a href="tel:+8618612030435" class="icon icon-phone"> +86
 								18612030435</a></p>
-						<p style="font-size:80%;"><a href="mailto:liuguobing@hipnuc.com" class="icon icon-envelope">
-								liuguobing@hipnuc.com</a></p>
+						<p style="font-size:80%;"><a href="mailto:sales@hipnuc.com" class="icon icon-envelope">
+								sales@hipnuc.com</a></p>
 						<h2 class="ftco-heading-2">{{ $t("footer.sales2") }}</h2>
-						<p style="font-size:80%;"><a href="tel:+886 0988592841" class="icon icon-phone"> +886
-								0908179107</a></p>
+						<p style="font-size:80%;"><a>Line ID : avmm9898</a></p>
 						<p style="font-size:80%;"><a href="mailto:hipnuctw@gmail.com" class="icon icon-envelope">
 								hipnuctw@gmail.com</a></p>
 					</div>
@@ -239,6 +243,7 @@
 				<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
 					stroke="#F96D00">
 		</svg></div>
+
 
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery-migrate-3.0.1.min.js"></script>
@@ -271,5 +276,6 @@
 
 
 </body>
+
 
 </html>

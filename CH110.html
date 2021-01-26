@@ -4,8 +4,8 @@
 <head>
 	<title>CH110 | HiPNUC</title>
 
-	<meta name="description" content="超核產品介紹:IMU(Inertial measurement unit)、AHRS，姿態檢測，動作捕捉，導航與定位等產品">
-	<meta name="keywords" content="電子羅盤模組,無線IMU">
+	<meta name="description" content="IMU(Inertial measurement unit)、AHRS，姿態檢測，動作捕捉，導航與定位等產品">
+	<meta name="keywords" content="IMU">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="css/poppins_font.css">
@@ -32,17 +32,25 @@
 							aria-haspopup="true" aria-expanded="true">{{ $t("navbar.products") }}</a>
 						<!-- .dropdown-menu 下拉選單內容 -->
 						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-							<a class="dropdown-item disabled">{{ $t("navbar.industrial") }}</a>        
-							<a class="dropdown-item" href="HI226_229.html">&nbsp&nbsp&nbsp&nbsp{{ $t("navbar.hi226") }}</a>
-							<a class="dropdown-item" href="HI226_229.html">&nbsp&nbsp&nbsp&nbsp{{ $t("navbar.hi229") }}</a>
-							<a class="dropdown-item" href="CH110.html">&nbsp&nbsp&nbsp&nbsp{{ $t("navbar.ch110") }}</a>
-							<a class="dropdown-item disabled">{{ $t("navbar.wireless") }}</a>   
-							<a class="dropdown-item" href="HI221.html">&nbsp&nbsp&nbsp&nbsp{{ $t("navbar.hi221") }}</a>
 							
+							<a class="dropdown-item disabled">{{ $t("navbar.lowcost") }}</a>
+							<a class="dropdown-item"
+								href="HI226_229.html">&nbsp&nbsp&nbsp&nbsp{{ $t("navbar.hi226") }}</a>
+							<a class="dropdown-item"
+								href="HI226_229.html">&nbsp&nbsp&nbsp&nbsp{{ $t("navbar.hi229") }}</a>
+							<a class="dropdown-item disabled">{{ $t("navbar.high_precision") }}</a>
+							<a class="dropdown-item" href="CH100.html">&nbsp&nbsp&nbsp&nbsp{{ $t("navbar.ch100") }}</a>
+							<a class="dropdown-item" href="CH110.html">&nbsp&nbsp&nbsp&nbsp{{ $t("navbar.ch110") }}</a>
+							
+							<a class="dropdown-item disabled">{{ $t("navbar.wireless") }}</a>
+							<a class="dropdown-item" href="HI221.html">&nbsp&nbsp&nbsp&nbsp{{ $t("navbar.hi221") }}</a>
+							<a class="dropdown-item disabled">{{ $t("navbar.usb_conversion") }}</a>
+							<a class="dropdown-item" href="datahub.html">&nbsp&nbsp&nbsp&nbsp{{ $t("navbar.HI210x") }}</a>
+							<a class="dropdown-item" href="datahub.html">&nbsp&nbsp&nbsp&nbsp{{ $t("navbar.HI394x") }}</a>
+
 						</div>
 					</li>
-					<li class="nav-item"><a href="javascript:doc_center()"
-							class="nav-link">{{ $t("navbar.documentation") }}</a>
+					<li class="nav-item"><a href="datahub.html" class="nav-link">{{ $t("navbar.documentation") }}</a>
 					</li>
 					<li class="nav-item"><a href="contact.html" class="nav-link">{{ $t("navbar.contact") }}</a></li>
 					<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"
@@ -64,13 +72,13 @@
 
 	<section class="ftco-consultation ftco-section js-fullheight img"
 		style="background-image: url(images/ch110-cover.jpg);">
-		<div class="overlay"></div>
+		
 		<div class="container">
 			<div class="row d-md-flex">
-				<div class="col-md-6 half p-3 p-md-5 ftco-animate heading-section">
+				<div class="col-md-6 half p-3 p-md-5 ftco-animate heading-section" style="text-align:justify;">
 
 					<h2 class="mb-6">CH110</h2>
-					<h3 id="hi226_cover" class="mb-6">{{ $t('products.ch110_intro') }}</h3>
+					<h4 id="ch110_cover" class="mb-6">{{ $t('products.ch110_intro') }}</h4>
 				</div>
 			</div>
 		</div>
@@ -104,54 +112,32 @@
 							</tr>
 							<tr>
 								<th scope="row">{{ $t('products.table_applications')}}</th>
-								
-								<td>
-									<div class="container-fluid" align="center">
-										<ul style="padding-left:5%;">
-											<li>{{ $t('products.table_ch110_app1')}}</li>
-											<li>{{ $t('products.table_ch110_app2')}}</li>
-											<li>5~24V ✓</li>
-										</ul>
 
+								<td>
+									<div class="container-fluid" align="center">								
+											{{ $t('products.table_ch110_app')}}
 									</div>
 
 								</td>
 							</tr>
 							<tr>
-								<th scope="row">{{ $t('products.gyro')}}</th>
-								<td>✓</td>
+								<th scope="row">{{ $t('products.gyro')}} | {{ $t('products.acce')}} | {{ $t('products.magnet')}}</th>
+								<td>✓ | ✓ | X</td>
 							</tr>
-							<tr>
-								<th scope="row">{{ $t('products.acce')}}</th>
-								<td>✓</td>
-							</tr>
-							<tr>
-								<th scope="row">{{ $t('products.magnet')}}</th>
-								<td>X</td>
-							</tr>
-
-							<tr>
-								<th scope="row">{{ $t('products.table_download')}}</th>
-								<td><a class="btn"
-										href="https://github.com/hipnuc/products">{{ $t('products.download')}}</a>
-								</td>
-							</tr>
-
-						</tbody>
-						<tbody id="collapse2" class="collapse in none">
+		
 							<tr>
 								<th scope="row">{{ $t('products.table_type')}}</th>
-								<td>IMU, VRU</td>
+								<td>IMU, VRU, AHRS</td>
 							</tr>
 							<tr>
 								<th scope="row">{{ $t('products.table_data_interface')}}</th>
-								<td>RS232</td>
+								<td>RS232 / CAN / USB</td>
 							</tr>
 							<tr>
 								<th scope="row">{{ $t('products.table_uart_rate')}}</th>
-								<td>10/25/50/100/200 Hz</td>
+								<td>1~400 Hz</td>
 							</tr>
-							
+
 							<tr>
 								<th scope="row">{{ $t('products.table_size')}}</th>
 								<td>40 x 40 x 25</td>
@@ -164,12 +150,18 @@
 							</tr>
 							<tr>
 								<th scope="row">{{ $t('products.table_range')}}</th>
-								<td>± 2000 °/s</td>
+								<td>± 500 °/s</td>
 							</tr>
 							<tr>
 								<th scope="row">{{ $t('products.table_sampling_rate')}}</th>
-								<td>2000 Hz</td>
+								<td>400 Hz</td>
 							</tr>
+							<tr>
+								<th scope="row">{{ $t('products.table_bias_stability')}}</th>
+								<td>3.5 °/hr</td>
+							</tr>
+
+							
 							<tr>
 								<th class="pt-3" scope="row">
 									<span style="font-size: 20px;">{{ $t('products.acce')}}</span>
@@ -183,32 +175,20 @@
 
 							<tr>
 								<th scope="row">{{ $t('products.table_sampling_rate')}}</th>
-								<td>500 Hz</td>
+								<td>400 Hz</td>
 							</tr>
 							<tr>
-								<th class="pt-3" scope="row">
-									<span style="font-size: 20px;">{{ $t('products.magnet')}}</span>
-								</th>
-								<td></td>
+								<th scope="row">{{ $t('products.table_bias_stability')}}</th>
+								<td>35 uG</td>
 							</tr>
-							<tr>
-								<th scope="row">{{ $t('products.table_range')}}</th>
-								<td>-</td>
-							</tr>
-							<tr>
-								<th scope="row">{{ $t('products.table_sampling_rate')}}</th>
-								<td>-</td>
-							</tr>
+							
 
 						</tbody>
 
 
 					</table>
 					<p>{{ $t('products.table_gravity_note')}}</p>
-					<div class="pt-3 text-center">
-						<button class="btn pushme2"
-							style="vertical-align:middle"><span>{{ $t('products.table_more')}}</span></button>
-					</div>
+					
 
 				</div>
 			</div>
@@ -292,8 +272,7 @@
 						<p style="font-size:80%;"><a href="mailto:liuguobing@hipnuc.com" class="icon icon-envelope">
 								liuguobing@hipnuc.com</a></p>
 						<h2 class="ftco-heading-2">{{ $t("footer.sales2") }}</h2>
-						<p style="font-size:80%;"><a href="tel:+886 0988592841" class="icon icon-phone"> +886
-								0908179107</a></p>
+						<p style="font-size:80%;"><a>Line ID : avmm9898</a></p>
 						<p style="font-size:80%;"><a href="mailto:hipnuctw@gmail.com" class="icon icon-envelope">
 								hipnuctw@gmail.com</a></p>
 					</div>
@@ -346,8 +325,7 @@
 				i18n.locale = tmp_lang
 
 			new Vue({ i18n: i18n }).$mount('#navbar');
-			new Vue({ i18n: i18n }).$mount('#hi221_cover');
-			new Vue({ i18n: i18n }).$mount('#hi226_cover');
+			new Vue({ i18n: i18n }).$mount('#ch110_cover');
 			new Vue({ i18n: i18n }).$mount('#table');
 			new Vue({ i18n: i18n }).$mount('#software1');
 			new Vue({ i18n: i18n }).$mount('#software2');
@@ -355,53 +333,8 @@
 		}
 		init_lang()
 
-
 	</script>
-	<script>
-		var tmp_lang = getCookie("lang");
-		function collapse(id, btn) {
-			if ($(id).is(":visible") == false) {
-				if (tmp_lang == "cn" || tmp_lang == "tc")
-					$(btn).text('收起');
-				else
-					$(btn).text('Less');
-				$(id).collapse('show');
-			}
-			else if ($(id).is(":visible") == true) {
-				if (tmp_lang == "cn" || tmp_lang == "tc")
-					$(btn).text('更多');
-				else
-					$(btn).text('More');
-				$(id).collapse('hide');
-			}
-		}
-		$(document).ready(function () {
-			if (tmp_lang == "cn" || tmp_lang == "tc")
-				$(".pushme").text('收起');
-			else
-				$(".pushme").text('Less');
-			if (tmp_lang == "cn" || tmp_lang == "tc")
-				$(".pushme").text('更多');
-			else
-				$(".pushme").text('More');
-			if (tmp_lang == "cn" || tmp_lang == "tc")
-				$(".pushme2").text('收起');
-			else
-				$(".pushme2").text('Less');
-			if (tmp_lang == "cn" || tmp_lang == "tc")
-				$(".pushme2").text('更多');
-			else
-				$(".pushme2").text('More');
 
-		});
-
-		$(".pushme").click(function () {
-			collapse("#collapse1", ".pushme");
-		})
-		$(".pushme2").click(function () {
-			collapse("#collapse2", ".pushme2");
-		})
-	</script>
 
 
 </body>

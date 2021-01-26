@@ -7,7 +7,7 @@ import fnmatch
 import glob
 
 
-os.chdir('./docs/')
+os.chdir('./doc_gen/')
 os.system('python update_doc.py')
 os.chdir('../')
 os.system('mkdocs build --clean')

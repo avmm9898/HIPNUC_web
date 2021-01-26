@@ -1,11 +1,12 @@
 site_name: HiPNUC 文件中心
-site_url: 'http://www.hipnuc.com/index_cn.html'
+site_url: 'http://www.hipnuc.com'
 
 
 nav:
   -  文档中心: 
       - index.md
-
+      - imu_download.md
+      - ic_download.md
 theme:
   name: material
   palette:

@@ -1,18 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url>
      <loc>http://www.hipnuc.com/</loc>
-     <lastmod>2020-05-10</lastmod>
+     <lastmod>2021-01-06</lastmod>
      <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>http://www.hipnuc.com/hi221/hi221um_tc/</loc>
-     <lastmod>2020-05-10</lastmod>
+    </url><url>
+     <loc>http://www.hipnuc.com/hi221/hi221/</loc>
+     <lastmod>2021-01-06</lastmod>
      <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>http://www.hipnuc.com/hi229/hi229um_tc/</loc>
-     <lastmod>2020-05-10</lastmod>
+    </url><url>
+     <loc>http://www.hipnuc.com/hi226/hi226/</loc>
+     <lastmod>2021-01-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>http://www.hipnuc.com/hi229/hi229/</loc>
+     <lastmod>2021-01-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>http://www.hipnuc.com/ch100/ch100/</loc>
+     <lastmod>2021-01-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>http://www.hipnuc.com/ch110/ch110/</loc>
+     <lastmod>2021-01-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>http://www.hipnuc.com/FAQ/FAQ/</loc>
+     <lastmod>2021-01-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>

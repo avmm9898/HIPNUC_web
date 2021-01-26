@@ -1,26 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
-	<title>Buy From HiPNUC</title>
-	<link rel="alternate" hreflang="en" href="http://www.hipnuc.com/contact.html" />
-	<link rel="alternate" hreflang="zh-Hans" href="http://www.hipnuc.com/contact_cn.html" />
-	<link rel="alternate" hreflang="zh-Hant" href="http://www.hipnuc.com/contact_tc.html" />
-	<link rel="alternate" hreflang="x-default" href="http://www.hipnuc.com/contact.html" />
+	<title id="title">产品购买与支援 | HiPNUC超核</title>
+	<script>
+		function getCookieValueByIndex(startIndex) {
+			var endIndex = document.cookie.indexOf(";", startIndex);
+			if (endIndex == -1) endIndex = document.cookie.length;
+			return unescape(document.cookie.substring(startIndex, endIndex));
+		}
+		function getCookie(name) {
+			var arg = escape(name) + "=";
+			var nameLen = arg.length;
+			var cookieLen = document.cookie.length;
+			var i = 0;
+			while (i < cookieLen) {
+				var j = i + nameLen;
+				if (document.cookie.substring(i, j) == arg) return getCookieValueByIndex(j);
+				i = document.cookie.indexOf(" ", i) + 1;
+				if (i == 0) break;
+			}
+			return null;
+		}
 
-	<meta name="description"
-		content="Purchase products of IMU, AHRS, attitude measurement, robot motion capturing, navigation and position.">
+		var tmp_lang = getCookie("lang");
 
-	<meta name="keywords" content="wirelessIMU, motionsensor,buy">
+		if (tmp_lang == "en")
+			document.getElementById("title").innerHTML = "Contact & Support | HiPNUC"
+		else if (tmp_lang == "tc")
+			document.getElementById("title").innerHTML = "產品購買與支援 | HiPNUC超核"
+		else
+			document.getElementById("title").innerHTML = "产品购买与支援 | HiPNUC超核"
+
+	</script>
+
+	<meta name="description" content="购买姿态检测，机器人动作捕捉，导航与定位产品">
+	<meta name="keywords" content="购买,电子罗盘,无线IMU">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
 	<link rel="stylesheet" href="css/poppins_font.css">
 	<link rel="stylesheet" href="css/material_icon.css">
 	<link rel="stylesheet" href="css/icomoon_minified.css">
 	<link rel="stylesheet" href="css/animate_minified.css">
 	<link rel="stylesheet" href="css/style_minified.css">
-	
 
 </head>
 
@@ -37,20 +60,28 @@
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item"><a href="index.html" class="nav-link">{{ $t("navbar.home") }}</a></li>
 					<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"
-						aria-haspopup="true" aria-expanded="true">{{ $t("navbar.products") }}</a>
-					<!-- .dropdown-menu 下拉選單內容 -->
-					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-						<a class="dropdown-item disabled">{{ $t("navbar.industrial") }}</a>        
-						<a class="dropdown-item" href="HI226_229.html">&nbsp&nbsp&nbsp&nbsp{{ $t("navbar.hi226") }}</a>
-						<a class="dropdown-item" href="HI226_229.html">&nbsp&nbsp&nbsp&nbsp{{ $t("navbar.hi229") }}</a>
-						<a class="dropdown-item" href="CH110.html">&nbsp&nbsp&nbsp&nbsp{{ $t("navbar.ch110") }}</a>
-						<a class="dropdown-item disabled">{{ $t("navbar.wireless") }}</a>   
-						<a class="dropdown-item" href="HI221.html">&nbsp&nbsp&nbsp&nbsp{{ $t("navbar.hi221") }}</a>
-						
-					</div>
-				</li>
-					<li class="nav-item"><a href="javascript:doc_center()"
-							class="nav-link">{{ $t("navbar.documentation") }}</a>
+							aria-haspopup="true" aria-expanded="true">{{ $t("navbar.products") }}</a>
+						<!-- .dropdown-menu 下拉選單內容 -->
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							
+							<a class="dropdown-item disabled">{{ $t("navbar.lowcost") }}</a>
+							<a class="dropdown-item"
+								href="HI226_229.html">&nbsp&nbsp&nbsp&nbsp{{ $t("navbar.hi226") }}</a>
+							<a class="dropdown-item"
+								href="HI226_229.html">&nbsp&nbsp&nbsp&nbsp{{ $t("navbar.hi229") }}</a>
+							<a class="dropdown-item disabled">{{ $t("navbar.high_precision") }}</a>
+							<a class="dropdown-item" href="CH100.html">&nbsp&nbsp&nbsp&nbsp{{ $t("navbar.ch100") }}</a>
+							<a class="dropdown-item" href="CH110.html">&nbsp&nbsp&nbsp&nbsp{{ $t("navbar.ch110") }}</a>
+							
+							<a class="dropdown-item disabled">{{ $t("navbar.wireless") }}</a>
+							<a class="dropdown-item" href="HI221.html">&nbsp&nbsp&nbsp&nbsp{{ $t("navbar.hi221") }}</a>
+							<a class="dropdown-item disabled">{{ $t("navbar.usb_conversion") }}</a>
+							<a class="dropdown-item" href="datahub.html">&nbsp&nbsp&nbsp&nbsp{{ $t("navbar.HI210x") }}</a>
+							<a class="dropdown-item" href="datahub.html">&nbsp&nbsp&nbsp&nbsp{{ $t("navbar.HI394x") }}</a>
+
+						</div>
+					</li>
+					<li class="nav-item"><a href="datahub.html" class="nav-link">{{ $t("navbar.documentation") }}</a>
 					</li>
 					<li class="nav-item"><a href="contact.html" class="nav-link">{{ $t("navbar.contact") }}</a></li>
 					<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"
@@ -59,10 +90,8 @@
 						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 							<a class="dropdown-item" href="contact.html"
 								onclick="doCookieSetup('lang', 'en')">English</a>
-							<a class="dropdown-item" href="contact_cn.html"
-								onclick="doCookieSetup('lang', 'cn')">简体中文</a>
-							<a class="dropdown-item" href="contact_tc.html"
-								onclick="doCookieSetup('lang', 'tc')">繁體中文</a>
+							<a class="dropdown-item" href="contact.html" onclick="doCookieSetup('lang', 'cn')">简体中文</a>
+							<a class="dropdown-item" href="contact.html" onclick="doCookieSetup('lang', 'tc')">繁體中文</a>
 						</div>
 					</li>
 
@@ -86,7 +115,7 @@
 					<p><span>{{ $t('contact.b_address') }}</span></p>
 					<p><span>{{ $t('contact.b_phone') }}</span></p>
 					<p><span>Email : <a style="color: black;"
-								href="mailto:liuguobing@hipnuc.com">liuguobing@hipnuc.com</a></span></p>
+								href="mailto:sales@hipnuc.com">sales@hipnuc.com</a></span></p>
 					<a class="btn py-3 px-4" href="http://upcmcu.taobao.com/">{{ $t('contact.taobao') }}</a>
 					<p></p>
 
@@ -160,11 +189,10 @@
 						<h2 class="ftco-heading-2">{{ $t("footer.sales1") }}</h2>
 						<p style="font-size:80%;"><a href="tel:+8618612030435" class="icon icon-phone"> +86
 								18612030435</a></p>
-						<p style="font-size:80%;"><a href="mailto:liuguobing@hipnuc.com" class="icon icon-envelope">
-								liuguobing@hipnuc.com</a></p>
+						<p style="font-size:80%;"><a href="mailto:sales@hipnuc.com" class="icon icon-envelope">
+								sales@hipnuc.com</a></p>
 						<h2 class="ftco-heading-2">{{ $t("footer.sales2") }}</h2>
-						<p style="font-size:80%;"><a href="tel:+886 0988592841" class="icon icon-phone"> +886
-								0908179107</a></p>
+						<p style="font-size:80%;"><a>Line ID : avmm9898</a></p>
 						<p style="font-size:80%;"><a href="mailto:hipnuctw@gmail.com" class="icon icon-envelope">
 								hipnuctw@gmail.com</a></p>
 					</div>

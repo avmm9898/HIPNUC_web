@@ -4,8 +4,8 @@
 <head>
 	<title>HI226 & HI229 | HiPNUC</title>
 
-	<meta name="description" content="超核產品介紹:IMU(Inertial measurement unit)、AHRS，姿態檢測，動作捕捉，導航與定位等產品">
-	<meta name="keywords" content="電子羅盤模組,無線IMU">
+	<meta name="description" content="IMU(Inertial measurement unit)、AHRS，姿態檢測，動作捕捉，導航與定位等產品">
+	<meta name="keywords" content="無線IMU">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="css/poppins_font.css">
@@ -32,17 +32,25 @@
 							aria-haspopup="true" aria-expanded="true">{{ $t("navbar.products") }}</a>
 						<!-- .dropdown-menu 下拉選單內容 -->
 						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-							<a class="dropdown-item disabled">{{ $t("navbar.industrial") }}</a>        
-							<a class="dropdown-item" href="HI226_229.html">&nbsp&nbsp&nbsp&nbsp{{ $t("navbar.hi226") }}</a>
-							<a class="dropdown-item" href="HI226_229.html">&nbsp&nbsp&nbsp&nbsp{{ $t("navbar.hi229") }}</a>
-							<a class="dropdown-item" href="CH110.html">&nbsp&nbsp&nbsp&nbsp{{ $t("navbar.ch110") }}</a>
-							<a class="dropdown-item disabled">{{ $t("navbar.wireless") }}</a>   
-							<a class="dropdown-item" href="HI221.html">&nbsp&nbsp&nbsp&nbsp{{ $t("navbar.hi221") }}</a>
 							
+							<a class="dropdown-item disabled">{{ $t("navbar.lowcost") }}</a>
+							<a class="dropdown-item"
+								href="HI226_229.html">&nbsp&nbsp&nbsp&nbsp{{ $t("navbar.hi226") }}</a>
+							<a class="dropdown-item"
+								href="HI226_229.html">&nbsp&nbsp&nbsp&nbsp{{ $t("navbar.hi229") }}</a>
+							<a class="dropdown-item disabled">{{ $t("navbar.high_precision") }}</a>
+							<a class="dropdown-item" href="CH100.html">&nbsp&nbsp&nbsp&nbsp{{ $t("navbar.ch100") }}</a>
+							<a class="dropdown-item" href="CH110.html">&nbsp&nbsp&nbsp&nbsp{{ $t("navbar.ch110") }}</a>
+							
+							<a class="dropdown-item disabled">{{ $t("navbar.wireless") }}</a>
+							<a class="dropdown-item" href="HI221.html">&nbsp&nbsp&nbsp&nbsp{{ $t("navbar.hi221") }}</a>
+							<a class="dropdown-item disabled">{{ $t("navbar.usb_conversion") }}</a>
+							<a class="dropdown-item" href="datahub.html">&nbsp&nbsp&nbsp&nbsp{{ $t("navbar.HI210x") }}</a>
+							<a class="dropdown-item" href="datahub.html">&nbsp&nbsp&nbsp&nbsp{{ $t("navbar.HI394x") }}</a>
+
 						</div>
 					</li>
-					<li class="nav-item"><a href="javascript:doc_center()"
-							class="nav-link">{{ $t("navbar.documentation") }}</a>
+					<li class="nav-item"><a href="datahub.html" class="nav-link">{{ $t("navbar.documentation") }}</a>
 					</li>
 					<li class="nav-item"><a href="contact.html" class="nav-link">{{ $t("navbar.contact") }}</a></li>
 					<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"
@@ -67,10 +75,10 @@
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row d-md-flex">
-				<div class="col-md-6 half p-3 p-md-5 ftco-animate heading-section">
+				<div class="col-md-6 half p-3 p-md-5 ftco-animate heading-section" style="text-align:justify;">
 
 					<h2 class="mb-6">HI226 & HI229</h2>
-					<h3 id="hi226_cover" class="mb-6">{{ $t('products.hi226_intro') }}</h3>
+					<h4 id="hi226_cover" class="mb-6">{{ $t('products.hi226_intro') }}</h4>
 				</div>
 			</div>
 		</div>
@@ -90,10 +98,10 @@
 							<tr>
 								<th scope="col">{{ $t('products.table_product')}}</th>
 								<td class="tech-table__column-title" scope="col">
-									<span>Hi226</span>
+									<span>HI226</span>
 								</td>
 								<td class="tech-table__column-title" scope="col">
-									<span>Hi229</span>
+									<span>HI229</span>
 								</td>
 							</tr>
 						</thead>
@@ -113,53 +121,28 @@
 								<th scope="row">{{ $t('products.table_applications')}}</th>
 								<td>
 									<div class="container-fluid" align="center">
-										<ul style="padding-left:5%;">
-											<li>{{ $t('products.table_hi226_app1')}}</li>
-										</ul>
+										{{ $t('products.table_hi226_app')}}
 
 									</div>
 
 								</td>
 								<td>
 									<div class="container-fluid" align="center">
-										<ul style="padding-left:5%;">
-											<li>{{ $t('products.table_hi229_app1')}}</li>
-											<li>{{ $t('products.table_hi229_app2')}}</li>
-											<li>{{ $t('products.table_hi229_app3')}}</li>
-										</ul>
-
+										{{ $t('products.table_hi229_app')}}
 									</div>
 
 								</td>
 							</tr>
 							<tr>
-								<th scope="row">{{ $t('products.gyro')}}</th>
-								<td>✓</td>
-								<td>✓</td>
-							</tr>
-							<tr>
-								<th scope="row">{{ $t('products.acce')}}</th>
-								<td>✓</td>
-								<td>✓</td>
-							</tr>
-							<tr>
-								<th scope="row">{{ $t('products.magnet')}}</th>
-								<td>X</td>
-								<td>✓</td>
+								<th scope="row">{{ $t('products.gyro')}} | {{ $t('products.acce')}} | {{ $t('products.magnet')}}</th>
+								<td>✓ | ✓ | X</td>
+								<td>✓ | ✓ | ✓</td>
 							</tr>
 
-							<tr>
-								<th scope="row">{{ $t('products.table_download')}}</th>
-								<td><a class="btn"
-										href="https://github.com/hipnuc/products">{{ $t('products.download')}}</a>
-								</td>
-								<td><a class="btn"
-										href="https://github.com/hipnuc/products">{{ $t('products.download')}}</a>
-								</td>
-							</tr>
-
-						</tbody>
-						<tbody id="collapse2" class="collapse in none">
+						<!--
+							</tbody>
+							<tbody id="collapse2" class="collapse in none">
+						-->
 							<tr>
 								<th scope="row">{{ $t('products.table_type')}}</th>
 								<td>IMU, VRU</td>
@@ -167,13 +150,13 @@
 							</tr>
 							<tr>
 								<th scope="row">{{ $t('products.table_data_interface')}}</th>
-								<td>UART</td>
-								<td>UART</td>
+								<td>UART / USB</td>
+								<td>UART / USB</td>
 							</tr>
 							<tr>
 								<th scope="row">{{ $t('products.table_uart_rate')}}</th>
-								<td>0/1/10/25/50/100/200 Hz</td>
-								<td>0/1/10/25/50/100/200 Hz</td>
+								<td>1~400 Hz</td>
+								<td>1~400 Hz</td>
 							</tr>
 							<tr>
 								<th scope="row">{{ $t('products.table_avg_working')}}</th>
@@ -199,8 +182,8 @@
 							</tr>
 							<tr>
 								<th scope="row">{{ $t('products.table_sampling_rate')}}</th>
-								<td>2000 Hz</td>
-								<td>2000 Hz</td>
+								<td>400 Hz</td>
+								<td>400 Hz</td>
 							</tr>
 							<tr>
 								<th class="pt-3" scope="row">
@@ -217,8 +200,8 @@
 
 							<tr>
 								<th scope="row">{{ $t('products.table_sampling_rate')}}</th>
-								<td>500 Hz</td>
-								<td>500 Hz</td>
+								<td>400 Hz</td>
+								<td>400 Hz</td>
 							</tr>
 							<tr>
 								<th class="pt-3" scope="row">
@@ -242,10 +225,12 @@
 
 					</table>
 					<p>{{ $t('products.table_gravity_note')}}</p>
+				<!--
 					<div class="pt-3 text-center">
 						<button class="btn pushme2"
 							style="vertical-align:middle"><span>{{ $t('products.table_more')}}</span></button>
 					</div>
+				-->
 
 				</div>
 			</div>
@@ -329,8 +314,7 @@
 						<p style="font-size:80%;"><a href="mailto:liuguobing@hipnuc.com" class="icon icon-envelope">
 								liuguobing@hipnuc.com</a></p>
 						<h2 class="ftco-heading-2">{{ $t("footer.sales2") }}</h2>
-						<p style="font-size:80%;"><a href="tel:+886 0988592841" class="icon icon-phone"> +886
-								0908179107</a></p>
+						<p style="font-size:80%;"><a>Line ID : avmm9898</a></p>
 						<p style="font-size:80%;"><a href="mailto:hipnuctw@gmail.com" class="icon icon-envelope">
 								hipnuctw@gmail.com</a></p>
 					</div>
@@ -383,7 +367,6 @@
 				i18n.locale = tmp_lang
 
 			new Vue({ i18n: i18n }).$mount('#navbar');
-			new Vue({ i18n: i18n }).$mount('#hi221_cover');
 			new Vue({ i18n: i18n }).$mount('#hi226_cover');
 			new Vue({ i18n: i18n }).$mount('#table');
 			new Vue({ i18n: i18n }).$mount('#software1');
@@ -394,6 +377,7 @@
 
 
 	</script>
+<!--
 	<script>
 		var tmp_lang = getCookie("lang");
 		function collapse(id, btn) {
@@ -439,7 +423,7 @@
 			collapse("#collapse2", ".pushme2");
 		})
 	</script>
-
+-->
 
 </body>
 

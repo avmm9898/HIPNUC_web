@@ -1,10 +1,22 @@
-site_name: HiPNUC 文件中心
-site_url: 'http://www.hipnuc.com/'
+site_name: HiPNUC 文件與軟體中心
+site_url: 'http://www.hipnuc.com'
+
+
+nav:
+  - index.md
+  - hi221\hi221.md
+  - hi226\hi226.md
+  - hi229\hi229.md
+  - ch100\ch100.md
+  - ch110\ch110.md
+  - FAQ\FAQ.md
+
+
 theme:
   name: material
   palette:
-      primary: 'Black'
-      accent: 'Black'
+      primary: 'white'
+      accent: 'indigo'
   feature:
     tabs: false
   logo:
@@ -21,8 +33,8 @@ markdown_extensions:
   - pymdownx.caret
   - pymdownx.critic
   - pymdownx.details
-  - pymdownx.emoji:
-      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+ # - pymdownx.emoji:
+ #     emoji_generator: !!python/name:pymdownx.emoji.to_svg
   - pymdownx.inlinehilite
   - pymdownx.magiclink
   - pymdownx.mark

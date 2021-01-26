@@ -3,19 +3,27 @@ const messages = {
     navbar: {
       home: 'Home',
       products: 'Products',
-      hi221: 'HI221 (Motion Catpure)',
-      hi226: 'HI226 (IMU/VRU module, SMD)',
-      hi229: 'HI229 (IMU/AHRS module, SMD)',
-      ch110: 'CH110 (IMU/AHRS module, Rugged)',
-      industrial: 'Industrial Series',
-      wireless: 'Wireless',
+
+      hi221: 'HI221 (Multi-node Motion Catpure)',
+      hi226: 'HI226 (IMU/ARU, SMD)',
+      hi229: 'HI229 (IMU/ARU/AHRS, SMD)',
+      ch100: 'CH100 (IMU/ARU/AHRS, SMD)',
+      ch110: 'CH110 (IMU/ARU/AHRS, Rugged Shell)',
+      HI210x:'HI210x (USB to 1/2/4 UART)',
+      HI394x:'HI394x (USB to CAN)',
+
+      lowcost: 'Low Cost Module',
+      high_precision: 'High Precision Module',
+      wireless: 'High-speed Wireless Kit',
+      usb_conversion:'Interface Conversion Chips',
+      
       documentation: 'Documentation',
       contact: 'Contact&Purchase',
       language: 'Language',
     },
     index: {
       intro: 'Welcome to HiPNUC',
-      intro2: 'We make professional, advanced, and tiny IMU/AHRS systems and products.',
+      intro2: 'We make professional, advanced, and tiny IMU/ARU/AHRS systems and products.',
     },
     contact: {
       title1: 'Sample Requests & Supports',
@@ -31,23 +39,40 @@ const messages = {
       content2: 'We welcome you all no matter you are researcher, student, maker or company. These are parts of our customers.'
     },
     products: {
+      
       hi221_intro: 'Wireless and high-speed data acquisition for multi points and motion capturing.',
-      hi226_intro: 'Mainly target for robot heading measurement, high speed attitude acquisition and motion stabilization equipment.',
-      ch110_intro: 'Solid quality for you. CH110 is a IP67 waterproof design IMU, supporting 232/485/CAN interface',
-      table_hi221_h1: 'Wireless IMU, VRU, AHRS Modules',
-      table_hi221_app1: 'Wireless data acquisition for multi points',
-      table_hi221_app2: 'High-speed data acquisition',
-      table_hi221_app3: 'Motion capture recording',
+      table_hi221_h1: 'Wireless Modules',
+      table_hi221_app: 'Wireless machinery, Motion capture, Multi-node data acquisition',
+
       table_hi221_max_number: 'Maximum Connection of Wireless Nodes',
-      table_hi221_data_interface: 'UART and 2.4G RF private protocol',
-      table_hi226_h1: 'IMU, VRU, AHRS Modules',
-      table_hi226_app1: 'Measurement of robot attitude',
-      table_hi229_app1:'Virtual reality',
-      table_hi229_app2:'Measurement of high-speed dynamic attitude',
-      table_hi229_app3:'Electronic compass',
-      table_ch110_h1: 'Industrial Design IMU',
-      table_ch110_app1: 'For industrial robot and AGV.',
-      table_ch110_app2: 'IP67 design',
+      
+      hi226_intro: 'Mainly target for robot heading measurement, high speed attitude acquisition and motion stabilization equipment.',
+      table_hi226_h1: 'Low-cost Modules',
+      table_hi226_app: 'Robots, Unmanned driving, AI machinery, AGV.',
+      table_hi229_app:'Robots, Unmanned driving, AI machinery, AGV, Electronic compass.',
+      
+      ch100_intro:'CH100 is an compact package of IMU/ARU/AHRS with high performance, \
+      small size and ultra low drift. \
+      It can simultaneously output 3-axis angular velocity, 3-axis acceleration, quaternion \
+      and Euler angle by our sensor fusion algorithm, \
+      combined with the latest redundant gyroscope correction technology \
+      to reduce the bias drift to 2.5°/hr. \
+      CH100 also provides multi-functional commands for customization, \
+      specially built for robots, unmanned driving, smart agricultural machinery, and AGVs.',
+      
+      table_ch100_h1:'Industrial & High Accuracy Module',
+      table_ch100_app:'Construction machinery, AI agricultural machinery, Robots, Exoskeleton',
+
+      ch110_intro: 'CH110 has high-performance, IP67 design, and RS232/485/CAN interfaces.\
+      It can simultaneously output the 3-axis angular velocity, 3-axis acceleration, quaternion \
+      and Euler angle by our sensor fusion algorithm with low drift. \
+      CH110 also provides multi-functional commands for customization, \
+      which are specially built by our company for robots, unmanned driving, \
+      waterproof equipment, outdoor machinery, AI agricultural machinery.',
+
+      table_ch110_h1: 'Industrial & IP67 shell',
+      table_ch110_app: 'Industrial robot, AGV, Watercraft, Outdoor Machine',
+      
       table_image: 'Image',
       table_product: 'Product',
       table_applications: 'Applications',
@@ -59,6 +84,7 @@ const messages = {
       table_avg_standby: 'Average Standby Current',
       table_avg_working: 'Average Working Current',
       table_avg_time: 'Average Working Time',
+      table_bias_stability:'Bias Drift',
       table_range: 'Range',
       table_sampling_rate: 'Sampling Rate',
       table_gravity_note: 'Note : 1G = 1x (Gravitational acceleration)',
@@ -73,7 +99,7 @@ const messages = {
     },
     footer: {
       about_title: 'About HiPNUC',
-      about_content: 'HiPNUC is dedicated to develope cost-effective IMU/AHRS with high quality, providing mature and advanced integrated navigation modules.',
+      about_content: 'HiPNUC is dedicated to develope cost-effective IMU/ARU/AHRS with high quality, providing mature and advanced integrated navigation modules.',
       github: 'Visit our github',
       library_title: 'Our Library',
       lib1: 'Digital filering with matlab',
@@ -93,38 +119,62 @@ const messages = {
     navbar: {
       home: '首頁',
       products: '產品',
-      hi221: 'HI221 (動作捕捉)',
-      hi226: 'HI226 (IMU/VRU 模組, SMD)',
-      hi229: 'HI229 (IMU/AHRS 模組, SMD)',
-      ch110: 'CH110 (IMU/AHRS 模組, IP67防水型)',
-      industrial: '工業級',
-      wireless: '無線慣性測量儀',
-      documentation: '資料下載',
+
+      hi221: 'HI221 (多節點高速動作捕捉)',
+      hi226: 'HI226 (IMU/ARU 模組, SMD)',
+      hi229: 'HI229 (IMU/ARU/AHRS 模組, SMD)',
+      ch100: 'CH100 (IMU/ARU/AHRS 模組, SMD)',
+      ch110: 'CH110 (IMU/ARU/AHRS 模組, IP67 外殼)',
+      HI210x:'HI210x (USB 轉 1/2/4路 UART)',
+      HI394x:'HI394x (USB 轉 CAN)',
+
+      lowcost: '泛用型模組',
+      high_precision: '精密型模組',
+      wireless: '無線套件',
+      usb_conversion:'介面轉換晶片',
+
+      documentation: '文件與軟體',
       contact: '聯絡與購買',
       language: '語言',
     },
     index: {
       intro: 'HiPNUC 超核電子',
-      intro2: '致力於開發高經濟效益、專業、先進、小巧的 IMU/AHRS 系統與產品。',
+      intro2: '提供高度整合的泛用型到精密型的 IMU/ARU/AHRS 系統與產品',
     },
     products: {
-      hi221_intro: '無線、高速數據採集，且可用於多點動作捕捉。',
-      hi226_intro: '主要用於機器人航向測量，高速姿態採集和運動穩定設備。',
-      ch110_intro: 'IP67 防水防塵，支援 USB、RS232、RS485、CAN 介面，適用於移動機器人、無人駕駛等應用，提供堅實可靠的設計。',
-      table_hi221_h1: '無線 IMU，VRU，AHRS 模組',
-      table_hi221_app1: '多點無線數據採集',
-      table_hi221_app2: '高速數據採集',
-      table_hi221_app3: '動作捕捉與錄製',
-      table_hi221_max_number: '無線節點的最大連接數量',
-      table_hi221_data_interface: 'UART 和 2.4G RF 私有協議',
-      table_hi226_h1: 'IMU, VRU, AHRS 模組',
-      table_hi226_app1: '機器人姿態測量',
-      table_hi229_app1:'虛擬實境',
-      table_hi229_app2:'高速動態姿態測量',
-      table_hi229_app3:'電子羅盤',
-      table_ch110_h1: '工業設計慣性測量儀',
-      table_ch110_app1: '適用工業機器人，AGV',
-      table_ch110_app2: 'IP67 防水防塵',
+      hi221_intro: "HI221 為9軸無線姿態感測節點，整合獨家的融合演算及校準技術。"+
+      "可輸出3軸角速度、3軸加速度、3軸磁力計的原始數據，及融合演算後的四元數與歐拉角。"+
+      "具備 Micro-USB 與無線輸出方式，適合大空間的動作捕捉、製作人體互動體驗設備。",
+      table_hi221_h1: '無線模組',
+      table_hi221_app: '無線設備, 動作捕捉, 多節點數據採集',
+
+      table_hi221_max_number: '無線節點最大連接數',
+      
+      hi226_intro: 'HI226 整合3軸加速度計、3軸陀螺儀、3軸磁場計(HI229)、微處理器，是一款性能與體積兼備的慣性測量單元(IMU)。'+
+      '同時輸出3軸角速度、3軸加速度、3軸磁場的原始數據，及融合演算後的四元數與歐拉角。'+
+      '提供多功能模組控制指令，為機器人、無人駕駛、AR/VR提供更多元可能。'+
+      '可用於機器人航向測量，高速姿態採集和運動穩定設備。',
+      table_hi226_h1: '泛用型模組',
+      table_hi226_app: '機器人、無人駕駛、智慧機械、AGV',
+      table_hi229_app:'機器人、無人駕駛、智慧機械、AGV、電子羅盤',
+      
+      ch100_intro:'CH100 是一款高性能、小體積、低延時的慣性測量單元(IMU)。'+
+      '可同時輸出3軸角速度、3軸加速度，及融合演算後的四元數與歐拉角，結合最新的冗餘陀螺儀校正技術，'+
+      '使偏移降低到每小時 2.5° 以內。除此之外提供多功能指令，'+
+      '專為機器人、無人駕駛、智慧農機、AGV 而打造。',
+      
+      table_ch100_h1:'工業級高精度模組',
+      table_ch100_app:'工程機械、智慧農機、高精度測量設備',
+
+      ch110_intro: 'CH110 是一款高性能、小體積、低延時的慣性測量單元(IMU)，'+
+      '具備 IP67 防水防塵外殼與防水接頭設計。同時輸出3軸角速度、3軸加速度，'+
+      '及融合演算後的四元數與歐拉角。除此之外提供多功能指令，'+
+      '可用於機器人、無人駕駛、防水設備、戶外機械、智慧農機。',
+
+      table_ch110_h1: '工業級外殼模組',
+      table_ch110_app: '工業機械, AGV, 水上設備, 戶外機械',
+
+      
       table_image: '圖片',
       table_product: '產品型號',
       table_applications: '主要應用領域',
@@ -136,6 +186,7 @@ const messages = {
       table_avg_standby: '平均待機電流',
       table_avg_working: '平均工作電流 ',
       table_avg_time: '平均工作時長',
+      table_bias_stability:'零偏穩定性',
       table_range: '測量範圍',
       table_sampling_rate: '採樣率',
       table_gravity_note: '註記 : 1G = 1 x (重力加速度)',
@@ -146,7 +197,7 @@ const messages = {
       acce: '加速度計',
       magnet: '磁場計',
       download: '下載',
-      software_intro:'適用於我們產品的強大軟體'
+      software_intro:'與產品搭配 : 數據紀錄、圖表呈現、客製化指令'
     },
     contact: {
 
@@ -165,7 +216,8 @@ const messages = {
     },
     footer: {
       about_title: '關於超核電子',
-      about_content: 'HiPNUC 超核電子致力於開發具有高成本效益的高品質IMU / AHRS。多年的低成本MEMS傳感器算法開發經驗，提供成熟和先進的集成導航模組，為客戶提供最具性價比的姿態檢測方案。',
+      about_content: 'HiPNUC 超核電子致力於開發具有高成本效益的高品質 IMU/ARU/AHRS。'+
+      '多年的低成本 MEMS 傳感器算法開發經驗，提供成熟和先進的集成導航模組，為客戶提供多樣的姿態檢測方案。',
       github: '前往我們的Github',
       library_title: '圖書館',
       lib1: 'Matlab 數字濾波入門',
@@ -184,30 +236,59 @@ const messages = {
     navbar: {
       home: '首页',
       products: '产品',
-      hi221: 'HI221 (动作捕捉)',
-      hi226: 'HI226 (SMD模块 IMU/VRU)',
-      hi229: 'HI229 (SMD模块 IMU/AHRS)',
-      ch110: 'CH110 (IP67防水外壳型 IMU/AHRS)',
-      industrial: '工业级',
-      wireless: '无线姿态传感器',
+      hi221: 'HI221 (多节点高速动作捕捉)',
+      hi226: 'HI226 (IMU/ARU 模块, SMD)',
+      hi229: 'HI229 (IMU/ARU/AHRS 模块, SMD)',
+      ch100: 'CH100 (IMU/ARU/AHRS 模块, SMD)',
+      ch110: 'CH110 (IMU/ARU/AHRS 模块, IP67 外壳)',
+      HI210x:'HI210x (USB 转 1/2/4路 UART)',
+      HI394x:'HI394x (USB 转 CAN)',
+
+      lowcost: '低成本模块',
+      high_precision: '高精度模块',
+      wireless: '多节点高速无线动作捕捉套件',
+      usb_conversion:'接口转换类芯片',
+
       documentation: '资料下载',
       contact: '联络与购买',
       language: '语言',
     },
     index: {
       intro: 'HiPNUC 超核电子',
-      intro2: '致力于开发高经济效益、专业、先进、小巧的 IMU/AHRS 系统与产品。',
+      intro2: '提供高经济效益、专业、精准、小巧的 IMU/ARU/AHRS 系统与产品。',
     },
     products: {
-      hi221_intro: '无线和高速数据采集，並且可用于多点运动捕捉。',
-      hi226_intro: '主要用于机器人航向测量，高速姿态采集和运动稳定设备。',
-      ch110_intro: 'IP67 防水外壳，支持 USB/232/485/CAN 接口，适用于移动机器人/无人驾驶等应用。',
-      table_hi221_h1: '无线 IMU，VRU，AHRS 模块',
-      table_hi221_app1: '多点无线数据采集',
-      table_hi221_app2: '高速数据采集',
-      table_hi221_app3: '动作捕捉录制',
-      table_hi221_max_number: '最大无线节点连接数量',
-      table_hi221_data_interface: 'UART和2.4G RF私有协议',
+
+      hi221_intro: "HI221 为9轴无线姿态传感节点，整合独家的融合演算及校准技术。"+
+      "可输出3轴角速度、3轴加速度、3轴磁力计的原始数据，及融合演算後的四元数与欧拉角。"+
+      "具备 Micro-USB 与无线输出方式，适合大空间的动作捕捉、制作人体交互体验设备等。",
+      table_hi221_h1: '无线模块',
+      table_hi221_app: '无线设备, 动作捕捉, 多节点数据采集',
+
+      table_hi221_max_number: '无线节点最大连接数',
+      
+      hi226_intro: '可用于机器人航向测量，高速姿态采集和运动稳定设备。',
+      table_hi226_h1: '泛用型模块',
+      table_hi226_app: '机器人、无人驾驶、智能机械、AGV',
+      table_hi229_app:'机器人、无人驾驶、智能机械、AGV、电子罗盘',
+      
+      ch100_intro:'CH100 是一款高性能、小体积、低延时的惯性测量单元(IMU)。'+
+      '可同时输出3轴角速度、3轴加速度，及融合演算後的四元数与欧拉角，结合最新的冗余陀螺仪校正技术，'+
+      '使偏移降低到每小时 2.5° 以内。除此之外提供多功能指令，'+
+      '专为机器人、无人驾驶、智能农机、AGV 而打造。',
+      
+      table_ch100_h1:'工业级高精度模块',
+      table_ch100_app:'工程机械、智能农机、高精度测量设备',
+
+      ch110_intro: 'CH110 是一款高性能、小体积、低延时的惯性测量单元(IMU)，'+
+      '具备 IP67 防水防尘外壳与防水接头设计。同时输出3轴角速度、3轴加速度，'+
+      '及融合演算後的四元数与欧拉角。除此之外提供多功能指令，'+
+      '可用于机器人、无人驾驶、防水设备、户外机械、智能农机等',
+
+      table_ch110_h1: '工业级外壳模块',
+      table_ch110_app: '工业机械, AGV, 水上设备, 户外机械',
+
+      
       table_hi226_h1: 'IMU, VRU, AHRS 模块',
       table_hi226_app1: '机器人姿态测量',
       table_hi229_app1:'虚拟实境',
@@ -227,6 +308,7 @@ const messages = {
       table_avg_standby: '平均待机电流',
       table_avg_working: '平均工作电流 ',
       table_avg_time: '平均工作时长',
+      table_bias_stability:'零偏稳定性',
       table_range: '测量范围',
       table_sampling_rate: '采样率',
       table_gravity_note: '注记 : 1G = 1 x (重力加速度)',
@@ -308,19 +390,7 @@ function listCookie() {
   }
   document.writeln("</table>");
 }
-function doc_center() {
-  var tmp_lang = getCookie("lang");
-  var short_cut = "";
-  if (tmp_lang == "en")
-    short_cut = "mkdocs_en/site/index.html";
-  else if (tmp_lang == "cn")
-    short_cut = "mkdocs_cn/site/index.html";
-  else if (tmp_lang == "tc")
-    short_cut = "mkdocs_tc/site/index.html";
-  else
-    short_cut = "mkdocs_en/site/index.html";
-  window.location.assign(short_cut);
-}
+
 
 
 
