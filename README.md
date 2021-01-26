@@ -1,6 +1,6 @@
 # HiPNUC_Website
 
-結合 i18n
+多語言網頁框架，以 i18n 實現
 
 lang/lang_pack.js 是包含所有語言文本的檔案
 
@@ -12,7 +12,7 @@ mkdocs 每種語言為一個環境，如
 
 mkdocs_cn\docs 底下是所有產品的資料夾
 
-HI221、HI226 等等
+hi221、hi226 等等
 
 md 檔擺在如 mkdocs_cn\docs\hi221\hi221um_cn.md
 
