@@ -1,5 +1,7 @@
 # HiPNUC_Website
 
+預覽:https://avmm9898.github.io/HiPNUC_Website/
+
 多語言網頁框架，以 vuei18n 實現
 
 lang/lang_pack.js 是包含所有語言文本的檔案
